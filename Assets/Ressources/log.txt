@@ -1,0 +1,3 @@
+gérer si l'item est trop large le descendre de ligne
+pouvoir rotate objets dans l'inventaire
+menu des item (drop...)
