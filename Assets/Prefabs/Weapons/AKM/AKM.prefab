@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f55736be8836f4daf9bb39c9fea4a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interact_text: Pick up
+  interact_text: Take
   item_icon: {fileID: 4272376817182253583, guid: b2d3acdb95d3b274eb7a1176cd6ca5c3,
     type: 3}
 --- !u!54 &6869129314785596433

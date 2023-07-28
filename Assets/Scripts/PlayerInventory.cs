@@ -9,8 +9,8 @@ public class PlayerInventory : MonoBehaviour
     Transform[] item_cells;
     [SerializeField] InventoryCell[] inventory_cells;
     [SerializeField] RectTransform[] inventory_cells_transform;
+    [SerializeField] int cell_size;
     [SerializeField] int inventory_columns;
-    [SerializeField] int inventory_rows;
     public List<InventoryCell> preview_cells = new List<InventoryCell>();
     public Dictionary<GameObject, List<InventoryCell>> previously_occupied_cells = new Dictionary<GameObject, List<InventoryCell>>();
 
@@ -54,68 +54,58 @@ public class PlayerInventory : MonoBehaviour
     {
         int item_nb_column = item.GetComponent<ItemDrag>().nb_columns;
         int item_nb_rows = item.GetComponent<ItemDrag>().nb_rows;
-        bool fitting = true;
-        bool exit_loop = false;
+        bool enough_cells = false;
 
         for (int i = 0; i < inventory_cells.Length; i++)
         {
             if (inventory_cells[i].cell_state != state.occupied)
             {
-                for (int j = i; j < i + item_nb_column; j++)
+                if (i + (item_nb_column - 1) + ((item_nb_rows - 1) * inventory_columns) > inventory_cells.Length-1)
                 {
-                    if (j + inventory_columns > inventory_cells.Length || j + inventory_rows > inventory_cells.Length)
+                    return;
+                }
+                else
+                {
+                    bool stop_searching = false;
+                    for (int j = 0; j < item_nb_column; j++)
                     {
-                        return;
-                    }
-                    if (inventory_cells[j].cell_state == state.occupied || inventory_cells[j + inventory_columns].cell_state == state.occupied)
-                    {
-                        preview_cells.Clear();
-                        break;
-                    }
-                    else
-                    {
-                        preview_cells.Add(inventory_cells[j]);
-                        preview_cells.Add(inventory_cells[j + inventory_columns]);
-                        if (preview_cells.Count == item_nb_column * item_nb_rows)
+                        for (int k = 0; k < item_nb_rows; k++)
                         {
-                            exit_loop = true;
+                            k = k * inventory_columns;
+                            if (inventory_cells[i + j + k].cell_state == state.occupied)
+                            {
+                                preview_cells.Clear();
+                                stop_searching = true;
+                                break;
+                            }
+                            else
+                            {
+                                preview_cells.Add(inventory_cells[i + j + k]);
+                                if (preview_cells.Count == item_nb_column * item_nb_rows)
+                                {
+                                    enough_cells = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if (stop_searching)
+                        {
                             break;
                         }
                     }
                 }
-                if (exit_loop)
+
+                if (enough_cells)
                 {
-
-                    float initial_x = preview_cells[0].transform.position.x;
-                    float initial_y = preview_cells[0].transform.position.y;
-
-                    for (int k = 0; k < item_nb_rows; k++)
-                    {
-                        if (preview_cells[k].transform.position.x != initial_x)
-                        {
-                            fitting = false;
-                            break;
-                        }
-                    }
-                    if (fitting)
-                    {
-                        for (int l = 0; l < item_nb_column; l += item_nb_rows)
-                        {
-                            if (preview_cells[l].transform.position.y != initial_y)
-                            {
-                                fitting = false;
-                                break;
-                            }
-                        }
-                    }
-                    if (fitting)
+                    enough_cells = false;
+                    if (preview_cells[0].transform.position.x + cell_size * (item_nb_column - 1) == preview_cells[preview_cells.Count - 1].transform.position.x
+                    && preview_cells[0].transform.position.y - cell_size * (item_nb_rows - 1) == preview_cells[preview_cells.Count - 1].transform.position.y)
                     {
                         break;
                     }
                     else
                     {
                         preview_cells.Clear();
-                        fitting = true;
                     }
                 }
             }

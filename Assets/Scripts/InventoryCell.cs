@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class InventoryCell : MonoBehaviour
 {
     public state cell_state;
-    Color next_color;
     [SerializeField] Color base_color;
     [SerializeField] Color preview_color;
     [SerializeField] Color occupied_color;
