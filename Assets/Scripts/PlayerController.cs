@@ -10,10 +10,9 @@ public class PlayerController : MonoBehaviour
     CharacterController character_controller;
     Vector3 forward;
     Vector3 right;
-    bool is_running;
-    float cur_speed_x;
-    float cur_speed_y;
     float movement_direction_y;
+    Vector3 target_move_direction;
+    Vector2 movements;
 
     void Start()
     {
@@ -34,15 +33,17 @@ public class PlayerController : MonoBehaviour
 
     void move_player()
     {
-        forward = transform.TransformDirection(Vector3.forward);
-        right = transform.TransformDirection(Vector3.right);
-
-        is_running = Input.GetKey(KeyCode.LeftShift);
-        cur_speed_x = (is_running ? player.run_speed : player.walk_speed) * Input.GetAxis("Vertical");
-        cur_speed_y = (is_running ? player.run_speed : player.walk_speed) * Input.GetAxis("Horizontal");
+        if (!player.is_jumping)
+        {
+            forward = transform.TransformDirection(Vector3.forward);
+            right = transform.TransformDirection(Vector3.right);
+            movements = new Vector2(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal")).normalized;
+            movements = player.is_running ? movements * player.run_speed : movements * player.walk_speed;
+        }
         movement_direction_y = move_direction.y;
-        move_direction = (forward * cur_speed_x) + (right * cur_speed_y);
-
+        target_move_direction = (forward * movements.x) + (right * movements.y);
+        move_direction = Vector3.SmoothDamp(move_direction, target_move_direction, ref move_direction, player.smooth_move_speed);
+        
         if (Input.GetButton("Jump") && !player.inventory_open && character_controller.isGrounded)
         {
             move_direction.y = player.jump_power;
@@ -55,6 +56,11 @@ public class PlayerController : MonoBehaviour
         if (!character_controller.isGrounded)
         {
             move_direction.y -= player.gravity * Time.deltaTime;
+            player.is_jumping = true;
+        }
+        else
+        {
+            player.is_jumping = false;
         }
 
         character_controller.Move(move_direction * Time.deltaTime);
