@@ -5,48 +5,61 @@ using UnityEngine;
 public class WeaponSwayAndHeadbob : MonoBehaviour
 {
     Player player;
-    [SerializeField] CharacterController character_controller;
+    [SerializeField] CharacterController characterController;
 
-    [Header("Sway")]
-    public float step = 0.01f;
-    public float maxStepDistance = 0.06f;
-    Vector3 swayPos;
+    [Header("Sway position")]
+    public float swayPositionSpeed = 0.01f;
+    public float maxSwayDistance = 0.06f;
+    Vector3 invertLookPosition;
+    Vector3 swayPosition;
 
-    [Header("Sway Rotation")]
-    public float rotationStep = 4f;
-    public float maxRotationStep = 5f;
-    Vector3 swayEulerRot;
+    [Header("Sway rotation")]
+    public float swayRotationSpeed = 4f;
+    public float maxSwayRotation = 5f;
+    Vector2 invertLookRotation;
+    Vector3 swayRotation;
 
-    public float smooth = 10f;
-    float smoothRot = 12f;
-
-    [Header("Bobbing")]
-    public float speedCurve;
-    float curveSin { get => Mathf.Sin(speedCurve); }
-    float curveCos { get => Mathf.Cos(speedCurve); }
-
+    [Header("Bob position")]
     public Vector3 travelLimit = Vector3.one * 0.025f;
-    public Vector3 bobLimit = Vector3.one * 0.01f;
-    Vector3 bobPosition;
+    [SerializeField] Vector3 walkBobLimit = Vector3.one * 0.02f;
+    [SerializeField] Vector3 runBobLimit = Vector3.one * 0.04f;
+    Vector3 bobLimit;
+    [SerializeField] float walkBobFrequency = 4f;
+    [SerializeField] float runBobFrequency = 6f;
+    float bobFrequency;
+    [SerializeField] float jumpBob = 0.01f;
+    [SerializeField] float jumpBobLimit = 0.05f;
 
-    public float bobExaggeration;
+    float speedCurve;
+    float sinCurve { get => Mathf.Sin(speedCurve); }
+    float cosCurve { get => Mathf.Cos(speedCurve); }
+    Vector3 bobPosition;
+    Vector3 bobRotation;
 
     [Header("Bob Rotation")]
-    public Vector3 multiplier;
-    Vector3 bobEulerRotation;
-    Vector2 look_inputs;
+    public Vector3 bobRotationMultiplier;
+    Vector2 lookInputs;
+
+    [Header("Smooth")]
+    public float smoothPosition = 10f;
+    public float smoothRotation = 12f;
 
     void Start()
     {
-        player = GameManager.Instance.player; 
+        player = GameManager.Instance.player;
     }
 
     void Update()
     {
-        look_inputs.x = !GameManager.Instance.player.inventory_open ? Input.GetAxis("Mouse X") : 0;
-        look_inputs.y = !GameManager.Instance.player.inventory_open ? Input.GetAxis("Mouse Y") : 0;
+        bobFrequency = player.isRunning ? runBobFrequency : walkBobFrequency;
+        bobLimit = player.isRunning ? runBobLimit : walkBobLimit;
+
+        lookInputs.x = !GameManager.Instance.player.inventoryOpen ? Input.GetAxis("Mouse X") : 0;
+        lookInputs.y = !GameManager.Instance.player.inventoryOpen ? Input.GetAxis("Mouse Y") : 0;
+
         Sway();
         SwayRotation();
+
         BobOffset();
         BobRotation();
 
@@ -55,40 +68,39 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void Sway()
     {
-        Vector3 invertLook = look_inputs * -step;
-        invertLook.x = Mathf.Clamp(invertLook.x, -maxStepDistance, maxStepDistance);
-        invertLook.y = Mathf.Clamp(invertLook.y, -maxStepDistance, maxStepDistance);
-
-        swayPos = invertLook;
+        invertLookPosition = lookInputs * -swayPositionSpeed;
+        invertLookPosition.x = Mathf.Clamp(invertLookPosition.x, -maxSwayDistance, maxSwayDistance);
+        invertLookPosition.y = Mathf.Clamp(invertLookPosition.y, -maxSwayDistance, maxSwayDistance);
+        swayPosition = invertLookPosition;
     }
 
     void SwayRotation()
     {
-        Vector2 invertLook = look_inputs * -rotationStep;
-        invertLook.x = Mathf.Clamp(invertLook.x, -maxRotationStep, maxRotationStep);
-        invertLook.y = Mathf.Clamp(invertLook.y, -maxRotationStep, maxRotationStep);
-        swayEulerRot = new Vector3(invertLook.y, invertLook.x, invertLook.x);
+        invertLookRotation = lookInputs * -swayRotationSpeed;
+        invertLookRotation.x = Mathf.Clamp(invertLookRotation.x, -maxSwayRotation, maxSwayRotation);
+        invertLookRotation.y = Mathf.Clamp(invertLookRotation.y, -maxSwayRotation, maxSwayRotation);
+        swayRotation = new Vector3(invertLookRotation.y, invertLookRotation.x, invertLookRotation.x);
     }
 
     void CompositePositionRotation()
     {
-        transform.localPosition = Vector3.Lerp(transform.localPosition, swayPos + bobPosition, Time.deltaTime * smooth);
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(swayEulerRot) * Quaternion.Euler(bobEulerRotation), Time.deltaTime * smoothRot);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, swayPosition + bobPosition, Time.deltaTime * smoothPosition);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(swayRotation) * Quaternion.Euler(bobRotation), Time.deltaTime * smoothRotation);
     }
 
     void BobOffset()
     {
-        speedCurve += Time.deltaTime * (character_controller.isGrounded ? (Input.GetAxis("Horizontal") + Input.GetAxis("Vertical")) * bobExaggeration : 1f) + 0.01f;
-
-        bobPosition.x = (curveCos * bobLimit.x * (character_controller.isGrounded ? 1 : 0)) - (player.move_inputs.x * travelLimit.x);
-        bobPosition.y = (curveSin * bobLimit.y) - (Input.GetAxis("Vertical") * travelLimit.y);
-        bobPosition.z = -(player.move_inputs.y * travelLimit.z);
+        speedCurve += Time.deltaTime * (characterController.isGrounded ? player.rawMoveInputs.magnitude * bobFrequency : 1f) + 0.01f;
+        speedCurve = speedCurve % (2 * Mathf.PI);
+        bobPosition.x = (cosCurve * bobLimit.x * (characterController.isGrounded ? 1 : 0)) - (player.rawMoveInputs.x * travelLimit.x);
+        bobPosition.y = player.isJumping ? Mathf.Clamp(player.characterController.velocity.y * -jumpBob, -jumpBobLimit, jumpBobLimit) : (sinCurve * bobLimit.y) - (player.rawMoveInputs.y * travelLimit.y);
+        bobPosition.z = -(player.rawMoveInputs.y * travelLimit.z);
     }
 
     void BobRotation()
     {
-        bobEulerRotation.x = (player.move_inputs != Vector2.zero ? multiplier.x * (Mathf.Sin(2 * speedCurve)) : multiplier.x * (Mathf.Sin(2 * speedCurve) / 2));
-        bobEulerRotation.y = (player.move_inputs != Vector2.zero ? multiplier.y * curveCos : 0);
-        bobEulerRotation.z = (player.move_inputs != Vector2.zero ? multiplier.z * curveCos * player.move_inputs.x : 0);
+        bobRotation.x = (player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve)) : bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve) * 0.5f));
+        bobRotation.y = (player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.y * cosCurve : 0);
+        bobRotation.z = (player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.z * cosCurve * player.rawMoveInputs.x : 0);
     }
 }

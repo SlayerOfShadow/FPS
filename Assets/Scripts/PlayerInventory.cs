@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     Player player;
-    ItemDrag item_dragged;
-    Transform[] item_cells;
-    [SerializeField] InventoryCell[] inventory_cells;
-    [SerializeField] RectTransform[] inventory_cells_transform;
-    [SerializeField] int cell_size;
-    [SerializeField] int inventory_columns;
-    public List<InventoryCell> preview_cells = new List<InventoryCell>();
-    public Dictionary<GameObject, List<InventoryCell>> previously_occupied_cells = new Dictionary<GameObject, List<InventoryCell>>();
+    ItemDrag itemDragged;
+    Transform[] itemCells;
+    [SerializeField] InventoryCell[] inventoryCells;
+    [SerializeField] RectTransform[] inventoryCellsTransform;
+    [SerializeField] int cellSize;
+    [SerializeField] int inventoryColumns;
+    public List<InventoryCell> previewCells = new List<InventoryCell>();
+    public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
 
     void Start()
     {
@@ -21,139 +21,139 @@ public class PlayerInventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && player.can_open_inventory)
+        if (Input.GetKeyDown(KeyCode.I) && player.canOpenInventory)
         {
-            player.inventory_open = !player.inventory_open;
-            if (!player.inventory_open && item_dragged)
+            player.inventoryOpen = !player.inventoryOpen;
+            if (!player.inventoryOpen && itemDragged)
             {
-                snap_item(item_dragged.gameObject);
+                snapItem(itemDragged.gameObject);
             }
-            player.can_interact = !player.inventory_open;
-            Cursor.lockState = player.inventory_open == true ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = player.inventory_open;
-            player.player_inventory.SetActive(player.inventory_open);
+            player.canInteract = !player.inventoryOpen;
+            Cursor.lockState = player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = player.inventoryOpen;
+            player.playerInventoryPanel.SetActive(player.inventoryOpen);
         }
 
-        if (item_dragged)
+        if (itemDragged)
         {
-            foreach (InventoryCell cell in preview_cells)
+            foreach (InventoryCell cell in previewCells)
             {
-                cell.cell_state = state.preview;
+                cell.cellState = state.preview;
             }
-            if (preview_cells.Count != item_dragged.cells.Length)
+            if (previewCells.Count != itemDragged.cells.Length)
             {
-                foreach (InventoryCell cell in preview_cells)
+                foreach (InventoryCell cell in previewCells)
                 {
-                    cell.cell_state = state.none;
+                    cell.cellState = state.none;
                 }
             }
         }
     }
 
-    public void add_item(GameObject item, GameObject prefab)
+    public void addItem(GameObject item, GameObject prefab)
     {
-        int item_nb_column = item.GetComponent<ItemDrag>().nb_columns;
-        int item_nb_rows = item.GetComponent<ItemDrag>().nb_rows;
-        bool enough_cells = false;
+        int itemNbColumn = item.GetComponent<ItemDrag>().nbColumns;
+        int itemNbRows = item.GetComponent<ItemDrag>().nbRows;
+        bool enoughCells = false;
 
-        for (int i = 0; i < inventory_cells.Length; i++)
+        for (int i = 0; i < inventoryCells.Length; i++)
         {
-            if (inventory_cells[i].cell_state != state.occupied)
+            if (inventoryCells[i].cellState != state.occupied)
             {
-                if (i + (item_nb_column - 1) + ((item_nb_rows - 1) * inventory_columns) > inventory_cells.Length-1)
+                if (i + (itemNbColumn - 1) + ((itemNbRows - 1) * inventoryColumns) > inventoryCells.Length-1)
                 {
                     return;
                 }
                 else
                 {
-                    bool stop_searching = false;
-                    for (int j = 0; j < item_nb_column; j++)
+                    bool stopSearching = false;
+                    for (int j = 0; j < itemNbColumn; j++)
                     {
-                        for (int k = 0; k < item_nb_rows; k++)
+                        for (int k = 0; k < itemNbRows; k++)
                         {
-                            k = k * inventory_columns;
-                            if (inventory_cells[i + j + k].cell_state == state.occupied)
+                            k = k * inventoryColumns;
+                            if (inventoryCells[i + j + k].cellState == state.occupied)
                             {
-                                preview_cells.Clear();
-                                stop_searching = true;
+                                previewCells.Clear();
+                                stopSearching = true;
                                 break;
                             }
                             else
                             {
-                                preview_cells.Add(inventory_cells[i + j + k]);
-                                if (preview_cells.Count == item_nb_column * item_nb_rows)
+                                previewCells.Add(inventoryCells[i + j + k]);
+                                if (previewCells.Count == itemNbColumn * itemNbRows)
                                 {
-                                    enough_cells = true;
+                                    enoughCells = true;
                                     break;
                                 }
                             }
                         }
-                        if (stop_searching)
+                        if (stopSearching)
                         {
                             break;
                         }
                     }
                 }
 
-                if (enough_cells)
+                if (enoughCells)
                 {
-                    enough_cells = false;
-                    if (preview_cells[0].transform.position.x + cell_size * (item_nb_column - 1) == preview_cells[preview_cells.Count - 1].transform.position.x
-                    && preview_cells[0].transform.position.y - cell_size * (item_nb_rows - 1) == preview_cells[preview_cells.Count - 1].transform.position.y)
+                    enoughCells = false;
+                    if (previewCells[0].transform.position.x + cellSize * (itemNbColumn - 1) == previewCells[previewCells.Count - 1].transform.position.x
+                    && previewCells[0].transform.position.y - cellSize * (itemNbRows - 1) == previewCells[previewCells.Count - 1].transform.position.y)
                     {
                         break;
                     }
                     else
                     {
-                        preview_cells.Clear();
+                        previewCells.Clear();
                     }
                 }
             }
         }
-        item = Instantiate(item, player.inventory_icons_handler.transform.position, Quaternion.identity, player.inventory_icons_handler.transform);
+        item = Instantiate(item, player.inventoryIconsHandler.transform.position, Quaternion.identity, player.inventoryIconsHandler.transform);
         prefab.SetActive(false);
-        previously_occupied_cells[item] = new List<InventoryCell>(preview_cells);
-        snap_item(item);
+        previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);
+        snapItem(item);
     }
 
-    public void move_item(GameObject item)
+    public void moveItem(GameObject item)
     {
-        if (previously_occupied_cells.ContainsKey(item))
+        if (previouslyOccupiedCells.ContainsKey(item))
         {
-            foreach (InventoryCell cell in previously_occupied_cells[item])
+            foreach (InventoryCell cell in previouslyOccupiedCells[item])
             {
-                cell.cell_state = state.none;
+                cell.cellState = state.none;
             }
         }
 
-        if (item_dragged == null)
+        if (itemDragged == null)
         {
-            item_dragged = item.GetComponent<ItemDrag>();
-            item_cells = item_dragged.cells;
+            itemDragged = item.GetComponent<ItemDrag>();
+            itemCells = itemDragged.cells;
         }
 
         int index = 0;
-        foreach (InventoryCell inventory_cell in inventory_cells)
+        foreach (InventoryCell inventoryCell in inventoryCells)
         {
-            foreach (Transform item_cell in item_cells)
+            foreach (Transform itemCell in itemCells)
             {
-                if (RectTransformUtility.RectangleContainsScreenPoint(inventory_cells_transform[index], item_cell.transform.position))
+                if (RectTransformUtility.RectangleContainsScreenPoint(inventoryCellsTransform[index], itemCell.transform.position))
                 {
-                    if (!preview_cells.Contains(inventory_cell))
+                    if (!previewCells.Contains(inventoryCell))
                     {
-                        if (inventory_cell.cell_state != state.occupied)
+                        if (inventoryCell.cellState != state.occupied)
                         {
-                            preview_cells.Add(inventory_cell);
+                            previewCells.Add(inventoryCell);
                         }
                     }
                     break;
                 }
                 else
                 {
-                    if (preview_cells.Contains(inventory_cell))
+                    if (previewCells.Contains(inventoryCell))
                     {
-                        preview_cells.Remove(inventory_cell);
-                        inventory_cell.cell_state = state.none;
+                        previewCells.Remove(inventoryCell);
+                        inventoryCell.cellState = state.none;
                     }
                 }
             }
@@ -161,12 +161,12 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    public void snap_item(GameObject item)
+    public void snapItem(GameObject item)
     {
         int count = 0;
         float x = 0;
         float y = 0;
-        foreach (InventoryCell cell in preview_cells)
+        foreach (InventoryCell cell in previewCells)
         {
             count++;
             x += cell.transform.localPosition.x;
@@ -177,25 +177,25 @@ public class PlayerInventory : MonoBehaviour
             Rect rect = item.GetComponent<RectTransform>().rect;
             x /= count;
             y /= count;
-            Vector3 mean_position = new Vector3(x - rect.width * 0.5f, y + rect.height * 0.5f, item.transform.position.z);
-            item.transform.localPosition = mean_position;
-            foreach (InventoryCell cell in preview_cells)
+            Vector3 meanPosition = new Vector3(x - rect.width * 0.5f, y + rect.height * 0.5f, item.transform.position.z);
+            item.transform.localPosition = meanPosition;
+            foreach (InventoryCell cell in previewCells)
             {
-                cell.cell_state = state.occupied;
-                cell.change_color();
+                cell.cellState = state.occupied;
+                cell.ChangeColor();
             }
-            previously_occupied_cells[item] = new List<InventoryCell>(preview_cells);
+            previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);
         }
         else
         {
-            item.transform.position = item.GetComponent<ItemDrag>().start_position;
-            foreach (InventoryCell cell in previously_occupied_cells[item])
+            item.transform.position = item.GetComponent<ItemDrag>().startPosition;
+            foreach (InventoryCell cell in previouslyOccupiedCells[item])
             {
-                cell.cell_state = state.occupied;
-                cell.change_color();
+                cell.cellState = state.occupied;
+                cell.ChangeColor();
             }
         }
-        preview_cells.Clear();
-        item_dragged = null;
+        previewCells.Clear();
+        itemDragged = null;
     }
 }

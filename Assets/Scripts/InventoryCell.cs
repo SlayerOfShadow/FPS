@@ -5,33 +5,29 @@ using UnityEngine.UI;
 
 public class InventoryCell : MonoBehaviour
 {
-    public state cell_state;
-    [SerializeField] Color base_color;
-    [SerializeField] Color preview_color;
-    [SerializeField] Color occupied_color;
-    [SerializeField] Color hover_color;
+    public state cellState;
+    [SerializeField] Color baseColor;
+    [SerializeField] Color previewColor;
+    [SerializeField] Color occupiedColor;
     [SerializeField] Image img;
 
     void Update()
     {
-        change_color();
+        ChangeColor();
     }
 
-    public void change_color()
+    public void ChangeColor()
     {
-        switch (cell_state)
+        switch (cellState)
         {
             case state.none:
-                img.color = base_color;
+                img.color = baseColor;
                 break;
             case state.preview:
-                img.color = preview_color;
+                img.color = previewColor;
                 break;
             case state.occupied:
-                img.color = occupied_color;
-                break;
-            case state.hover:
-                img.color = hover_color;
+                img.color = occupiedColor;
                 break;
         }
     }
@@ -41,6 +37,5 @@ public enum state
 {
     none,
     preview,
-    occupied,
-    hover
+    occupied
 }

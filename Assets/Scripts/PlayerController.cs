@@ -5,72 +5,68 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Player player;
-    Vector3 move_direction = Vector3.zero;
-    float rotation_x = 0;
-    CharacterController character_controller;
+    Vector3 moveDirection = Vector3.zero;
+    float xRotation = 0;
     Vector3 forward;
     Vector3 right;
-    float movement_direction_y;
-    Vector3 target_move_direction;
+    float yMovementDirection;
+    Vector3 targetMoveDirection;
     Vector2 movements;
 
     void Start()
     {
         player = GameManager.Instance.player;
-        character_controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     void Update()
     {
-        move_player();
-        if (!player.inventory_open)
+        MovePlayer();
+        if (!player.inventoryOpen)
         {
-            rotate_camera();
+            RotateCamera();
         }
     }
 
-    void move_player()
+    void MovePlayer()
     {
-        if (!player.is_jumping)
+        if (!player.isJumping)
         {
             forward = transform.TransformDirection(Vector3.forward);
             right = transform.TransformDirection(Vector3.right);
-            movements = new Vector2(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal")).normalized;
-            movements = player.is_running ? movements * player.run_speed : movements * player.walk_speed;
+            movements = player.isRunning ? player.rawMoveInputs * player.runSpeed : player.rawMoveInputs * player.walkSpeed;
         }
-        movement_direction_y = move_direction.y;
-        target_move_direction = (forward * movements.x) + (right * movements.y);
-        move_direction = Vector3.SmoothDamp(move_direction, target_move_direction, ref move_direction, player.smooth_move_speed);
+        yMovementDirection = moveDirection.y;
+        targetMoveDirection = (forward * movements.y) + (right * movements.x);
+        moveDirection = Vector3.SmoothDamp(moveDirection, targetMoveDirection, ref moveDirection, player.smoothMoveSpeed);
         
-        if (Input.GetButton("Jump") && !player.inventory_open && character_controller.isGrounded)
+        if (Input.GetButton("Jump") && player.canJump)
         {
-            move_direction.y = player.jump_power;
+            moveDirection.y = player.jumpPower;
         }
         else
         {
-            move_direction.y = movement_direction_y;
+            moveDirection.y = yMovementDirection;
         }
 
-        if (!character_controller.isGrounded)
+        if (player.isJumping)
         {
-            move_direction.y -= player.gravity * Time.deltaTime;
-            player.is_jumping = true;
+            moveDirection.y -= player.gravity * Time.deltaTime;
         }
         else
         {
-            player.is_jumping = false;
+            player.isJumping = false;
         }
 
-        character_controller.Move(move_direction * Time.deltaTime);
+        player.characterController.Move(moveDirection * Time.deltaTime);
     }
 
-    void rotate_camera()
+    void RotateCamera()
     {
-        rotation_x += -Input.GetAxis("Mouse Y") * player.look_speed;
-        rotation_x = Mathf.Clamp(rotation_x, -player.look_x_limit, player.look_x_limit);
-        player.player_camera.transform.localRotation = Quaternion.Euler(rotation_x, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * player.look_speed, 0);
+        xRotation += -Input.GetAxis("Mouse Y") * player.lookSpeed;
+        xRotation = Mathf.Clamp(xRotation, -player.lookXLimit, player.lookXLimit);
+        player.playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * player.lookSpeed, 0);
     }
 }

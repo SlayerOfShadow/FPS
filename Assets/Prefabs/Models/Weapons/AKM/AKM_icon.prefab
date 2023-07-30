@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a86a7d1a7effad4783785406dc582f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start_position: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
   cells:
   - {fileID: 3031923539712653587}
   - {fileID: 4245881481504674058}
@@ -525,8 +525,8 @@ MonoBehaviour:
   - {fileID: 6463281461132767520}
   - {fileID: 5332213334031145888}
   - {fileID: 7832056083216032706}
-  nb_rows: 2
-  nb_columns: 7
+  nbRows: 2
+  nbColumns: 7
 --- !u!1 &4472023851586829245
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,17 +5,15 @@ using UnityEngine;
 public class Item : Interactable
 {
     Player player;
-    PlayerInventory player_inventory;
-    [SerializeField] GameObject item_icon;
+    [SerializeField] GameObject itemIcon;
 
     void Start()
     {
         player = GameManager.Instance.player;
-        player_inventory = player.GetComponent<PlayerInventory>();
     }
 
-    public override void interact_action()
+    public override void interactAction()
     {
-        player_inventory.add_item(item_icon, gameObject);
+        player.playerInventory.addItem(itemIcon, gameObject);
     }
 }

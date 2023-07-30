@@ -5,53 +5,53 @@ using UnityEngine.EventSystems;
 
 public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
-    PlayerInventory player_inventory;
+    Player player;
     Vector3 offset;
-    public Vector3 start_position;
-    RectTransform rect_transform;
+    public Vector3 startPosition;
+    RectTransform rectTransform;
     public Transform[] cells;
-    public int nb_rows;
-    public int nb_columns;
-    PointerEventData current_event = new PointerEventData(EventSystem.current);
+    public int nbRows;
+    public int nbColumns;
+    PointerEventData currentEvent = new PointerEventData(EventSystem.current);
 
     void Start()
     {
-        rect_transform = GetComponent<RectTransform>();
-        player_inventory = GameManager.Instance.player.GetComponent<PlayerInventory>();
+        player = GameManager.Instance.player;
+        rectTransform = GetComponent<RectTransform>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        rect_transform.SetAsLastSibling();
+        rectTransform.SetAsLastSibling();
         eventData.useDragThreshold = false;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        current_event = eventData;
-        start_position = transform.position;
+        currentEvent = eventData;
+        startPosition = transform.position;
         offset = transform.position - Input.mousePosition;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition + offset;
-        player_inventory.move_item(gameObject);
+        player.playerInventory.moveItem(gameObject);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        player_inventory.snap_item(gameObject);
+        player.playerInventory.snapItem(gameObject);
     }
 
     void OnDisable()
     {
-        if (current_event.pointerDrag)
+        if (currentEvent.pointerDrag)
         {
-            current_event.pointerDrag = null;
-            foreach (InventoryCell cell in player_inventory.previously_occupied_cells[gameObject])
+            currentEvent.pointerDrag = null;
+            foreach (InventoryCell cell in player.playerInventory.previouslyOccupiedCells[gameObject])
             {
-                cell.cell_state = state.occupied;
+                cell.cellState = state.occupied;
             }
         }
     }

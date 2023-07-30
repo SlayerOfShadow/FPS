@@ -6,39 +6,55 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     [Header("Components")]
-    public Camera player_camera;
-    public GameObject interaction_panel;
-    public TMP_Text interaction_text;
+    public Camera playerCamera;
+    public CharacterController characterController;
+    public TMP_Text interactionText;
+    public GameObject playerInventoryPanel;
 
     [Header("Stats")]
-    public float walk_speed = 3f;
-    public float run_speed = 6f;
-    public float smooth_move_speed = 0.01f;
-    public float jump_power = 6f;
+    public float walkSpeed = 3f;
+    public float runSpeed = 6f;
+    public float smoothMoveSpeed = 0.01f;
+    public float jumpPower = 6f;
     public float gravity = 15f;
-    public float look_speed = 1f;
-    public float look_x_limit = 90f;
-    public float interaction_range = 5f;
+    public float lookSpeed = 1f;
+    public float lookXLimit = 90f;
+    public float interactionRange = 5f;
 
     [Header("Inventory")]
-    public GameObject player_inventory;
-    public bool inventory_open = false;
-    public GameObject inventory_icons_handler;
+    public PlayerInventory playerInventory;
+    public bool inventoryOpen = false;
+    public GameObject inventoryIconsHandler;
 
     [Header("Actions")]
-    public bool can_interact = true;
-    public bool can_open_inventory = true;
-    public bool is_running = false;
-    public bool is_jumping = false;
+    public bool canInteract = true;
+    public bool canOpenInventory = true;
+    public bool canMove = true;
+    public bool canRun = true;
+    public bool canJump = false;
+    public bool isMoving = false;
+    public bool isRunning = false;
+    public bool isJumping = true;
 
     [Header("Inputs")]
-    public Vector2 move_inputs;
-    public Vector2 look_inputs;
+    public Vector2 moveInputs;
+    public Vector2 rawMoveInputs;
+    public Vector2 lookInputs;
 
     void Update()
     {
-        move_inputs = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-        look_inputs = inventory_open ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized : Vector2.zero;
-        is_running = Input.GetKey(KeyCode.LeftShift);
+        if (canMove)
+        {
+            moveInputs = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+            rawMoveInputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        }
+        lookInputs = inventoryOpen ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized : Vector2.zero;
+        canInteract = !inventoryOpen;
+        canMove = characterController.isGrounded;
+        canJump = characterController.isGrounded;
+        canRun = isMoving;
+        isRunning = Input.GetKey(KeyCode.LeftShift);
+        isMoving = moveInputs.magnitude > 0 ? true : false;
+        isJumping = !characterController.isGrounded;
     }
 }

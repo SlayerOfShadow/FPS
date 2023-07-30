@@ -173,11 +173,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 10565321}
 --- !u!114 &10565321
 MonoBehaviour:
@@ -586,11 +585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 11222117}
 --- !u!114 &11222117
 MonoBehaviour:
@@ -680,11 +678,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 42040345}
 --- !u!114 &42040345
 MonoBehaviour:
@@ -774,11 +771,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 54751377}
 --- !u!114 &54751377
 MonoBehaviour:
@@ -868,11 +864,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 89928980}
 --- !u!114 &89928980
 MonoBehaviour:
@@ -962,11 +957,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 90719354}
 --- !u!114 &90719354
 MonoBehaviour:
@@ -1120,11 +1114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 111349021}
 --- !u!114 &111349021
 MonoBehaviour:
@@ -1476,11 +1469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 159989035}
 --- !u!114 &159989035
 MonoBehaviour:
@@ -1570,11 +1562,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 204876047}
 --- !u!114 &204876047
 MonoBehaviour:
@@ -1897,11 +1888,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 240773624}
 --- !u!114 &240773624
 MonoBehaviour:
@@ -1991,11 +1981,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 260501262}
 --- !u!114 &260501262
 MonoBehaviour:
@@ -2085,11 +2074,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 327250093}
 --- !u!114 &327250093
 MonoBehaviour:
@@ -2179,11 +2167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 328161586}
 --- !u!114 &328161586
 MonoBehaviour:
@@ -2273,11 +2260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 338583230}
 --- !u!114 &338583230
 MonoBehaviour:
@@ -2367,11 +2353,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 343205101}
 --- !u!114 &343205101
 MonoBehaviour:
@@ -2528,7 +2513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f35742d2cea4644a067ea31e3872c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fps_text: {fileID: 1742661270}
+  fpsText: {fileID: 1742661270}
+  refreshRate: 1
 --- !u!1 &357182297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,11 +2600,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 360831444}
 --- !u!114 &360831444
 MonoBehaviour:
@@ -2708,11 +2693,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 395871141}
 --- !u!114 &395871141
 MonoBehaviour:
@@ -2802,11 +2786,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 402937890}
 --- !u!114 &402937890
 MonoBehaviour:
@@ -2896,11 +2879,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 408426052}
 --- !u!114 &408426052
 MonoBehaviour:
@@ -3039,11 +3021,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 436477288}
 --- !u!114 &436477288
 MonoBehaviour:
@@ -3179,11 +3160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 471056926}
 --- !u!114 &471056926
 MonoBehaviour:
@@ -3273,11 +3253,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 477863843}
 --- !u!114 &477863843
 MonoBehaviour:
@@ -3497,11 +3476,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 520310513}
 --- !u!114 &520310513
 MonoBehaviour:
@@ -3756,11 +3734,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 547912842}
 --- !u!114 &547912842
 MonoBehaviour:
@@ -3850,11 +3827,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 553292571}
 --- !u!114 &553292571
 MonoBehaviour:
@@ -3944,11 +3920,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 559075684}
 --- !u!114 &559075684
 MonoBehaviour:
@@ -4038,11 +4013,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 561779943}
 --- !u!114 &561779943
 MonoBehaviour:
@@ -4132,11 +4106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 579743036}
 --- !u!114 &579743036
 MonoBehaviour:
@@ -4226,11 +4199,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 582123633}
 --- !u!114 &582123633
 MonoBehaviour:
@@ -4560,11 +4532,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 588319698}
 --- !u!114 &588319698
 MonoBehaviour:
@@ -4654,11 +4625,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 591980124}
 --- !u!114 &591980124
 MonoBehaviour:
@@ -4748,11 +4718,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 609148493}
 --- !u!114 &609148493
 MonoBehaviour:
@@ -5007,11 +4976,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 626342727}
 --- !u!114 &626342727
 MonoBehaviour:
@@ -5176,11 +5144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 649145695}
 --- !u!114 &649145695
 MonoBehaviour:
@@ -5473,11 +5440,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 692526864}
 --- !u!1 &766838600
 GameObject:
@@ -5529,11 +5495,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 766838603}
 --- !u!114 &766838603
 MonoBehaviour:
@@ -5623,11 +5588,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 772796195}
 --- !u!114 &772796195
 MonoBehaviour:
@@ -6069,11 +6033,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 794395731}
 --- !u!114 &794395731
 MonoBehaviour:
@@ -6163,11 +6126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 799086961}
 --- !u!114 &799086961
 MonoBehaviour:
@@ -6520,11 +6482,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 839859410}
 --- !u!114 &839859410
 MonoBehaviour:
@@ -8166,11 +8127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 856733403}
 --- !u!114 &856733403
 MonoBehaviour:
@@ -8409,11 +8369,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 903873456}
 --- !u!114 &903873456
 MonoBehaviour:
@@ -8503,11 +8462,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 932557849}
 --- !u!114 &932557849
 MonoBehaviour:
@@ -8597,11 +8555,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 933331334}
 --- !u!114 &933331334
 MonoBehaviour:
@@ -8691,11 +8648,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 937499731}
 --- !u!114 &937499731
 MonoBehaviour:
@@ -8785,11 +8741,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 954643344}
 --- !u!114 &954643344
 MonoBehaviour:
@@ -8879,11 +8834,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 970522519}
 --- !u!114 &970522519
 MonoBehaviour:
@@ -8973,11 +8927,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 980741083}
 --- !u!114 &980741083
 MonoBehaviour:
@@ -9067,11 +9020,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1010980251}
 --- !u!114 &1010980251
 MonoBehaviour:
@@ -9161,11 +9113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1022718376}
 --- !u!114 &1022718376
 MonoBehaviour:
@@ -9255,11 +9206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1025840035}
 --- !u!114 &1025840035
 MonoBehaviour:
@@ -9349,11 +9299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1026891558}
 --- !u!114 &1026891558
 MonoBehaviour:
@@ -9577,11 +9526,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1063936910}
 --- !u!114 &1063936910
 MonoBehaviour:
@@ -9812,11 +9760,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1108619131}
 --- !u!114 &1108619131
 MonoBehaviour:
@@ -9906,11 +9853,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1110401393}
 --- !u!114 &1110401393
 MonoBehaviour:
@@ -10000,11 +9946,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1154494240}
 --- !u!114 &1154494240
 MonoBehaviour:
@@ -10089,17 +10034,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78225ae4cbcd8947bd3e552256d742c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character_controller: {fileID: 1699233286}
-  step: 0.05
-  maxStepDistance: 2
-  rotationStep: 1
-  maxRotationStep: 4
-  smooth: 10
-  speedCurve: 1780.2845
-  travelLimit: {x: 0.025, y: 0.025, z: 0.025}
-  bobLimit: {x: 0.01, y: 0.01, z: 0.01}
-  bobExaggeration: 4
-  multiplier: {x: 1, y: 1, z: 1}
+  characterController: {fileID: 1699233286}
+  swayPositionSpeed: 0.01
+  maxSwayDistance: 0.05
+  swayRotationSpeed: 1
+  maxSwayRotation: 4
+  travelLimit: {x: 0.05, y: 0.03, z: 0.03}
+  walkBobLimit: {x: 0.02, y: 0.02, z: 0.02}
+  runBobLimit: {x: 0.04, y: 0.04, z: 0.04}
+  walkBobFrequency: 4
+  runBobFrequency: 6
+  jumpBob: 0.02
+  jumpBobLimit: 0.1
+  bobRotationMultiplier: {x: 1, y: 1, z: 1}
+  smoothPosition: 10
+  smoothRotation: 10
 --- !u!1 &1193312458
 GameObject:
   m_ObjectHideFlags: 0
@@ -10150,11 +10099,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1193312461}
 --- !u!114 &1193312461
 MonoBehaviour:
@@ -10244,11 +10192,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1195443021}
 --- !u!114 &1195443021
 MonoBehaviour:
@@ -10338,11 +10285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1202127814}
 --- !u!114 &1202127814
 MonoBehaviour:
@@ -10432,11 +10378,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1206170974}
 --- !u!114 &1206170974
 MonoBehaviour:
@@ -10526,11 +10471,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1214330688}
 --- !u!114 &1214330688
 MonoBehaviour:
@@ -10620,11 +10564,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1230769667}
 --- !u!114 &1230769667
 MonoBehaviour:
@@ -10714,11 +10657,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1261737959}
 --- !u!114 &1261737959
 MonoBehaviour:
@@ -10808,11 +10750,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1287096765}
 --- !u!114 &1287096765
 MonoBehaviour:
@@ -10902,11 +10843,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1289048392}
 --- !u!114 &1289048392
 MonoBehaviour:
@@ -10996,11 +10936,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1292942265}
 --- !u!114 &1292942265
 MonoBehaviour:
@@ -11442,11 +11381,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1316472568}
 --- !u!114 &1316472568
 MonoBehaviour:
@@ -11536,11 +11474,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1319102748}
 --- !u!114 &1319102748
 MonoBehaviour:
@@ -11698,11 +11635,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1336638983}
 --- !u!114 &1336638983
 MonoBehaviour:
@@ -11792,11 +11728,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1349475973}
 --- !u!114 &1349475973
 MonoBehaviour:
@@ -11886,11 +11821,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1363605271}
 --- !u!114 &1363605271
 MonoBehaviour:
@@ -11980,11 +11914,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1365373234}
 --- !u!114 &1365373234
 MonoBehaviour:
@@ -12074,11 +12007,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1370199212}
 --- !u!114 &1370199212
 MonoBehaviour:
@@ -12168,11 +12100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1375629625}
 --- !u!114 &1375629625
 MonoBehaviour:
@@ -12262,11 +12193,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1379416030}
 --- !u!114 &1379416030
 MonoBehaviour:
@@ -12631,11 +12561,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1412590455}
 --- !u!114 &1412590455
 MonoBehaviour:
@@ -12725,11 +12654,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1416952236}
 --- !u!114 &1416952236
 MonoBehaviour:
@@ -12984,11 +12912,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1476323289}
 --- !u!114 &1476323289
 MonoBehaviour:
@@ -13078,11 +13005,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1487794100}
 --- !u!114 &1487794100
 MonoBehaviour:
@@ -13240,11 +13166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1495180498}
 --- !u!114 &1495180498
 MonoBehaviour:
@@ -13334,11 +13259,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1510533548}
 --- !u!114 &1510533548
 MonoBehaviour:
@@ -13428,11 +13352,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1547570362}
 --- !u!114 &1547570362
 MonoBehaviour:
@@ -13522,11 +13445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1550523134}
 --- !u!114 &1550523134
 MonoBehaviour:
@@ -13656,11 +13578,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1569915115}
 --- !u!114 &1569915115
 MonoBehaviour:
@@ -13711,6 +13632,8 @@ GameObject:
   - component: {fileID: 1585616676}
   - component: {fileID: 1585616678}
   - component: {fileID: 1585616677}
+  - component: {fileID: 1585616680}
+  - component: {fileID: 1585616679}
   m_Layer: 5
   m_Name: PlayerInventory
   m_TagString: Untagged
@@ -13730,15 +13653,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 466169233}
   - {fileID: 1554886940}
+  - {fileID: 466169233}
   m_Father: {fileID: 352200134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -480, y: 0}
+  m_AnchoredPosition: {x: 0, y: -540}
   m_SizeDelta: {x: 960, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1585616677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13777,6 +13700,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585616675}
   m_CullTransparentMesh: 1
+--- !u!114 &1585616679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585616675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
+--- !u!95 &1585616680
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585616675}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9c7d37775e97117458c9d7e426e74e7a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1602370134
 GameObject:
   m_ObjectHideFlags: 0
@@ -13827,11 +13784,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1602370137}
 --- !u!114 &1602370137
 MonoBehaviour:
@@ -13921,11 +13877,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1625951452}
 --- !u!114 &1625951452
 MonoBehaviour:
@@ -14015,11 +13970,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1647784788}
 --- !u!114 &1647784788
 MonoBehaviour:
@@ -14109,11 +14063,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1651778489}
 --- !u!114 &1651778489
 MonoBehaviour:
@@ -14203,11 +14156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1654257733}
 --- !u!114 &1654257733
 MonoBehaviour:
@@ -14297,11 +14249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1675989997}
 --- !u!114 &1675989997
 MonoBehaviour:
@@ -14459,11 +14410,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1683127917}
 --- !u!114 &1683127917
 MonoBehaviour:
@@ -14553,11 +14503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1684981657}
 --- !u!114 &1684981657
 MonoBehaviour:
@@ -14647,11 +14596,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1690622210}
 --- !u!114 &1690622210
 MonoBehaviour:
@@ -14741,11 +14689,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1696063582}
 --- !u!114 &1696063582
 MonoBehaviour:
@@ -14844,7 +14791,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.1
+  m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -14872,26 +14819,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67124e24dca0f6944aadaf93903d4d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_camera: {fileID: 1823688466}
-  interaction_panel: {fileID: 1065035321}
-  interaction_text: {fileID: 872326335}
-  walk_speed: 3
-  run_speed: 5
-  smooth_move_speed: 0.03
-  jump_power: 6
+  playerCamera: {fileID: 1823688466}
+  characterController: {fileID: 1699233286}
+  interactionText: {fileID: 872326335}
+  playerInventoryPanel: {fileID: 1585616675}
+  walkSpeed: 3
+  runSpeed: 5
+  smoothMoveSpeed: 0.01
+  jumpPower: 5
   gravity: 15
-  look_speed: 0.8
-  look_x_limit: 90
-  interaction_range: 1.75
-  player_inventory: {fileID: 1585616675}
-  inventory_open: 0
-  inventory_icons_handler: {fileID: 357182297}
-  can_interact: 1
-  can_open_inventory: 1
-  is_running: 0
-  is_jumping: 0
-  move_inputs: {x: 0, y: 0}
-  look_inputs: {x: 0, y: 0}
+  lookSpeed: 1
+  lookXLimit: 90
+  interactionRange: 1.75
+  playerInventory: {fileID: 1699233290}
+  inventoryOpen: 0
+  inventoryIconsHandler: {fileID: 357182297}
+  canInteract: 1
+  canOpenInventory: 1
+  canMove: 0
+  canRun: 0
+  canJump: 0
+  isMoving: 0
+  isRunning: 0
+  isJumping: 1
+  moveInputs: {x: 0, y: 0}
+  rawMoveInputs: {x: 0, y: 0}
+  lookInputs: {x: 0, y: 0}
 --- !u!114 &1699233289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14904,6 +14857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90b1be2b23ae087448e671dcbe695b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionPanel: {fileID: 1065035321}
 --- !u!114 &1699233290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14916,7 +14870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e128c204506fb44bd7f6fbdd8ea7c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory_cells:
+  inventoryCells:
   - {fileID: 692526867}
   - {fileID: 1732420918}
   - {fileID: 1476323288}
@@ -15045,7 +14999,7 @@ MonoBehaviour:
   - {fileID: 2065714083}
   - {fileID: 408426051}
   - {fileID: 1815777151}
-  inventory_cells_transform:
+  inventoryCellsTransform:
   - {fileID: 692526863}
   - {fileID: 1732420917}
   - {fileID: 1476323287}
@@ -15174,9 +15128,9 @@ MonoBehaviour:
   - {fileID: 2065714082}
   - {fileID: 408426050}
   - {fileID: 1815777150}
-  cell_size: 50
-  inventory_columns: 16
-  preview_cells: []
+  cellSize: 50
+  inventoryColumns: 16
+  previewCells: []
 --- !u!1 &1729365113
 GameObject:
   m_ObjectHideFlags: 0
@@ -15227,11 +15181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1729365116}
 --- !u!114 &1729365116
 MonoBehaviour:
@@ -15321,11 +15274,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1732420919}
 --- !u!114 &1732420919
 MonoBehaviour:
@@ -15624,11 +15576,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1754553073}
 --- !u!114 &1754553073
 MonoBehaviour:
@@ -15718,11 +15669,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1758586674}
 --- !u!114 &1758586674
 MonoBehaviour:
@@ -15812,11 +15762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1769592441}
 --- !u!114 &1769592441
 MonoBehaviour:
@@ -15906,11 +15855,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1778760849}
 --- !u!114 &1778760849
 MonoBehaviour:
@@ -16000,11 +15948,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1790529665}
 --- !u!114 &1790529665
 MonoBehaviour:
@@ -16089,9 +16036,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18098d0423e76c64a8108ff37a736fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x_amount: 0.03
-  y_amount: 0.01
-  frequency: 12
+  walkAmount: {x: 0.02, y: 0.01}
+  runAmount: {x: 0.04, y: 0.02}
+  walkFrequency: 12
+  runFrequency: 16
   smooth: 20
 --- !u!1 &1804181980
 GameObject:
@@ -16143,11 +16091,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1804181983}
 --- !u!114 &1804181983
 MonoBehaviour:
@@ -16237,11 +16184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1814514872}
 --- !u!114 &1814514872
 MonoBehaviour:
@@ -16331,11 +16277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1815777152}
 --- !u!114 &1815777152
 MonoBehaviour:
@@ -16685,11 +16630,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1840135305}
 --- !u!114 &1840135305
 MonoBehaviour:
@@ -16847,11 +16791,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1855074161}
 --- !u!114 &1855074161
 MonoBehaviour:
@@ -17293,11 +17236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1883711767}
 --- !u!114 &1883711767
 MonoBehaviour:
@@ -17387,11 +17329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1889078673}
 --- !u!114 &1889078673
 MonoBehaviour:
@@ -17481,11 +17422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1910825434}
 --- !u!114 &1910825434
 MonoBehaviour:
@@ -17575,11 +17515,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1911859052}
 --- !u!114 &1911859052
 MonoBehaviour:
@@ -17669,11 +17608,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1915497947}
 --- !u!114 &1915497947
 MonoBehaviour:
@@ -17763,11 +17701,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1926915651}
 --- !u!114 &1926915651
 MonoBehaviour:
@@ -17857,11 +17794,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1945294657}
 --- !u!114 &1945294657
 MonoBehaviour:
@@ -17951,11 +17887,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1945574748}
 --- !u!114 &1945574748
 MonoBehaviour:
@@ -18045,11 +17980,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 1966505317}
 --- !u!114 &1966505317
 MonoBehaviour:
@@ -18491,11 +18425,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2009083297}
 --- !u!114 &2009083297
 MonoBehaviour:
@@ -18633,11 +18566,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2013501496}
 --- !u!114 &2013501496
 MonoBehaviour:
@@ -18727,11 +18659,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2016776049}
 --- !u!114 &2016776049
 MonoBehaviour:
@@ -18821,11 +18752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2017317507}
 --- !u!114 &2017317507
 MonoBehaviour:
@@ -18915,11 +18845,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2019871792}
 --- !u!114 &2019871792
 MonoBehaviour:
@@ -19009,11 +18938,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2040121729}
 --- !u!114 &2040121729
 MonoBehaviour:
@@ -19103,11 +19031,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2049467503}
 --- !u!114 &2049467503
 MonoBehaviour:
@@ -19197,11 +19124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2065714084}
 --- !u!114 &2065714084
 MonoBehaviour:
@@ -19291,11 +19217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2101313312}
 --- !u!114 &2101313312
 MonoBehaviour:
@@ -19737,11 +19662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2121580773}
 --- !u!114 &2121580773
 MonoBehaviour:
@@ -19831,11 +19755,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2129855487}
 --- !u!114 &2129855487
 MonoBehaviour:
@@ -19925,11 +19848,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2134343910}
 --- !u!114 &2134343910
 MonoBehaviour:
@@ -20019,11 +19941,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2bf3ce7c5080149bb999394aeb3c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell_state: 0
-  base_color: {r: 0, g: 0, b: 0, a: 0.78431374}
-  preview_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
-  occupied_color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 0.5882353}
-  hover_color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.5882353}
+  cellState: 0
+  baseColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
+  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.78431374}
   img: {fileID: 2140195562}
 --- !u!114 &2140195562
 MonoBehaviour:

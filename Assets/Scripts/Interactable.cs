@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public string interact_text;
+    public string interactText;
 
-    public virtual void interact_action() {}
+    public virtual void interactAction() {}
 }
