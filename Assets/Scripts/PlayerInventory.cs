@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    Player player;
     ItemDrag itemDragged;
     Transform[] itemCells;
     [SerializeField] InventoryCell[] inventoryCells;
@@ -14,24 +13,19 @@ public class PlayerInventory : MonoBehaviour
     public List<InventoryCell> previewCells = new List<InventoryCell>();
     public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
 
-    void Start()
-    {
-        player = GameManager.Instance.player;
-    }
-
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && player.canOpenInventory)
+        if (Input.GetKeyDown(KeyCode.I) && GameManager.Instance.player.canOpenInventory)
         {
-            player.inventoryOpen = !player.inventoryOpen;
-            if (!player.inventoryOpen && itemDragged)
+            GameManager.Instance.player.inventoryOpen = !GameManager.Instance.player.inventoryOpen;
+            if (!GameManager.Instance.player.inventoryOpen && itemDragged)
             {
                 snapItem(itemDragged.gameObject);
             }
-            player.canInteract = !player.inventoryOpen;
-            Cursor.lockState = player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = player.inventoryOpen;
-            player.playerInventoryPanel.SetActive(player.inventoryOpen);
+            GameManager.Instance.player.canInteract = !GameManager.Instance.player.inventoryOpen;
+            Cursor.lockState = GameManager.Instance.player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = GameManager.Instance.player.inventoryOpen;
+            GameManager.Instance.player.playerInventoryPanel.SetActive(GameManager.Instance.player.inventoryOpen);
         }
 
         if (itemDragged)
@@ -110,7 +104,7 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
-        item = Instantiate(item, player.inventoryIconsHandler.transform.position, Quaternion.identity, player.inventoryIconsHandler.transform);
+        item = Instantiate(item, GameManager.Instance.player.inventoryIconsHandler.transform.position, Quaternion.identity, GameManager.Instance.player.inventoryIconsHandler.transform);
         prefab.SetActive(false);
         previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);
         snapItem(item);

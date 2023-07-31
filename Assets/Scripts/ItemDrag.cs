@@ -5,7 +5,6 @@ using UnityEngine.EventSystems;
 
 public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
-    Player player;
     Vector3 offset;
     public Vector3 startPosition;
     RectTransform rectTransform;
@@ -16,7 +15,6 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
 
     void Start()
     {
-        player = GameManager.Instance.player;
         rectTransform = GetComponent<RectTransform>();
     }
 
@@ -36,12 +34,12 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition + offset;
-        player.playerInventory.moveItem(gameObject);
+        GameManager.Instance.player.playerInventory.moveItem(gameObject);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        player.playerInventory.snapItem(gameObject);
+        GameManager.Instance.player.playerInventory.snapItem(gameObject);
     }
 
     void OnDisable()
@@ -49,7 +47,7 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
         if (currentEvent.pointerDrag)
         {
             currentEvent.pointerDrag = null;
-            foreach (InventoryCell cell in player.playerInventory.previouslyOccupiedCells[gameObject])
+            foreach (InventoryCell cell in GameManager.Instance.player.playerInventory.previouslyOccupiedCells[gameObject])
             {
                 cell.cellState = state.occupied;
             }

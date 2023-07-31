@@ -4,96 +4,93 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Player player;
     Vector3 moveDirection = Vector3.zero;
     float xRotation = 0;
-    Vector3 forward;
-    Vector3 right;
-    float yMovementDirection;
-    Vector3 targetMoveDirection;
     Vector2 movements;
     Vector2 inputs;
     Vector3 initialCameraPosition;
     float currentHeight;
-    bool IsCrouching => player.standingHeight - currentHeight > .1f;
+    bool IsCrouching => GameManager.Instance.player.standingHeight - currentHeight > .1f;
 
     void Start()
     {
-        player = GameManager.Instance.player;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        initialCameraPosition = player.playerCamera.transform.localPosition;
-        currentHeight = player.standingHeight;
+        initialCameraPosition = GameManager.Instance.player.playerCamera.transform.localPosition;
+        currentHeight = GameManager.Instance.player.standingHeight;
     }
 
     void Update()
     {
         MoveAndJump();
         Crouch();
-        if (!player.inventoryOpen) RotateCamera();
+        if (!GameManager.Instance.player.inventoryOpen) RotateCamera();
     }
 
     void MoveAndJump()
     {
-        if (!player.isJumping)
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        Vector3 right = transform.TransformDirection(Vector3.right);
+
+        if (!GameManager.Instance.player.isJumping)
         {
             inputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-            forward = transform.TransformDirection(Vector3.forward);
-            right = transform.TransformDirection(Vector3.right);
-            movements = player.isRunning ? inputs * player.runSpeed
-                        : player.isCrouching ? inputs * player.crouchSpeed
-                        : inputs * player.walkSpeed;
+
+            movements = inputs * GameManager.Instance.player.currentSpeed;
         }
-        yMovementDirection = moveDirection.y;
-        targetMoveDirection = (forward * movements.y) + (right * movements.x);
-        moveDirection = Vector3.SmoothDamp(moveDirection, targetMoveDirection, ref moveDirection, player.smoothMoveSpeed);
 
-        moveDirection.y = Input.GetButton("Jump") && player.canJump ? player.jumpPower : yMovementDirection;
+        float yMovementDirection = moveDirection.y;
+        Vector3 targetMoveDirection = (forward * movements.y) + (right * movements.x);
+        moveDirection = Vector3.SmoothDamp(moveDirection, targetMoveDirection, ref moveDirection, GameManager.Instance.player.smoothMoveSpeed);
 
-        if (player.isJumping)
+        moveDirection.y = Input.GetButton("Jump") && GameManager.Instance.player.canJump ? GameManager.Instance.player.jumpPower : yMovementDirection;
+
+        if (GameManager.Instance.player.isJumping)
         {
-            moveDirection.y -= player.gravity * Time.deltaTime;
+            moveDirection.y -= GameManager.Instance.player.gravity * Time.deltaTime;
         }
         else
         {
-            player.isJumping = false;
+            GameManager.Instance.player.isJumping = false;
         }
 
-        player.characterController.Move(moveDirection * Time.deltaTime);
+        GameManager.Instance.player.characterController.Move(moveDirection * Time.deltaTime);
     }
 
     void Crouch()
     {
-        float targetHeight = player.isCrouching ? player.crouchHeight : player.standingHeight;
+        GameManager.Instance.player.isCrouching = IsCrouching;
 
-        if (IsCrouching && !player.isCrouching)
+        float targetHeight = GameManager.Instance.player.isTryingToCrouch ? GameManager.Instance.player.crouchHeight : GameManager.Instance.player.standingHeight;
+
+        if (IsCrouching && !GameManager.Instance.player.isTryingToCrouch)
         {
             Vector3 castOrigin = transform.position + new Vector3(0, currentHeight * 0.5f, 0);
             if (Physics.Raycast(castOrigin, Vector3.up, out RaycastHit hit, 0.2f))
             {
                 float distanceToCeiling = hit.point.y - castOrigin.y;
-                targetHeight = Mathf.Max(currentHeight + distanceToCeiling - 0.1f, player.crouchHeight);
+                targetHeight = Mathf.Max(currentHeight + distanceToCeiling - 0.1f, GameManager.Instance.player.crouchHeight);
             }
         }
 
         if (!Mathf.Approximately(targetHeight, currentHeight))
         {
-            float crouchDelta = Time.deltaTime * player.smoothCrouch;
+            float crouchDelta = Time.deltaTime * GameManager.Instance.player.smoothCrouch;
             currentHeight = Mathf.Lerp(currentHeight, targetHeight, crouchDelta);
 
-            Vector3 halfHeightDifference = new Vector3(0, (player.standingHeight - currentHeight) * 0.5f, 0);
+            Vector3 halfHeightDifference = new Vector3(0, (GameManager.Instance.player.standingHeight - currentHeight) * 0.5f, 0);
             Vector3 newCameraPosition = initialCameraPosition - halfHeightDifference;
 
-            player.playerCamera.transform.localPosition = newCameraPosition;
-            player.characterController.height = currentHeight;
+            GameManager.Instance.player.playerCamera.transform.localPosition = newCameraPosition;
+            GameManager.Instance.player.characterController.height = currentHeight;
         }
     }
 
     void RotateCamera()
     {
-        xRotation += -Input.GetAxis("Mouse Y") * player.lookSpeed;
-        xRotation = Mathf.Clamp(xRotation, -player.lookXLimit, player.lookXLimit);
-        player.playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * player.lookSpeed, 0);
+        xRotation += -Input.GetAxis("Mouse Y") * GameManager.Instance.player.lookSpeed;
+        xRotation = Mathf.Clamp(xRotation, -GameManager.Instance.player.lookXLimit, GameManager.Instance.player.lookXLimit);
+        GameManager.Instance.player.playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * GameManager.Instance.player.lookSpeed, 0);
     }
 }

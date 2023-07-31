@@ -1,5 +1,9 @@
-crouch
+jump underbridge levitation
 falling from bridge is too fast compared to jump falling
 how player interact with objects in the world
 pouvoir rotate objets dans l'inventaire
 menu des item (drop...)
+hover item in inventory change a bit the color
+blur when inventory open
+smooth camera looking ?
+strafe left/right

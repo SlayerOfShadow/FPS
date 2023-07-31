@@ -5,42 +5,37 @@ using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    Player player;
     [SerializeField] GameObject interactionPanel;
     RectTransform interactionPanelRectTransform;
     LayerMask layerMask;
-    Ray ray;
-    RaycastHit hit;
-    Vector3 interactionTextPosition;
-    Interactable interactable;
     Interactable cachedInteractable;
 
     void Start()
     {
-        player = GameManager.Instance.player;
-        layerMask = LayerMask.GetMask("Interactable");
         interactionPanelRectTransform = interactionPanel.GetComponent<RectTransform>();
+        layerMask = LayerMask.GetMask("Interactable");
     }
 
     void Update()
     {
-        if (!player.canInteract)
+        if (!GameManager.Instance.player.canInteract)
         {
             interactionPanel.SetActive(false);
             return;
         }
 
-        ray = player.playerCamera.ScreenPointToRay(new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0));
-        if (Physics.Raycast(ray, out hit, player.interactionRange, layerMask))
+        Ray ray = GameManager.Instance.player.playerCamera.ScreenPointToRay(new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0));
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, GameManager.Instance.player.interactionRange, layerMask))
         {
-            interactable = hit.transform.GetComponent<Interactable>();
+            Interactable interactable = hit.transform.GetComponent<Interactable>();
             if (cachedInteractable != interactable)
             {
                 cachedInteractable = interactable;
             }
-            interactionTextPosition = player.playerCamera.WorldToScreenPoint(hit.transform.position);
+            Vector3 interactionTextPosition = GameManager.Instance.player.playerCamera.WorldToScreenPoint(hit.transform.position);
             interactionPanel.transform.position = interactionTextPosition;
-            player.interactionText.text = cachedInteractable.interactText;
+            GameManager.Instance.player.interactionText.text = cachedInteractable.interactText;
             interactionPanel.SetActive(true);
             LayoutRebuilder.ForceRebuildLayoutImmediate(interactionPanelRectTransform);
             Canvas.ForceUpdateCanvases();

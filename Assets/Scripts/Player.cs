@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public GameObject playerInventoryPanel;
 
     [Header("Movements")]
+    public float currentSpeed;
     public float walkSpeed = 3f;
     public float runSpeed = 6f;
     public float crouchSpeed = 1.5f;
@@ -40,41 +41,51 @@ public class Player : MonoBehaviour
     public bool isMoving = false;
     public bool isRunning = false;
     public bool isJumping = true;
+    public bool isTryingToCrouch = false;
     public bool isCrouching = false;
 
     [Header("Inputs")]
     public Vector2 moveInputs;
     public Vector2 rawMoveInputs;
-    public Vector2 lookInputs;
 
     void Update()
     {
+        currentSpeed = isRunning ? runSpeed
+                    : isCrouching ? crouchSpeed
+                    : walkSpeed;
+
+        // Jump
+        canJump = characterController.isGrounded;
+        isJumping = !canJump;
+
+        // Move
+        canMove = !isJumping;
         if (canMove)
         {
             moveInputs = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
             rawMoveInputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        }
-        lookInputs = inventoryOpen ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized : Vector2.zero;
+        }   
+        isMoving = moveInputs.magnitude > 0 || rawMoveInputs.magnitude > 0;
 
+        // Run
+        canRun = isMoving && !isCrouching && characterController.height >= standingHeight - 0.1f;
         if (canRun)
         {
             isRunning = Input.GetKey(KeyCode.LeftShift);
         }
+
+        // Crouch
+        canCrouch = !isJumping;
         if (canCrouch)
         {
-            isCrouching = Input.GetKey(KeyCode.X);
-            if (isCrouching && isRunning)
+            isTryingToCrouch = Input.GetKey(KeyCode.X);
+            if (isTryingToCrouch && isRunning)
             {
                 isRunning = false;
             }
         }
-        isMoving = moveInputs.magnitude > 0 ? true : false;
-        isJumping = !characterController.isGrounded;
-
+        
+        // Interact
         canInteract = !inventoryOpen;
-        canMove = characterController.isGrounded;
-        canJump = characterController.isGrounded;
-        canCrouch = characterController.isGrounded;
-        canRun = isMoving && !isCrouching && characterController.height == standingHeight;
     }
 }
