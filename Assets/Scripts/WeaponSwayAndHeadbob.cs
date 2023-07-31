@@ -23,9 +23,11 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     public Vector3 travelLimit = Vector3.one * 0.025f;
     [SerializeField] Vector3 walkBobLimit = Vector3.one * 0.02f;
     [SerializeField] Vector3 runBobLimit = Vector3.one * 0.04f;
+    [SerializeField] Vector3 crouchBobLimit = Vector3.one * 0.01f;
     Vector3 bobLimit;
     [SerializeField] float walkBobFrequency = 4f;
     [SerializeField] float runBobFrequency = 6f;
+    [SerializeField] float crouchBobFrequency = 2f;
     float bobFrequency;
     [SerializeField] float jumpBob = 0.01f;
     [SerializeField] float jumpBobLimit = 0.05f;
@@ -51,8 +53,13 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void Update()
     {
-        bobFrequency = player.isRunning ? runBobFrequency : walkBobFrequency;
-        bobLimit = player.isRunning ? runBobLimit : walkBobLimit;
+        bobFrequency = player.isRunning ? runBobFrequency
+                    : player.isCrouching ? crouchBobFrequency
+                    : walkBobFrequency;
+
+        bobLimit = player.isRunning ? runBobLimit
+                    : player.isCrouching ? crouchBobLimit
+                    : walkBobLimit;
 
         lookInputs.x = !GameManager.Instance.player.inventoryOpen ? Input.GetAxis("Mouse X") : 0;
         lookInputs.y = !GameManager.Instance.player.inventoryOpen ? Input.GetAxis("Mouse Y") : 0;

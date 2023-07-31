@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     float yMovementDirection;
     Vector3 targetMoveDirection;
     Vector2 movements;
+    float yVelocity = 0.0f;
 
     void Start()
     {
@@ -31,24 +32,28 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
+        if (player.isCrouching)
+        {
+            player.characterController.height = Mathf.SmoothDamp(player.characterController.height, player.crouchHeight, ref yVelocity, player.smoothCrouch);
+        }
+        else
+        {
+            player.characterController.height = Mathf.SmoothDamp(player.characterController.height, player.normalHeight, ref yVelocity, player.smoothCrouch);;
+        }
+
         if (!player.isJumping)
         {
             forward = transform.TransformDirection(Vector3.forward);
             right = transform.TransformDirection(Vector3.right);
-            movements = player.isRunning ? player.rawMoveInputs * player.runSpeed : player.rawMoveInputs * player.walkSpeed;
+            movements = player.isRunning ? player.rawMoveInputs * player.runSpeed
+                        : player.isCrouching ? player.rawMoveInputs * player.crouchSpeed
+                        : player.rawMoveInputs * player.walkSpeed;
         }
         yMovementDirection = moveDirection.y;
         targetMoveDirection = (forward * movements.y) + (right * movements.x);
         moveDirection = Vector3.SmoothDamp(moveDirection, targetMoveDirection, ref moveDirection, player.smoothMoveSpeed);
-        
-        if (Input.GetButton("Jump") && player.canJump)
-        {
-            moveDirection.y = player.jumpPower;
-        }
-        else
-        {
-            moveDirection.y = yMovementDirection;
-        }
+
+        moveDirection.y = Input.GetButton("Jump") && player.canJump ? player.jumpPower : yMovementDirection;
 
         if (player.isJumping)
         {
