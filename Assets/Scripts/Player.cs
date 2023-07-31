@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     public float crouchSpeed = 1.5f;
     public float smoothMoveSpeed = 0.01f;
     public float jumpPower = 6f;
-    public float normalHeight = 2f;
+    public float standingHeight = 2f;
     public float crouchHeight = 1f;
     public float smoothCrouch = 1f;
     public float gravity = 15f;
@@ -60,7 +60,14 @@ public class Player : MonoBehaviour
         {
             isRunning = Input.GetKey(KeyCode.LeftShift);
         }
-        isCrouching = Input.GetKey(KeyCode.X);
+        if (canCrouch)
+        {
+            isCrouching = Input.GetKey(KeyCode.X);
+            if (isCrouching && isRunning)
+            {
+                isRunning = false;
+            }
+        }
         isMoving = moveInputs.magnitude > 0 ? true : false;
         isJumping = !characterController.isGrounded;
 
@@ -68,6 +75,6 @@ public class Player : MonoBehaviour
         canMove = characterController.isGrounded;
         canJump = characterController.isGrounded;
         canCrouch = characterController.isGrounded;
-        canRun = isMoving && !isCrouching;
+        canRun = isMoving && !isCrouching && characterController.height == standingHeight;
     }
 }

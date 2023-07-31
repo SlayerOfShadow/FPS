@@ -1,3 +1,5 @@
-gérer si l'item est trop large le descendre de ligne
+crouch
+falling from bridge is too fast compared to jump falling
+how player interact with objects in the world
 pouvoir rotate objets dans l'inventaire
 menu des item (drop...)

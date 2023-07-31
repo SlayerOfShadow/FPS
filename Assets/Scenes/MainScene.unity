@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2159.8723, g: 2264.2756, b: 3287.5708, a: 1}
+  m_IndirectSpecularColor: {r: 2161.384, g: 2265.385, b: 3288.5474, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8679,7 +8679,7 @@ Transform:
   m_GameObject: {fileID: 897175222}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: -7, y: 3, z: 6}
+  m_LocalPosition: {x: -7, y: 3.5, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16406,7 +16406,7 @@ Transform:
   m_GameObject: {fileID: 1699233284}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16435,8 +16435,8 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.4
-  m_SkinWidth: 0.3
+  m_StepOffset: 0.2
+  m_SkinWidth: 0.001
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1699233287
@@ -16472,9 +16472,9 @@ MonoBehaviour:
   crouchSpeed: 1.5
   smoothMoveSpeed: 0.01
   jumpPower: 5
-  normalHeight: 2
-  crouchHeight: 1
-  smoothCrouch: 0.1
+  standingHeight: 2
+  crouchHeight: 1.2
+  smoothCrouch: 5
   gravity: 15
   lookSpeed: 1
   lookXLimit: 90
@@ -17667,7 +17667,7 @@ Transform:
   m_GameObject: {fileID: 1796029523}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18030,7 +18030,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.2
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -19058,7 +19058,7 @@ Transform:
   m_GameObject: {fileID: 1889157995}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: 6, y: 3, z: 6}
+  m_LocalPosition: {x: 6, y: 3.5, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
