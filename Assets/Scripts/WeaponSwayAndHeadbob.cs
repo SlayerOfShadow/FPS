@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class WeaponSwayAndHeadbob : MonoBehaviour
 {
-    [SerializeField] CharacterController characterController;
-
     [Header("Sway position")]
     public float swayPositionSpeed = 0.01f;
     public float maxSwayDistance = 0.06f;
@@ -90,17 +88,17 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void BobOffset()
     {
-        speedCurve += Time.deltaTime * (characterController.isGrounded ? GameManager.Instance.player.rawMoveInputs.magnitude * bobFrequency : 1f) + 0.01f;
+        speedCurve += Time.deltaTime * (GameManager.Instance.player.characterController.isGrounded ? GameManager.Instance.player.rawMoveInputs.magnitude * bobFrequency : 1f) + 0.01f;
         speedCurve = speedCurve % (2 * Mathf.PI);
-        bobPosition.x = (cosCurve * bobLimit.x * (characterController.isGrounded ? 1 : 0)) - (GameManager.Instance.player.rawMoveInputs.x * travelLimit.x);
+        bobPosition.x = (cosCurve * bobLimit.x * (GameManager.Instance.player.characterController.isGrounded ? 1 : 0)) - (GameManager.Instance.player.rawMoveInputs.x * travelLimit.x);
         bobPosition.y = GameManager.Instance.player.isJumping ? Mathf.Clamp(GameManager.Instance.player.characterController.velocity.y * -jumpBob, -jumpBobLimit, jumpBobLimit) : (sinCurve * bobLimit.y) - (GameManager.Instance.player.rawMoveInputs.y * travelLimit.y);
         bobPosition.z = -(GameManager.Instance.player.rawMoveInputs.y * travelLimit.z);
     }
 
     void BobRotation()
     {
-        bobRotation.x = (GameManager.Instance.player.isMoving ? bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve)) : bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve) * 0.5f));
-        bobRotation.y = (GameManager.Instance.player.isMoving ? bobRotationMultiplier.y * cosCurve : 0);
-        bobRotation.z = (GameManager.Instance.player.isMoving ? bobRotationMultiplier.z * cosCurve * GameManager.Instance.player.rawMoveInputs.x : 0);
+        bobRotation.x = (GameManager.Instance.player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve)) : bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve) * 0.5f));
+        bobRotation.y = (GameManager.Instance.player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.y * cosCurve : 0);
+        bobRotation.z = (GameManager.Instance.player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.z * cosCurve * GameManager.Instance.player.rawMoveInputs.x : 0);
     }
 }

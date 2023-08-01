@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2161.384, g: 2265.385, b: 3288.5474, a: 1}
+  m_IndirectSpecularColor: {r: 2159.8684, g: 2264.2522, b: 3287.641, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8679,7 +8679,7 @@ Transform:
   m_GameObject: {fileID: 897175222}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: -7, y: 3.5, z: 6}
+  m_LocalPosition: {x: -7, y: 3, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10716,7 +10716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78225ae4cbcd8947bd3e552256d742c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 1699233286}
   swayPositionSpeed: 0.01
   maxSwayDistance: 0.05
   swayRotationSpeed: 1
@@ -10724,7 +10723,7 @@ MonoBehaviour:
   travelLimit: {x: 0.05, y: 0.03, z: 0.03}
   walkBobLimit: {x: 0.02, y: 0.02, z: 0.02}
   runBobLimit: {x: 0.04, y: 0.04, z: 0.04}
-  crouchBobLimit: {x: 0.01, y: 0.01, z: 0.01}
+  crouchBobLimit: {x: 0.02, y: 0.02, z: 0.02}
   walkBobFrequency: 4
   runBobFrequency: 6
   crouchBobFrequency: 2
@@ -16467,15 +16466,16 @@ MonoBehaviour:
   characterController: {fileID: 1699233286}
   interactionText: {fileID: 872326335}
   playerInventoryPanel: {fileID: 1585616675}
+  currentSpeed: 0
   walkSpeed: 3
   runSpeed: 5
   crouchSpeed: 1.5
   smoothMoveSpeed: 0.01
-  jumpPower: 5
+  jumpPower: 6
   standingHeight: 2
   crouchHeight: 1.2
   smoothCrouch: 5
-  gravity: 15
+  gravity: 17.5
   lookSpeed: 1
   lookXLimit: 90
   interactionRange: 1.75
@@ -16491,10 +16491,10 @@ MonoBehaviour:
   isMoving: 0
   isRunning: 0
   isJumping: 1
+  isTryingToCrouch: 0
   isCrouching: 0
   moveInputs: {x: 0, y: 0}
   rawMoveInputs: {x: 0, y: 0}
-  lookInputs: {x: 0, y: 0}
 --- !u!114 &1699233289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19058,7 +19058,7 @@ Transform:
   m_GameObject: {fileID: 1889157995}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: 6, y: 3.5, z: 6}
+  m_LocalPosition: {x: 6, y: 3, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

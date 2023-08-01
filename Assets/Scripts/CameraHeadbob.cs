@@ -24,11 +24,11 @@ public class CameraHeadbob : MonoBehaviour
     void Update()
     {
         frequency = GameManager.Instance.player.isRunning ? runFrequency
-                : GameManager.Instance.player.isTryingToCrouch ? crouchFrequency
+                : GameManager.Instance.player.isCrouching ? crouchFrequency
                 : walkFrequency;
 
         amount = GameManager.Instance.player.isRunning ? runAmount
-                : GameManager.Instance.player.isTryingToCrouch ? crouchAmount
+                : GameManager.Instance.player.isCrouching ? crouchAmount
                 : walkAmount;
 
         CheckHeadbobTrigger();
@@ -37,7 +37,7 @@ public class CameraHeadbob : MonoBehaviour
 
     void CheckHeadbobTrigger()
     {
-        if (GameManager.Instance.player.isMoving)
+        if (GameManager.Instance.player.isMoving && !GameManager.Instance.player.isJumping)
         {
             StartHeadbob();
         }

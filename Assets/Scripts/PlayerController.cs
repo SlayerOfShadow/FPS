@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
     float xRotation = 0;
     Vector2 movements;
     Vector2 inputs;
@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
     void MoveAndJump()
     {
+        // Move
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
@@ -43,17 +44,33 @@ public class PlayerController : MonoBehaviour
         Vector3 targetMoveDirection = (forward * movements.y) + (right * movements.x);
         moveDirection = Vector3.SmoothDamp(moveDirection, targetMoveDirection, ref moveDirection, GameManager.Instance.player.smoothMoveSpeed);
 
-        moveDirection.y = Input.GetButton("Jump") && GameManager.Instance.player.canJump ? GameManager.Instance.player.jumpPower : yMovementDirection;
+        // Jump
+        bool isTryingToJump = false;
+        if (Input.GetButton("Jump") && GameManager.Instance.player.canJump)
+        {
+            moveDirection.y = GameManager.Instance.player.jumpPower;
+            isTryingToJump = true;
+        }
+        else
+        {
+            moveDirection.y = yMovementDirection;
+        }
 
         if (GameManager.Instance.player.isJumping)
         {
+            Vector3 castOrigin = transform.position + new Vector3(0, currentHeight * 0.5f, 0);
+            if (Physics.Raycast(castOrigin, Vector3.up, out RaycastHit hit, 0.1f))
+            {
+                moveDirection.y = -0.2f;
+            }
             moveDirection.y -= GameManager.Instance.player.gravity * Time.deltaTime;
         }
         else
         {
-            GameManager.Instance.player.isJumping = false;
+            moveDirection.y = 0 + (isTryingToJump ? GameManager.Instance.player.jumpPower : -3.0f);
         }
 
+        // Final
         GameManager.Instance.player.characterController.Move(moveDirection * Time.deltaTime);
     }
 

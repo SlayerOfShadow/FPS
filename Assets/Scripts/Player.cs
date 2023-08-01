@@ -65,13 +65,17 @@ public class Player : MonoBehaviour
             moveInputs = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
             rawMoveInputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         }   
-        isMoving = moveInputs.magnitude > 0 || rawMoveInputs.magnitude > 0;
+        isMoving = rawMoveInputs.magnitude > 0;
 
         // Run
-        canRun = isMoving && !isCrouching && characterController.height >= standingHeight - 0.1f;
+        canRun = rawMoveInputs.y > 0 && isMoving && !isCrouching && characterController.height >= standingHeight - 0.15f;
         if (canRun)
         {
             isRunning = Input.GetKey(KeyCode.LeftShift);
+        }
+        else
+        {
+            isRunning = false;
         }
 
         // Crouch
