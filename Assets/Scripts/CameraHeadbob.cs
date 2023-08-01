@@ -14,7 +14,6 @@ public class CameraHeadbob : MonoBehaviour
     float frequency;
     [SerializeField] float smooth = 20f;
     Vector3 startPosition;
-    Vector3 headbobPosition;
 
     void Start()
     {
@@ -45,7 +44,7 @@ public class CameraHeadbob : MonoBehaviour
 
     Vector3 StartHeadbob()
     {
-        headbobPosition = Vector3.zero;
+        Vector3 headbobPosition = Vector3.zero;
         headbobPosition.y += Mathf.Lerp(headbobPosition.y, Mathf.Sin(Time.time * frequency) * amount.x, smooth * Time.deltaTime);
         headbobPosition.x += Mathf.Lerp(headbobPosition.x, Mathf.Cos(Time.time * frequency * 0.5f) * amount.y, smooth * Time.deltaTime);
         transform.localPosition += headbobPosition;

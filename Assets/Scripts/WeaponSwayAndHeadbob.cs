@@ -19,6 +19,7 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     [SerializeField] Vector3 walkBobLimit = Vector3.one * 0.02f;
     [SerializeField] Vector3 runBobLimit = Vector3.one * 0.04f;
     [SerializeField] Vector3 crouchBobLimit = Vector3.one * 0.01f;
+    [SerializeField] Vector3 standingBobLimit = Vector3.one * 0.01f;
     Vector3 bobLimit;
     [SerializeField] float walkBobFrequency = 4f;
     [SerializeField] float runBobFrequency = 6f;
@@ -34,7 +35,9 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     Vector3 bobRotation;
 
     [Header("Bob Rotation")]
-    public Vector3 bobRotationMultiplier;
+    public Vector3 movingBobRotationMultiplier;
+    public Vector3 standingBobRotationMultiplier;
+    Vector3 bobRotationMultiplier;
     Vector2 lookInputs;
 
     [Header("Smooth")]
@@ -49,7 +52,11 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
         bobLimit = GameManager.Instance.player.isRunning ? runBobLimit
                     : GameManager.Instance.player.isCrouching ? crouchBobLimit
-                    : walkBobLimit;
+                    : GameManager.Instance.player.isMoving ? walkBobLimit
+                    : standingBobLimit;
+
+        bobRotationMultiplier = GameManager.Instance.player.isMoving ? movingBobRotationMultiplier
+                    : standingBobRotationMultiplier;
 
         lookInputs = !GameManager.Instance.player.inventoryOpen ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) : Vector2.zero;
 
@@ -76,7 +83,7 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
         Vector2 invertLookRotation;
         invertLookRotation = lookInputs * -swayRotationSpeed;
         invertLookRotation.x = Mathf.Clamp(invertLookRotation.x, -maxSwayRotation, maxSwayRotation);
-        invertLookRotation.y = Mathf.Clamp(invertLookRotation.y, -maxSwayRotation, maxSwayRotation);
+        invertLookRotation.y = Mathf.Clamp(-invertLookRotation.y, -maxSwayRotation, maxSwayRotation);
         swayRotation = new Vector3(invertLookRotation.y, invertLookRotation.x, invertLookRotation.x);
     }
 

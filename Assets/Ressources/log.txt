@@ -1,9 +1,0 @@
-strafe left/right
-smooth camera looking 
-blur when inventory open
-hover item in inventory change a bit the color
-how player interact with objects in the world
-pouvoir rotate objets dans l'inventaire ?
-menu des item (drop...)
-
-

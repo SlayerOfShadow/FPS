@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     Vector3 initialCameraPosition;
     float currentHeight;
     bool IsCrouching => GameManager.Instance.player.standingHeight - currentHeight > .1f;
+    Vector3 targetMoveDirection;
 
     void Start()
     {
@@ -29,22 +30,18 @@ public class PlayerController : MonoBehaviour
 
     void MoveAndJump()
     {
-        // Move
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
         if (!GameManager.Instance.player.isJumping)
         {
-            inputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-
-            movements = inputs * GameManager.Instance.player.currentSpeed;
+            movements = GameManager.Instance.player.rawMoveInputs * GameManager.Instance.player.currentSpeed;
         }
 
         float yMovementDirection = moveDirection.y;
-        Vector3 targetMoveDirection = (forward * movements.y) + (right * movements.x);
+        if (!GameManager.Instance.player.isJumping) targetMoveDirection = (forward * movements.y) + (right * movements.x);
         moveDirection = Vector3.SmoothDamp(moveDirection, targetMoveDirection, ref moveDirection, GameManager.Instance.player.smoothMoveSpeed);
 
-        // Jump
         bool isTryingToJump = false;
         if (Input.GetButton("Jump") && GameManager.Instance.player.canJump)
         {
@@ -70,7 +67,6 @@ public class PlayerController : MonoBehaviour
             moveDirection.y = 0 + (isTryingToJump ? GameManager.Instance.player.jumpPower : -3.0f);
         }
 
-        // Final
         GameManager.Instance.player.characterController.Move(moveDirection * Time.deltaTime);
     }
 

@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    [SerializeField] TMP_Text interactionText;
     [SerializeField] GameObject interactionPanel;
     RectTransform interactionPanelRectTransform;
     LayerMask layerMask;
@@ -35,7 +37,7 @@ public class PlayerInteraction : MonoBehaviour
             }
             Vector3 interactionTextPosition = GameManager.Instance.player.playerCamera.WorldToScreenPoint(hit.transform.position);
             interactionPanel.transform.position = interactionTextPosition;
-            GameManager.Instance.player.interactionText.text = cachedInteractable.interactText;
+            interactionText.text = cachedInteractable.interactText;
             interactionPanel.SetActive(true);
             LayoutRebuilder.ForceRebuildLayoutImmediate(interactionPanelRectTransform);
             Canvas.ForceUpdateCanvases();

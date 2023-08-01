@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
+    [SerializeField] GameObject playerInventoryPanel;
     ItemDrag itemDragged;
     Transform[] itemCells;
     [SerializeField] InventoryCell[] inventoryCells;
@@ -25,7 +26,7 @@ public class PlayerInventory : MonoBehaviour
             GameManager.Instance.player.canInteract = !GameManager.Instance.player.inventoryOpen;
             Cursor.lockState = GameManager.Instance.player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = GameManager.Instance.player.inventoryOpen;
-            GameManager.Instance.player.playerInventoryPanel.SetActive(GameManager.Instance.player.inventoryOpen);
+            playerInventoryPanel.SetActive(GameManager.Instance.player.inventoryOpen);
         }
 
         if (itemDragged)

@@ -1,0 +1,6 @@
+- fix character stuck on object edges (step offset?)
+- leaning
+- hover item in inventory change a bit the color
+- how player interact with objects in the world
+- rotate items in inventory ?
+- items menu (drop, use...)
