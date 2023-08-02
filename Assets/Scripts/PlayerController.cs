@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     float currentHeight;
     bool IsCrouching => GameManager.Instance.player.standingHeight - currentHeight > .1f;
     Vector3 targetMoveDirection;
+    public float noSlipDistance = 1.0f;
+    public float edgeFallFactor = 1.0f;
 
     void Start()
     {
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
 
     void MoveAndJump()
     {
+        #region Move
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
@@ -41,7 +44,9 @@ public class PlayerController : MonoBehaviour
         float yMovementDirection = moveDirection.y;
         if (!GameManager.Instance.player.isJumping) targetMoveDirection = (forward * movements.y) + (right * movements.x);
         moveDirection = Vector3.SmoothDamp(moveDirection, targetMoveDirection, ref moveDirection, GameManager.Instance.player.smoothMoveSpeed);
+        #endregion
 
+        #region Jump
         bool isTryingToJump = false;
         if (Input.GetButton("Jump") && GameManager.Instance.player.canJump)
         {
@@ -66,6 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             moveDirection.y = 0 + (isTryingToJump ? GameManager.Instance.player.jumpPower : -3.0f);
         }
+        #endregion
 
         GameManager.Instance.player.characterController.Move(moveDirection * Time.deltaTime);
     }
@@ -105,5 +111,19 @@ public class PlayerController : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -GameManager.Instance.player.lookXLimit, GameManager.Instance.player.lookXLimit);
         GameManager.Instance.player.playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * GameManager.Instance.player.lookSpeed, 0);
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody body = hit.collider.attachedRigidbody;
+        if (body == null || body.isKinematic)
+            return;
+
+        if (hit.moveDirection.y < -0.3F)
+            return;
+
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+        Vector3 collisionPoint = hit.point;
+        body.AddForceAtPosition(pushDir * GameManager.Instance.player.pushPower, collisionPoint, ForceMode.Impulse);
     }
 }

@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public float lookSpeed = 1f;
     public float lookXLimit = 90f;
     public float interactionRange = 5f;
+    public float pushPower = 1f;
 
     [Header("Inventory")]
     public PlayerInventory playerInventory;

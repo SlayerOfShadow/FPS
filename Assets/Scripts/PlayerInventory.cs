@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     [SerializeField] GameObject playerInventoryPanel;
-    ItemDrag itemDragged;
+    public ItemDrag itemDragged;
     Transform[] itemCells;
     [SerializeField] InventoryCell[] inventoryCells;
     [SerializeField] RectTransform[] inventoryCellsTransform;
@@ -13,6 +13,7 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] int inventoryColumns;
     public List<InventoryCell> previewCells = new List<InventoryCell>();
     public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
+    public bool isItemHighlighted = false;
 
     void Update()
     {
