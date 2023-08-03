@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using TMPro;
 
 public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
@@ -31,6 +33,13 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
             if (inventoryActions[i])
             {
                 GameManager.Instance.player.playerInventory.actionsButtons[i].SetActive(true);
+                if (i == 0)
+                {
+                    GameManager.Instance.player.playerInventory.actionsButtons[i].GetComponent<Button>().interactable = !GameManager.Instance.player.playerEquipment.primaryWeapon;
+                    print(GameManager.Instance.player.playerInventory.actionsButtons[i].transform.GetChild(0).name);
+                    GameManager.Instance.player.playerInventory.actionsButtons[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color 
+                    = GameManager.Instance.player.playerEquipment.primaryWeapon ? Color.gray : Color.white;
+                }
             }
             else
             {
