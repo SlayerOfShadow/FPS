@@ -6,5 +6,5 @@ public class Interactable : MonoBehaviour
 {
     public string interactText;
 
-    public virtual void interactAction() {}
+    public virtual void InteractAction() {}
 }

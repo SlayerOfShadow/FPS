@@ -44,7 +44,7 @@ public class PlayerInteraction : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.F))
             {
-                cachedInteractable.interactAction();
+                cachedInteractable.InteractAction();
             }
         }
         else

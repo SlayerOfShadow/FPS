@@ -28,7 +28,7 @@ public class PlayerInventory : MonoBehaviour
             GameManager.Instance.player.inventoryOpen = !GameManager.Instance.player.inventoryOpen;
             if (!GameManager.Instance.player.inventoryOpen && itemDragged)
             {
-                snapItem(itemDragged.gameObject);
+                SnapItem(itemDragged.gameObject);
             }
             GameManager.Instance.player.canInteract = !GameManager.Instance.player.inventoryOpen;
             Cursor.lockState = GameManager.Instance.player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
@@ -53,7 +53,7 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    public void addItem(GameObject item, GameObject prefab)
+    public void AddItem(GameObject item, GameObject prefab)
     {
         InventoryItem inventoryItem = item.GetComponent<InventoryItem>();
         int itemNbColumn = inventoryItem.nbColumns;
@@ -118,10 +118,10 @@ public class PlayerInventory : MonoBehaviour
         item.GetComponent<InventoryItem>().associatedItem = prefab;
         prefab.SetActive(false);
         previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);
-        snapItem(item);
+        SnapItem(item);
     }
 
-    public void moveItem(GameObject item)
+    public void MoveItem(GameObject item)
     {
         if (previouslyOccupiedCells.ContainsKey(item))
         {
@@ -166,7 +166,7 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    public void snapItem(GameObject item)
+    public void SnapItem(GameObject item)
     {
         int count = 0;
         float x = 0;

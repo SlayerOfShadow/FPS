@@ -509,6 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9c8bd2568ee44fafd6404173f2655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  associatedItem: {fileID: 0}
   itemName: AKM
   inventoryActions: 0000000002000000
   startPosition: {x: 0, y: 0, z: 0}

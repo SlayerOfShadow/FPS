@@ -6,8 +6,6 @@ using UnityEngine.EventSystems;
 public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
     public GameObject associatedItem;
-    [SerializeField] string itemName;
-    [TextAreaAttribute] string itemDescription;
     [SerializeField] InventoryActions[] inventoryActions;
 
     #region InventoryMovementsVariables
@@ -88,7 +86,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             transform.position = Input.mousePosition + offset;
-            GameManager.Instance.player.playerInventory.moveItem(gameObject);
+            GameManager.Instance.player.playerInventory.MoveItem(gameObject);
         }
     }
 
@@ -96,7 +94,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            GameManager.Instance.player.playerInventory.snapItem(gameObject);
+            GameManager.Instance.player.playerInventory.SnapItem(gameObject);
         }
     }
 

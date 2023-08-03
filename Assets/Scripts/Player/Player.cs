@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
 
     [Header("Inventory")]
     public PlayerInventory playerInventory;
+    public PlayerEquipment playerEquipment;
     public bool inventoryOpen = false;
     public GameObject inventoryIconsHandler;
 
@@ -61,7 +62,7 @@ public class Player : MonoBehaviour
         isMoving = rawMoveInputs.magnitude > 0;
 
         canRun = rawMoveInputs.y > 0 && isMoving && !isCrouching && characterController.height >= standingHeight - 0.15f;
-        isRunning = canRun ? Input.GetKey(KeyCode.LeftShift) : false;
+        isRunning = canRun && Input.GetKey(KeyCode.LeftShift);
 
         canCrouch = !isJumping;
         if (canCrouch) isTryingToCrouch = Input.GetKey(KeyCode.X);

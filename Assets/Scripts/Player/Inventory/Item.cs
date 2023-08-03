@@ -6,8 +6,8 @@ public class Item : Interactable
 {
     [SerializeField] GameObject inventoryItem;
 
-    public override void interactAction()
+    public override void InteractAction()
     {
-        GameManager.Instance.player.playerInventory.addItem(inventoryItem, gameObject);
+        GameManager.Instance.player.playerInventory.AddItem(inventoryItem, gameObject);
     }
 }
