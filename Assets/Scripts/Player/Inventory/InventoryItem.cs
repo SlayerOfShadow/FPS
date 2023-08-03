@@ -6,7 +6,8 @@ using UnityEngine.EventSystems;
 public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
     public GameObject associatedItem;
-    [SerializeField] InventoryActions[] inventoryActions;
+    [Tooltip("0 = Equip | 1 = Unequip | 2 = Drop")]
+    public bool[] inventoryActions;
 
     #region InventoryMovementsVariables
     Vector3 offset;
@@ -25,32 +26,24 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
 
     void DisplayActions()
     {
-        foreach (GameObject button in GameManager.Instance.player.playerInventory.actionsButtons)
+        for (int i = 0; i < inventoryActions.Length; i++)
         {
-            button.SetActive(false);
-        }
-        foreach (InventoryActions action in inventoryActions)
-        {
-            switch (action)
+            if (inventoryActions[i])
             {
-                case InventoryActions.equip:
-                    GameManager.Instance.player.playerInventory.actionsButtons[0].SetActive(true);
-                    break;
-                case InventoryActions.use:
-                    GameManager.Instance.player.playerInventory.actionsButtons[1].SetActive(true);
-                    break;
-                case InventoryActions.drop:
-                    GameManager.Instance.player.playerInventory.actionsButtons[2].SetActive(true);
-                    break;
+                GameManager.Instance.player.playerInventory.actionsButtons[i].SetActive(true);
+            }
+            else
+            {
+                GameManager.Instance.player.playerInventory.actionsButtons[i].SetActive(false);
             }
         }
         GameManager.Instance.player.playerInventory.itemActionsPanel.SetActive(true);
     }
 
-    enum InventoryActions
+    public enum InventoryActions
     {
-        equip,
-        use,
+        equipPrimary,
+        unequip,
         drop
     }
 

@@ -18,7 +18,7 @@ public class FPSCounter : MonoBehaviour
         if (time >= refreshRate)
         {
             frameRate = Mathf.RoundToInt(frameCount / time);
-            fpsText.text = frameRate.ToString() + " FPS";
+            fpsText.text = frameRate.ToString() + " Fps";
             time -= refreshRate;
             frameCount = 0;
         }

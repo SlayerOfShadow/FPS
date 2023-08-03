@@ -510,8 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associatedItem: {fileID: 0}
-  itemName: AKM
-  inventoryActions: 0000000002000000
+  inventoryActions: 010001
   startPosition: {x: 0, y: 0, z: 0}
   cells:
   - {fileID: 3031923539712653587}

@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ItemActions : MonoBehaviour
 {
-    public void Equip()
+    public void EquipPrimaryWeapon()
     {
         Transform inventoryItemToEquip = GameManager.Instance.player.inventoryIconsHandler.transform.GetChild(GameManager.Instance.player.inventoryIconsHandler.transform.childCount - 1);
         GameObject itemEquipped = inventoryItemToEquip.GetComponent<InventoryItem>().associatedItem;
         GameManager.Instance.player.playerEquipment.primaryWeapon = itemEquipped;
+    }
+
+    public void Unequip()
+    {
+        print("Unequip");
     }
 
     public void Drop()
