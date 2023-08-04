@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
+    Player player;
+
     [SerializeField] GameObject playerInventoryPanel;
     InventoryItem itemDragged;
     Transform[] itemCells;
@@ -14,26 +16,32 @@ public class PlayerInventory : MonoBehaviour
     public List<InventoryCell> previewCells = new List<InventoryCell>();
     public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
     public GameObject itemActionsPanel;
+    public GameObject itemInfosPanel;
     public GameObject[] actionsButtons;
+
+    void Start()
+    {
+        player = GameManager.Instance.player;
+    }
 
     void Update()
     {
-        if (Input.GetMouseButtonUp(0) && GameManager.Instance.player.inventoryOpen)
+        if (Input.GetMouseButtonUp(0) && player.inventoryOpen)
         {
             itemActionsPanel.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.I) && GameManager.Instance.player.canOpenInventory)
+        if (Input.GetKeyDown(KeyCode.I) && player.canOpenInventory)
         {
-            GameManager.Instance.player.inventoryOpen = !GameManager.Instance.player.inventoryOpen;
-            if (!GameManager.Instance.player.inventoryOpen && itemDragged)
+            player.inventoryOpen = !player.inventoryOpen;
+            if (!player.inventoryOpen && itemDragged)
             {
                 SnapItem(itemDragged.gameObject);
             }
-            GameManager.Instance.player.canInteract = !GameManager.Instance.player.inventoryOpen;
-            Cursor.lockState = GameManager.Instance.player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = GameManager.Instance.player.inventoryOpen;
-            playerInventoryPanel.SetActive(GameManager.Instance.player.inventoryOpen);
+            player.canInteract = !player.inventoryOpen;
+            Cursor.lockState = player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = player.inventoryOpen;
+            playerInventoryPanel.SetActive(player.inventoryOpen);
             itemActionsPanel.SetActive(false);
         }
 
@@ -115,7 +123,7 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
-        item = Instantiate(item, GameManager.Instance.player.inventoryIconsHandler.transform.position, Quaternion.identity, GameManager.Instance.player.inventoryIconsHandler.transform);
+        item = Instantiate(item, player.inventoryIconsHandler.transform.position, Quaternion.identity, player.inventoryIconsHandler.transform);
         item.GetComponent<InventoryItem>().associatedItem = prefab;
         prefab.SetActive(false);
         previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);

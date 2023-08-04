@@ -5,8 +5,10 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
+public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    Player player;
+    
     [Tooltip("0 = EquipPrimary | 1 = EquipSecondary | 2 = EquipArmor | 3 = EquipHelmet | 4 = Unequip | 5 = Use | 6 = Drop")]
     public bool[] inventoryActions = new bool[7];
     public int occupiedEquipmentSlot = -1;
@@ -21,7 +23,19 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
 
     void Start()
     {
+        player = GameManager.Instance.player;
         rectTransform = GetComponent<RectTransform>();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        player.playerInventory.itemInfosPanel.transform.position = Input.mousePosition;
+        player.playerInventory.itemInfosPanel.SetActive(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        player.playerInventory.itemInfosPanel.SetActive(false);
     }
 
     void DisplayActions()
@@ -30,20 +44,20 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         {
             if (inventoryActions[i])
             {
-                GameManager.Instance.player.playerInventory.actionsButtons[i].SetActive(true);
+                player.playerInventory.actionsButtons[i].SetActive(true);
                 if (i == 0 || i == 1 || i == 2 || i == 3)
                 {
-                    GameManager.Instance.player.playerInventory.actionsButtons[i].GetComponent<Button>().interactable = !GameManager.Instance.player.playerEquipment.equipment[i];
-                    GameManager.Instance.player.playerInventory.actionsButtons[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color 
-                    = GameManager.Instance.player.playerEquipment.equipment[i] ? Color.gray : Color.white;
+                    player.playerInventory.actionsButtons[i].GetComponent<Button>().interactable = !player.playerEquipment.equipment[i];
+                    player.playerInventory.actionsButtons[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color 
+                    = player.playerEquipment.equipment[i] ? Color.gray : Color.white;
                 }
             }
             else
             {
-                GameManager.Instance.player.playerInventory.actionsButtons[i].SetActive(false);
+                player.playerInventory.actionsButtons[i].SetActive(false);
             }
         }
-        GameManager.Instance.player.playerInventory.itemActionsPanel.SetActive(true);
+        player.playerInventory.itemActionsPanel.SetActive(true);
     }
 
     public enum InventoryActions
@@ -61,8 +75,8 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         }
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
-            GameManager.Instance.player.playerInventory.itemActionsPanel.transform.position = Input.mousePosition;
-            GameManager.Instance.player.playerInventory.itemActionsPanel.SetActive(false);
+            player.playerInventory.itemActionsPanel.transform.position = Input.mousePosition;
+            player.playerInventory.itemActionsPanel.SetActive(false);
             DisplayActions();
         }
         rectTransform.SetAsLastSibling();
@@ -75,7 +89,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
             currentEvent = eventData;
             startPosition = transform.position;
             offset = transform.position - Input.mousePosition;
-            GameManager.Instance.player.playerInventory.itemActionsPanel.SetActive(false);
+            player.playerInventory.itemActionsPanel.SetActive(false);
         }
     }
 
@@ -84,7 +98,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             transform.position = Input.mousePosition + offset;
-            GameManager.Instance.player.playerInventory.MoveItem(gameObject);
+            player.playerInventory.MoveItem(gameObject);
         }
     }
 
@@ -92,7 +106,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            GameManager.Instance.player.playerInventory.SnapItem(gameObject);
+            player.playerInventory.SnapItem(gameObject);
         }
     }
 
@@ -101,7 +115,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         if (currentEvent.pointerDrag)
         {
             currentEvent.pointerDrag = null;
-            foreach (InventoryCell cell in GameManager.Instance.player.playerInventory.previouslyOccupiedCells[gameObject])
+            foreach (InventoryCell cell in player.playerInventory.previouslyOccupiedCells[gameObject])
             {
                 cell.cellState = CellState.occupied;
             }

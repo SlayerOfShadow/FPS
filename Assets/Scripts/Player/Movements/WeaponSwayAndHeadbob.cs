@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WeaponSwayAndHeadbob : MonoBehaviour
 {
+    Player player;
+
     [Header("Sway position")]
     public float swayPositionSpeed = 0.01f;
     public float maxSwayDistance = 0.06f;
@@ -44,21 +46,26 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     public float smoothPosition = 10f;
     public float smoothRotation = 12f;
 
+    void Start()
+    {
+        player = GameManager.Instance.player;
+    }
+
     void Update()
     {
-        bobFrequency = GameManager.Instance.player.isRunning ? runBobFrequency
-                    : GameManager.Instance.player.isCrouching ? crouchBobFrequency
+        bobFrequency = player.isRunning ? runBobFrequency
+                    : player.isCrouching ? crouchBobFrequency
                     : walkBobFrequency;
 
-        bobLimit = GameManager.Instance.player.isRunning ? runBobLimit
-                    : GameManager.Instance.player.isCrouching ? crouchBobLimit
-                    : GameManager.Instance.player.isMoving ? walkBobLimit
+        bobLimit = player.isRunning ? runBobLimit
+                    : player.isCrouching ? crouchBobLimit
+                    : player.isMoving ? walkBobLimit
                     : standingBobLimit;
 
-        bobRotationMultiplier = GameManager.Instance.player.isMoving ? movingBobRotationMultiplier
+        bobRotationMultiplier = player.isMoving ? movingBobRotationMultiplier
                     : standingBobRotationMultiplier;
 
-        lookInputs = !GameManager.Instance.player.inventoryOpen ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) : Vector2.zero;
+        lookInputs = !player.inventoryOpen ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) : Vector2.zero;
 
         Sway();
         SwayRotation();
@@ -95,17 +102,17 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void BobOffset()
     {
-        speedCurve += Time.deltaTime * (GameManager.Instance.player.characterController.isGrounded ? GameManager.Instance.player.rawMoveInputs.magnitude * bobFrequency : 1f) + 0.01f;
+        speedCurve += Time.deltaTime * (player.characterController.isGrounded ? player.rawMoveInputs.magnitude * bobFrequency : 1f) + 0.01f;
         speedCurve = speedCurve % (2 * Mathf.PI);
-        bobPosition.x = (cosCurve * bobLimit.x * (GameManager.Instance.player.characterController.isGrounded ? 1 : 0)) - (GameManager.Instance.player.rawMoveInputs.x * travelLimit.x);
-        bobPosition.y = GameManager.Instance.player.isJumping ? Mathf.Clamp(GameManager.Instance.player.characterController.velocity.y * -jumpBob, -jumpBobLimit, jumpBobLimit) : (sinCurve * bobLimit.y) - (GameManager.Instance.player.rawMoveInputs.y * travelLimit.y);
-        bobPosition.z = -(GameManager.Instance.player.rawMoveInputs.y * travelLimit.z);
+        bobPosition.x = (cosCurve * bobLimit.x * (player.characterController.isGrounded ? 1 : 0)) - (player.rawMoveInputs.x * travelLimit.x);
+        bobPosition.y = player.isJumping ? Mathf.Clamp(player.characterController.velocity.y * -jumpBob, -jumpBobLimit, jumpBobLimit) : (sinCurve * bobLimit.y) - (player.rawMoveInputs.y * travelLimit.y);
+        bobPosition.z = -(player.rawMoveInputs.y * travelLimit.z);
     }
 
     void BobRotation()
     {
-        bobRotation.x = (GameManager.Instance.player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve)) : bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve) * 0.5f));
-        bobRotation.y = (GameManager.Instance.player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.y * cosCurve : 0);
-        bobRotation.z = (GameManager.Instance.player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.z * cosCurve * GameManager.Instance.player.rawMoveInputs.x : 0);
+        bobRotation.x = (player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve)) : bobRotationMultiplier.x * (Mathf.Sin(2 * speedCurve) * 0.5f));
+        bobRotation.y = (player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.y * cosCurve : 0);
+        bobRotation.z = (player.rawMoveInputs != Vector2.zero ? bobRotationMultiplier.z * cosCurve * player.rawMoveInputs.x : 0);
     }
 }

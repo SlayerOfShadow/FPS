@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ItemActions : MonoBehaviour
 {
+    Player player;
+    
     Transform inventoryIconsHandlerTransform;
 
     void Start()
     {
-        inventoryIconsHandlerTransform = GameManager.Instance.player.inventoryIconsHandler.transform;
+        player = GameManager.Instance.player;
+        inventoryIconsHandlerTransform = player.inventoryIconsHandler.transform;
     }
 
     public void Equip(int slot)
@@ -19,12 +22,12 @@ public class ItemActions : MonoBehaviour
         if (inventoryItem.occupiedEquipmentSlot > -1)
         {
             inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
-            GameManager.Instance.player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
+            player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
         }
         inventoryItem.occupiedEquipmentSlot = slot;
         inventoryItem.inventoryActions[slot] = false;
         inventoryItem.inventoryActions[4] = true;
-        GameManager.Instance.player.playerEquipment.equipment[slot] = itemToEquip;
+        player.playerEquipment.equipment[slot] = itemToEquip;
     }
 
     public void Unequip()
@@ -34,7 +37,7 @@ public class ItemActions : MonoBehaviour
         GameObject itemToEquip = inventoryItem.associatedItem;
         inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
         inventoryItem.inventoryActions[4] = false;
-        GameManager.Instance.player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
+        player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
         inventoryItem.occupiedEquipmentSlot = -1;
     }
 
@@ -45,22 +48,22 @@ public class ItemActions : MonoBehaviour
 
     public void Drop()
     {
-        Transform inventoryItemToDrop = inventoryIconsHandlerTransform.GetChild(GameManager.Instance.player.inventoryIconsHandler.transform.childCount - 1);
+        Transform inventoryItemToDrop = inventoryIconsHandlerTransform.GetChild(player.inventoryIconsHandler.transform.childCount - 1);
         InventoryItem inventoryItem = inventoryItemToDrop.GetComponent<InventoryItem>();
         GameObject itemDropped = inventoryItem.associatedItem;
         if (inventoryItem.occupiedEquipmentSlot > -1)
         {
             inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
             inventoryItem.inventoryActions[4] = false;
-            GameManager.Instance.player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
+            player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
             inventoryItem.occupiedEquipmentSlot = -1;
         }
 
-        itemDropped.transform.position = GameManager.Instance.player.playerCamera.transform.position + GameManager.Instance.player.playerCamera.transform.forward * GameManager.Instance.player.dropDistance;
-        itemDropped.transform.rotation = GameManager.Instance.player.playerCamera.transform.rotation * Quaternion.Euler(0, 90, 0);
+        itemDropped.transform.position = player.playerCamera.transform.position + player.playerCamera.transform.forward * player.dropDistance;
+        itemDropped.transform.rotation = player.playerCamera.transform.rotation * Quaternion.Euler(0, 90, 0);
         itemDropped.SetActive(true);
-        Vector3 forceToAdd = GameManager.Instance.player.playerCamera.transform.forward * GameManager.Instance.player.dropForce;
+        Vector3 forceToAdd = player.playerCamera.transform.forward * player.dropForce;
         itemDropped.GetComponent<Rigidbody>().AddForce(forceToAdd, ForceMode.Impulse);
-        GameManager.Instance.player.playerInventory.RemoveItem(inventoryItemToDrop.gameObject);
+        player.playerInventory.RemoveItem(inventoryItemToDrop.gameObject);
     }
 }

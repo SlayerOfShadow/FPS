@@ -21,7 +21,6 @@ public class InventoryCell : MonoBehaviour
         switch (cellState)
         {
             case CellState.none:
-                if (img.color != baseColor)
                 img.color = baseColor;
                 break;
             case CellState.preview:

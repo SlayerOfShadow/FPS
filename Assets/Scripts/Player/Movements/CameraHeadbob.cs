@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraHeadbob : MonoBehaviour
 {
+    Player player;
+
     [SerializeField] Vector2 walkAmount = new Vector2(0.02f, 0.01f);
     [SerializeField] Vector2 runAmount = new Vector2(0.04f, 0.02f);
     [SerializeField] Vector2 crouchAmount = new Vector2(0.01f, 0.005f);
@@ -17,17 +19,18 @@ public class CameraHeadbob : MonoBehaviour
 
     void Start()
     {
+        player = GameManager.Instance.player;
         startPosition = transform.localPosition;
     }
 
     void Update()
     {
-        frequency = GameManager.Instance.player.isRunning ? runFrequency
-                : GameManager.Instance.player.isCrouching ? crouchFrequency
+        frequency = player.isRunning ? runFrequency
+                : player.isCrouching ? crouchFrequency
                 : walkFrequency;
 
-        amount = GameManager.Instance.player.isRunning ? runAmount
-                : GameManager.Instance.player.isCrouching ? crouchAmount
+        amount = player.isRunning ? runAmount
+                : player.isCrouching ? crouchAmount
                 : walkAmount;
 
         CheckHeadbobTrigger();
@@ -36,7 +39,7 @@ public class CameraHeadbob : MonoBehaviour
 
     void CheckHeadbobTrigger()
     {
-        if (GameManager.Instance.player.isMoving && !GameManager.Instance.player.isJumping)
+        if (player.isMoving && !player.isJumping)
         {
             StartHeadbob();
         }

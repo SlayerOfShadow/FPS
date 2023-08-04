@@ -6,6 +6,8 @@ using TMPro;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    Player player;
+
     [SerializeField] TMP_Text interactionText;
     [SerializeField] GameObject interactionPanel;
     RectTransform interactionPanelRectTransform;
@@ -14,21 +16,22 @@ public class PlayerInteraction : MonoBehaviour
 
     void Start()
     {
+        player = GameManager.Instance.player;
         interactionPanelRectTransform = interactionPanel.GetComponent<RectTransform>();
         layerMask = LayerMask.GetMask("Interactable");
     }
 
     void Update()
     {
-        if (!GameManager.Instance.player.canInteract)
+        if (!player.canInteract)
         {
             interactionPanel.SetActive(false);
             return;
         }
 
-        Ray ray = GameManager.Instance.player.playerCamera.ScreenPointToRay(new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0));
+        Ray ray = player.playerCamera.ScreenPointToRay(new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0));
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, GameManager.Instance.player.interactionRange, layerMask))
+        if (Physics.Raycast(ray, out hit, player.interactionRange, layerMask))
         {
             Interactable interactable = hit.transform.GetComponent<Interactable>();
             if (cachedInteractable != interactable)
@@ -36,7 +39,7 @@ public class PlayerInteraction : MonoBehaviour
                 interactionPanel.SetActive(false);
                 cachedInteractable = interactable;
             }
-            Vector3 interactionTextPosition = GameManager.Instance.player.playerCamera.WorldToScreenPoint(hit.transform.position);
+            Vector3 interactionTextPosition = player.playerCamera.WorldToScreenPoint(hit.transform.position);
             interactionPanel.transform.position = interactionTextPosition;
             interactionText.text = cachedInteractable.interactText;
             interactionPanel.SetActive(true);
