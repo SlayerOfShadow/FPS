@@ -7,19 +7,17 @@ using TMPro;
 
 public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
+    [Tooltip("0 = EquipPrimary | 1 = EquipSecondary | 2 = EquipArmor | 3 = EquipHelmet | 4 = Unequip | 5 = Use | 6 = Drop")]
+    public bool[] inventoryActions = new bool[7];
+    public int occupiedEquipmentSlot = -1;
     public GameObject associatedItem;
-    [Tooltip("0 = Equip | 1 = Unequip | 2 = Drop")]
-    public bool[] inventoryActions;
-
-    #region InventoryMovementsVariables
+    public int nbRows;
+    public int nbColumns;
     Vector3 offset;
     public Vector3 startPosition;
     RectTransform rectTransform;
     public Transform[] cells;
-    public int nbRows;
-    public int nbColumns;
     PointerEventData currentEvent = new PointerEventData(EventSystem.current);
-    #endregion
 
     void Start()
     {
@@ -33,12 +31,11 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
             if (inventoryActions[i])
             {
                 GameManager.Instance.player.playerInventory.actionsButtons[i].SetActive(true);
-                if (i == 0)
+                if (i == 0 || i == 1 || i == 2 || i == 3)
                 {
-                    GameManager.Instance.player.playerInventory.actionsButtons[i].GetComponent<Button>().interactable = !GameManager.Instance.player.playerEquipment.primaryWeapon;
-                    print(GameManager.Instance.player.playerInventory.actionsButtons[i].transform.GetChild(0).name);
+                    GameManager.Instance.player.playerInventory.actionsButtons[i].GetComponent<Button>().interactable = !GameManager.Instance.player.playerEquipment.equipment[i];
                     GameManager.Instance.player.playerInventory.actionsButtons[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color 
-                    = GameManager.Instance.player.playerEquipment.primaryWeapon ? Color.gray : Color.white;
+                    = GameManager.Instance.player.playerEquipment.equipment[i] ? Color.gray : Color.white;
                 }
             }
             else
@@ -56,7 +53,6 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         drop
     }
 
-    #region InventoryMovements
     public void OnPointerDown(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)
@@ -111,5 +107,4 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
             }
         }
     }
-    #endregion
 }

@@ -1,1 +1,1 @@
-- items menu (drop, use...)
+- item infos display when mouse over

@@ -4,36 +4,56 @@ using UnityEngine;
 
 public class ItemActions : MonoBehaviour
 {
-    public void EquipPrimaryWeapon()
+    Transform inventoryIconsHandlerTransform;
+
+    void Start()
     {
-        Transform inventoryItemToEquip = GameManager.Instance.player.inventoryIconsHandler.transform.GetChild(GameManager.Instance.player.inventoryIconsHandler.transform.childCount - 1);
+        inventoryIconsHandlerTransform = GameManager.Instance.player.inventoryIconsHandler.transform;
+    }
+
+    public void Equip(int slot)
+    {
+        Transform inventoryItemToEquip = inventoryIconsHandlerTransform.GetChild(inventoryIconsHandlerTransform.childCount - 1);
         InventoryItem inventoryItem = inventoryItemToEquip.GetComponent<InventoryItem>();
-        GameObject itemEquipped = inventoryItem.associatedItem;
-        inventoryItem.inventoryActions[0] = false;
-        inventoryItem.inventoryActions[1] = true;
-        GameManager.Instance.player.playerEquipment.primaryWeapon = itemEquipped;
+        GameObject itemToEquip = inventoryItem.associatedItem;
+        if (inventoryItem.occupiedEquipmentSlot > -1)
+        {
+            inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
+            GameManager.Instance.player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
+        }
+        inventoryItem.occupiedEquipmentSlot = slot;
+        inventoryItem.inventoryActions[slot] = false;
+        inventoryItem.inventoryActions[4] = true;
+        GameManager.Instance.player.playerEquipment.equipment[slot] = itemToEquip;
     }
 
     public void Unequip()
     {
-        Transform inventoryItemToUnequip = GameManager.Instance.player.inventoryIconsHandler.transform.GetChild(GameManager.Instance.player.inventoryIconsHandler.transform.childCount - 1);
-        InventoryItem inventoryItem = inventoryItemToUnequip.GetComponent<InventoryItem>();
-        GameObject itemUnequipped = inventoryItem.associatedItem;
-        inventoryItem.inventoryActions[0] = true;
-        inventoryItem.inventoryActions[1] = false;
-        GameManager.Instance.player.playerEquipment.primaryWeapon = null;
+        Transform inventoryItemToEquip = inventoryIconsHandlerTransform.GetChild(inventoryIconsHandlerTransform.childCount - 1);
+        InventoryItem inventoryItem = inventoryItemToEquip.GetComponent<InventoryItem>();
+        GameObject itemToEquip = inventoryItem.associatedItem;
+        inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
+        inventoryItem.inventoryActions[4] = false;
+        GameManager.Instance.player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
+        inventoryItem.occupiedEquipmentSlot = -1;
+    }
+
+    public void Use()
+    {
+        print("Use");
     }
 
     public void Drop()
     {
-        Transform inventoryItemToDrop = GameManager.Instance.player.inventoryIconsHandler.transform.GetChild(GameManager.Instance.player.inventoryIconsHandler.transform.childCount - 1);
+        Transform inventoryItemToDrop = inventoryIconsHandlerTransform.GetChild(GameManager.Instance.player.inventoryIconsHandler.transform.childCount - 1);
         InventoryItem inventoryItem = inventoryItemToDrop.GetComponent<InventoryItem>();
         GameObject itemDropped = inventoryItem.associatedItem;
-        if (GameManager.Instance.player.playerEquipment.primaryWeapon == itemDropped)
+        if (inventoryItem.occupiedEquipmentSlot > -1)
         {
-            inventoryItem.inventoryActions[0] = true;
-            inventoryItem.inventoryActions[1] = false;
-            GameManager.Instance.player.playerEquipment.primaryWeapon = null;
+            inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
+            inventoryItem.inventoryActions[4] = false;
+            GameManager.Instance.player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
+            inventoryItem.occupiedEquipmentSlot = -1;
         }
 
         itemDropped.transform.position = GameManager.Instance.player.playerCamera.transform.position + GameManager.Instance.player.playerCamera.transform.forward * GameManager.Instance.player.dropDistance;

@@ -509,8 +509,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9c8bd2568ee44fafd6404173f2655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryActions: 010100000001
   associatedItem: {fileID: 0}
-  inventoryActions: 010001
+  nbRows: 2
+  nbColumns: 7
   startPosition: {x: 0, y: 0, z: 0}
   cells:
   - {fileID: 3031923539712653587}
@@ -527,8 +529,6 @@ MonoBehaviour:
   - {fileID: 6463281461132767520}
   - {fileID: 5332213334031145888}
   - {fileID: 7832056083216032706}
-  nbRows: 2
-  nbColumns: 7
 --- !u!1 &4472023851586829245
 GameObject:
   m_ObjectHideFlags: 0

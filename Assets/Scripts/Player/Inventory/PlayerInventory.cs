@@ -5,8 +5,6 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     [SerializeField] GameObject playerInventoryPanel;
-    public GameObject itemActionsPanel;
-    public GameObject[] actionsButtons;
     InventoryItem itemDragged;
     Transform[] itemCells;
     [SerializeField] InventoryCell[] inventoryCells;
@@ -15,6 +13,8 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] int inventoryColumns;
     public List<InventoryCell> previewCells = new List<InventoryCell>();
     public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
+    public GameObject itemActionsPanel;
+    public GameObject[] actionsButtons;
 
     void Update()
     {
