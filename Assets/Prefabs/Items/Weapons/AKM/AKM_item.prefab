@@ -509,7 +509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9c8bd2568ee44fafd6404173f2655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryActions: 010100000001
+  inventoryActions: 01010000000001
+  occupiedEquipmentSlot: -1
   associatedItem: {fileID: 0}
   nbRows: 2
   nbColumns: 7

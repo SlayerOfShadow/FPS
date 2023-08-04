@@ -33,6 +33,7 @@ public class PlayerInteraction : MonoBehaviour
             Interactable interactable = hit.transform.GetComponent<Interactable>();
             if (cachedInteractable != interactable)
             {
+                interactionPanel.SetActive(false);
                 cachedInteractable = interactable;
             }
             Vector3 interactionTextPosition = GameManager.Instance.player.playerCamera.WorldToScreenPoint(hit.transform.position);

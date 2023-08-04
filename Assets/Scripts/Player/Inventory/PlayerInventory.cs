@@ -91,6 +91,7 @@ public class PlayerInventory : MonoBehaviour
                                     break;
                                 }
                             }
+                            k = k / inventoryColumns;
                         }
                         if (stopSearching)
                         {
