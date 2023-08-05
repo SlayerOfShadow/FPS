@@ -13080,6 +13080,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4645e76eac50a74b980fc81dd3eca58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipmentSlots:
+  - {fileID: 803858933}
+  - {fileID: 346701575}
+  - {fileID: 878100527}
+  - {fileID: 1531685223}
 --- !u!114 &1212768359
 MonoBehaviour:
   m_ObjectHideFlags: 0

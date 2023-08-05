@@ -25,7 +25,7 @@ public class PlayerInventory : MonoBehaviour
     public GameObject itemInfosPanel;
     public TextMeshProUGUI itemInfosPanelName;
     public TextMeshProUGUI itemInfosPanelDescription;
-    
+
     void Start()
     {
         player = GameManager.Instance.player;
@@ -85,7 +85,7 @@ public class PlayerInventory : MonoBehaviour
         {
             if (inventoryCells[i].cellState != CellState.occupied)
             {
-                if (i + (itemNbColumn - 1) + ((itemNbRows - 1) * inventoryColumns) > inventoryCells.Length-1)
+                if (i + (itemNbColumn - 1) + ((itemNbRows - 1) * inventoryColumns) > inventoryCells.Length - 1)
                 {
                     return;
                 }
@@ -224,6 +224,71 @@ public class PlayerInventory : MonoBehaviour
         }
         previewCells.Clear();
         itemDragged = null;
+    }
+
+    public void RemoveEquipment(InventoryItem item)
+    {
+        int itemNbColumn = item.nbColumns;
+        int itemNbRows = item.nbRows;
+        bool enoughCells = false;
+
+        for (int i = 0; i < inventoryCells.Length; i++)
+        {
+            if (inventoryCells[i].cellState != CellState.occupied)
+            {
+                if (i + (itemNbColumn - 1) + ((itemNbRows - 1) * inventoryColumns) > inventoryCells.Length - 1)
+                {
+                    return;
+                }
+                else
+                {
+                    bool stopSearching = false;
+                    for (int j = 0; j < itemNbColumn; j++)
+                    {
+                        for (int k = 0; k < itemNbRows; k++)
+                        {
+                            k = k * inventoryColumns;
+                            if (inventoryCells[i + j + k].cellState == CellState.occupied)
+                            {
+                                previewCells.Clear();
+                                stopSearching = true;
+                                break;
+                            }
+                            else
+                            {
+                                previewCells.Add(inventoryCells[i + j + k]);
+                                if (previewCells.Count == itemNbColumn * itemNbRows)
+                                {
+                                    enoughCells = true;
+                                    break;
+                                }
+                            }
+                            k = k / inventoryColumns;
+                        }
+                        if (stopSearching)
+                        {
+                            break;
+                        }
+                    }
+                }
+
+                if (enoughCells)
+                {
+                    enoughCells = false;
+                    if (previewCells[0].transform.position.x + cellSize * (itemNbColumn - 1) == previewCells[previewCells.Count - 1].transform.position.x
+                    && previewCells[0].transform.position.y - cellSize * (itemNbRows - 1) == previewCells[previewCells.Count - 1].transform.position.y)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        previewCells.Clear();
+                    }
+                }
+            }
+        }
+        previouslyOccupiedCells[item.gameObject] = new List<InventoryCell>(previewCells);
+        SnapItem(item.gameObject);
     }
 
     public void RemoveItem(GameObject item)

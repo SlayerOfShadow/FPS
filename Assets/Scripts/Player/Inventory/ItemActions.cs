@@ -5,8 +5,9 @@ using UnityEngine;
 public class ItemActions : MonoBehaviour
 {
     Player player;
-    
+
     Transform inventoryIconsHandlerTransform;
+    [SerializeField] Transform[] equipmentSlots;
 
     void Start()
     {
@@ -19,15 +20,23 @@ public class ItemActions : MonoBehaviour
         Transform inventoryItemToEquip = inventoryIconsHandlerTransform.GetChild(inventoryIconsHandlerTransform.childCount - 1);
         InventoryItem inventoryItem = inventoryItemToEquip.GetComponent<InventoryItem>();
         GameObject itemToEquip = inventoryItem.associatedItem;
-        if (inventoryItem.occupiedEquipmentSlot > -1)
+        if (inventoryItem.occupiedEquipmentSlot > -1) // In case player switches between weapons slots
         {
             inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
             player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
+        }
+        else
+        {
+            foreach (InventoryCell cell in player.playerInventory.previouslyOccupiedCells[inventoryItem.gameObject])
+            {
+                cell.cellState = CellState.none;
+            }
         }
         inventoryItem.occupiedEquipmentSlot = slot;
         inventoryItem.inventoryActions[slot] = false;
         inventoryItem.inventoryActions[4] = true;
         player.playerEquipment.equipment[slot] = itemToEquip;
+        inventoryItem.transform.position = equipmentSlots[slot].transform.position + 0.5f * new Vector3(-inventoryItem.GetComponent<RectTransform>().rect.width, inventoryItem.GetComponent<RectTransform>().rect.height, 0);
     }
 
     public void Unequip()
@@ -39,6 +48,7 @@ public class ItemActions : MonoBehaviour
         inventoryItem.inventoryActions[4] = false;
         player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
         inventoryItem.occupiedEquipmentSlot = -1;
+        player.playerInventory.RemoveEquipment(inventoryItem);
     }
 
     public void Use()
