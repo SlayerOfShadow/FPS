@@ -209,6 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9c8bd2568ee44fafd6404173f2655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: Military Helmet
+  itemDescription: A military helmet is a headgear designed to protect soldiers'
+    heads from ballistic and impact hazards in combat scenarios.
   inventoryActions: 00000001000001
   occupiedEquipmentSlot: -1
   associatedItem: {fileID: 0}
@@ -220,6 +223,13 @@ MonoBehaviour:
   - {fileID: 4245881481504674058}
   - {fileID: 6331795840597165863}
   - {fileID: 3371839819556774937}
+  cellsImages:
+  - {fileID: 6039141607473049046}
+  - {fileID: 2000160159098410432}
+  - {fileID: 7579390612497072052}
+  - {fileID: 6628216903904623490}
+  baseColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverColor: {r: 1, g: 1, b: 1, a: 0.7058824}
 --- !u!1 &5240012538204216682
 GameObject:
   m_ObjectHideFlags: 0

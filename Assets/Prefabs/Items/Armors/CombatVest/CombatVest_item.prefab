@@ -509,6 +509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9c8bd2568ee44fafd6404173f2655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: Combat vest
+  itemDescription: A military armor vest is a protective garment worn by soldiers
+    to shield against ballistic threats, such as bullets and shrapnel.
   inventoryActions: 00000100000001
   occupiedEquipmentSlot: -1
   associatedItem: {fileID: 0}
@@ -528,6 +531,21 @@ MonoBehaviour:
   - {fileID: 3441671388632793916}
   - {fileID: 4708287514452647703}
   - {fileID: 1898093268392096132}
+  cellsImages:
+  - {fileID: 6039141607473049046}
+  - {fileID: 2000160159098410432}
+  - {fileID: 7579390612497072052}
+  - {fileID: 6628216903904623490}
+  - {fileID: 7159808928927091052}
+  - {fileID: 6233374004024943310}
+  - {fileID: 847861635583418759}
+  - {fileID: 5742834243457623189}
+  - {fileID: 6858083325994251465}
+  - {fileID: 5652445052547248770}
+  - {fileID: 1400155725193813163}
+  - {fileID: 8528990391233908428}
+  baseColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverColor: {r: 1, g: 1, b: 1, a: 0.7058824}
 --- !u!1 &5240012538204216682
 GameObject:
   m_ObjectHideFlags: 0

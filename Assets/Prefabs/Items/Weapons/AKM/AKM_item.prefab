@@ -509,6 +509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c9c8bd2568ee44fafd6404173f2655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: AKM
+  itemDescription: The AKM is a widely used and modernized version of the AK-47 assault
+    rifle, renowned for its durability and chambered for 7.62x39mm ammunition.
   inventoryActions: 01010000000001
   occupiedEquipmentSlot: -1
   associatedItem: {fileID: 0}
@@ -530,6 +533,23 @@ MonoBehaviour:
   - {fileID: 6463281461132767520}
   - {fileID: 5332213334031145888}
   - {fileID: 7832056083216032706}
+  cellsImages:
+  - {fileID: 6039141607473049046}
+  - {fileID: 2000160159098410432}
+  - {fileID: 7579390612497072052}
+  - {fileID: 6628216903904623490}
+  - {fileID: 1295030912178732692}
+  - {fileID: 8005132283725619821}
+  - {fileID: 8082835006627187602}
+  - {fileID: 8419288972215746315}
+  - {fileID: 3292324602495854199}
+  - {fileID: 2272008847586904286}
+  - {fileID: 8507407617828751948}
+  - {fileID: 6729712745722719708}
+  - {fileID: 4957601751043961529}
+  - {fileID: 6104907727431724093}
+  baseColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverColor: {r: 1, g: 1, b: 1, a: 0.7058824}
 --- !u!1 &4472023851586829245
 GameObject:
   m_ObjectHideFlags: 0

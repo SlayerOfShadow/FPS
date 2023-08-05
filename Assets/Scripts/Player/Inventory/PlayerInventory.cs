@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -16,8 +17,10 @@ public class PlayerInventory : MonoBehaviour
     public List<InventoryCell> previewCells = new List<InventoryCell>();
     public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
     public GameObject itemActionsPanel;
-    public GameObject itemInfosPanel;
     public GameObject[] actionsButtons;
+    public GameObject itemInfosPanel;
+    public TextMeshProUGUI itemInfosPanelName;
+    public TextMeshProUGUI itemInfosPanelDescription;
 
     void Start()
     {
@@ -43,6 +46,7 @@ public class PlayerInventory : MonoBehaviour
             Cursor.visible = player.inventoryOpen;
             playerInventoryPanel.SetActive(player.inventoryOpen);
             itemActionsPanel.SetActive(false);
+            itemInfosPanel.SetActive(false);
         }
 
         if (itemDragged)
@@ -58,6 +62,11 @@ public class PlayerInventory : MonoBehaviour
                     cell.cellState = CellState.none;
                 }
             }
+        }
+
+        if (itemInfosPanel.activeSelf)
+        {
+            itemInfosPanel.transform.position = Input.mousePosition;
         }
     }
 
