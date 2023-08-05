@@ -11,7 +11,7 @@ public class ItemActions : MonoBehaviour
     void Start()
     {
         player = GameManager.Instance.player;
-        inventoryIconsHandlerTransform = player.inventoryIconsHandler.transform;
+        inventoryIconsHandlerTransform = player.playerInventory.inventoryIconsHandler.transform;
     }
 
     public void Equip(int slot)
@@ -48,7 +48,7 @@ public class ItemActions : MonoBehaviour
 
     public void Drop()
     {
-        Transform inventoryItemToDrop = inventoryIconsHandlerTransform.GetChild(player.inventoryIconsHandler.transform.childCount - 1);
+        Transform inventoryItemToDrop = inventoryIconsHandlerTransform.GetChild(player.playerInventory.inventoryIconsHandler.transform.childCount - 1);
         InventoryItem inventoryItem = inventoryItemToDrop.GetComponent<InventoryItem>();
         GameObject itemDropped = inventoryItem.associatedItem;
         if (inventoryItem.occupiedEquipmentSlot > -1)

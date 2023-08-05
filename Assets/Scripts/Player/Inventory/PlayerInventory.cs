@@ -7,21 +7,25 @@ public class PlayerInventory : MonoBehaviour
 {
     Player player;
 
+    [Header("Inventory properties")]
     [SerializeField] GameObject playerInventoryPanel;
-    InventoryItem itemDragged;
-    Transform[] itemCells;
+    public GameObject inventoryIconsHandler;
     [SerializeField] InventoryCell[] inventoryCells;
     [SerializeField] RectTransform[] inventoryCellsTransform;
     [SerializeField] int cellSize;
     [SerializeField] int inventoryColumns;
-    public List<InventoryCell> previewCells = new List<InventoryCell>();
-    public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
+    [HideInInspector] public List<InventoryCell> previewCells = new List<InventoryCell>();
+    [HideInInspector] public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
+    Transform[] itemCells;
+    InventoryItem itemDragged;
+
+    [Header("Menus")]
     public GameObject itemActionsPanel;
     public GameObject[] actionsButtons;
     public GameObject itemInfosPanel;
     public TextMeshProUGUI itemInfosPanelName;
     public TextMeshProUGUI itemInfosPanelDescription;
-
+    
     void Start()
     {
         player = GameManager.Instance.player;
@@ -132,7 +136,7 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
-        item = Instantiate(item, player.inventoryIconsHandler.transform.position, Quaternion.identity, player.inventoryIconsHandler.transform);
+        item = Instantiate(item, inventoryIconsHandler.transform.position, Quaternion.identity, inventoryIconsHandler.transform);
         item.GetComponent<InventoryItem>().associatedItem = prefab;
         prefab.SetActive(false);
         previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);

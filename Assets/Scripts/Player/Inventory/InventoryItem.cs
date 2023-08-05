@@ -9,23 +9,26 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
 {
     Player player;
 
+    [Header("Item properties")]
     [SerializeField] string itemName;
     [TextAreaAttribute][SerializeField] string itemDescription;
     [Tooltip("0 = EquipPrimary | 1 = EquipSecondary | 2 = EquipArmor | 3 = EquipHelmet | 4 = Unequip | 5 = Use | 6 = Drop")]
     public bool[] inventoryActions = new bool[7];
-    public int occupiedEquipmentSlot = -1;
-    public GameObject associatedItem;
+    [HideInInspector] public GameObject associatedItem;
+    [HideInInspector] public int occupiedEquipmentSlot = -1;
+
+    [Header("Item hover")]
+    public Transform[] cells;
+    [SerializeField] Image[] cellsImages;
+    [SerializeField] Color baseColor;
+    [SerializeField] Color hoverColor;
+    [HideInInspector] public Vector3 startPosition;
     public int nbRows;
     public int nbColumns;
     Vector3 offset;
-    public Vector3 startPosition;
     RectTransform rectTransform;
-    public Transform[] cells;
-    [SerializeField] Image[] cellsImages;
     PointerEventData currentEvent = new PointerEventData(EventSystem.current);
-    [SerializeField] Color baseColor;
-    [SerializeField] Color hoverColor;
-
+    
     void Start()
     {
         player = GameManager.Instance.player;
@@ -54,9 +57,9 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         }
     }
 
-    void Hover(bool b)
+    void Hover(bool isHovered)
     {
-        if (b)
+        if (isHovered)
         {
             foreach (Image img in cellsImages)
             {
@@ -109,7 +112,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         }
         else if (eventData.button == PointerEventData.InputButton.Right && !currentEvent.pointerDrag)
         {
-            player.playerInventory.itemActionsPanel.transform.position = Input.mousePosition + new Vector3(-0.5f, 0.5f, 0);
+            player.playerInventory.itemActionsPanel.transform.position = Input.mousePosition + new Vector3(-1f, 1f, 0);
             player.playerInventory.itemActionsPanel.SetActive(false);
             player.playerInventory.itemInfosPanel.SetActive(false);
             DisplayActions();

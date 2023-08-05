@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("Components")]
-    public Camera playerCamera;
-    public CharacterController characterController;
+    [HideInInspector] public Camera playerCamera;
+    [HideInInspector] public CharacterController characterController;
 
-    [Header("Movements")]
+    [Header("Stats")]
     public float currentSpeed;
     public float walkSpeed = 3f;
     public float runSpeed = 6f;
@@ -27,12 +26,11 @@ public class Player : MonoBehaviour
     public float dropForce = 1f;
 
     [Header("Inventory")]
-    public PlayerInventory playerInventory;
-    public PlayerEquipment playerEquipment;
-    public bool inventoryOpen = false;
-    public GameObject inventoryIconsHandler;
+    [HideInInspector] public PlayerInventory playerInventory;
+    [HideInInspector] public PlayerEquipment playerEquipment;
 
     [Header("States")]
+    public bool inventoryOpen = false;
     public bool canMove = true;
     public bool canRun = true;
     public bool canJump = false;
@@ -47,6 +45,14 @@ public class Player : MonoBehaviour
 
     [Header("Inputs")]
     public Vector2 rawMoveInputs;
+
+    void Start()
+    {
+        playerCamera = Camera.main;
+        characterController = GetComponent<CharacterController>();
+        playerInventory = GetComponent<PlayerInventory>();
+        playerEquipment = GetComponent<PlayerEquipment>();
+    }
 
     void Update()
     {

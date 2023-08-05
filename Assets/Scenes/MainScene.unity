@@ -19934,7 +19934,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2959872043128152127}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2959872043128152128}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67124e24dca0f6944aadaf93903d4d2c, type: 3}
@@ -24221,16 +24221,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5181491672470389657, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
-      propertyPath: pushPower
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5181491672470389657, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: playerEquipment
-      value: 
-      objectReference: {fileID: 2959872043128152129}
-    - target: {fileID: 5181491672470389657, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
       propertyPath: inventoryIconsHandler
       value: 
       objectReference: {fileID: 357182297}
@@ -24251,11 +24241,6 @@ PrefabInstance:
       objectReference: {fileID: 1756097816}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
-      propertyPath: inventoryColumns
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
       propertyPath: itemActionsPanel
       value: 
       objectReference: {fileID: 1212768351}
@@ -24271,14 +24256,9 @@ PrefabInstance:
       objectReference: {fileID: 1585616675}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
-      propertyPath: actionsButtons.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: inventoryCells.Array.size
-      value: 128
-      objectReference: {fileID: 0}
+      propertyPath: inventoryIconsHandler
+      value: 
+      objectReference: {fileID: 357182297}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemInfosPanelDescription
@@ -24961,11 +24941,6 @@ PrefabInstance:
       objectReference: {fileID: 2112265409}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
-      propertyPath: inventoryCellsTransform.Array.size
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
       propertyPath: inventoryCellsTransform.Array.data[0]
       value: 
       objectReference: {fileID: 692526863}
@@ -25607,35 +25582,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4558615056594042609, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2959872043128152129}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d2486b91e978164f87112bd1ba3e4a3, type: 3}
---- !u!1 &2959872043128152128 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4558615056594042609, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2959872043128152127}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2959872043128152129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2959872043128152128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2275ad2d520557d4cb35f4008f5f3e31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  equipment:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1001 &8124385744208812937
 PrefabInstance:
   m_ObjectHideFlags: 0
