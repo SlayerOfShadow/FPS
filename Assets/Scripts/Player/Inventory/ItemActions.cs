@@ -6,13 +6,12 @@ public class ItemActions : MonoBehaviour
 {
     Player player;
 
-    Transform inventoryIconsHandlerTransform;
-    [SerializeField] Transform[] equipmentSlots;
+    [SerializeField] Transform inventoryIconsHandlerTransform;
+    public RectTransform[] equipmentSlots;
 
     void Start()
     {
         player = GameManager.Instance.player;
-        inventoryIconsHandlerTransform = player.playerInventory.inventoryIconsHandler.transform;
     }
 
     public void Equip(int slot)
@@ -31,15 +30,16 @@ public class ItemActions : MonoBehaviour
             {
                 cell.cellState = CellState.none;
             }
+            player.playerInventory.previouslyOccupiedCells[inventoryItem.gameObject].Clear();
         }
         inventoryItem.occupiedEquipmentSlot = slot;
         inventoryItem.inventoryActions[slot] = false;
         inventoryItem.inventoryActions[4] = true;
         player.playerEquipment.equipment[slot] = itemToEquip;
-        inventoryItem.transform.position = equipmentSlots[slot].transform.position + 0.5f * new Vector3(-inventoryItem.GetComponent<RectTransform>().rect.width, inventoryItem.GetComponent<RectTransform>().rect.height, 0);
+        inventoryItem.transform.position = equipmentSlots[slot].position + 0.5f * new Vector3(-inventoryItem.GetComponent<RectTransform>().rect.width, inventoryItem.GetComponent<RectTransform>().rect.height, 0);
     }
 
-    public void Unequip()
+    public void Unequip(bool drag)
     {
         Transform inventoryItemToEquip = inventoryIconsHandlerTransform.GetChild(inventoryIconsHandlerTransform.childCount - 1);
         InventoryItem inventoryItem = inventoryItemToEquip.GetComponent<InventoryItem>();
@@ -48,7 +48,7 @@ public class ItemActions : MonoBehaviour
         inventoryItem.inventoryActions[4] = false;
         player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
         inventoryItem.occupiedEquipmentSlot = -1;
-        player.playerInventory.RemoveEquipment(inventoryItem);
+        if (!drag) player.playerInventory.RemoveEquipment(inventoryItem);
     }
 
     public void Use()

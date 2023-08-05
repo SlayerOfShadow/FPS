@@ -5132,7 +5132,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1212768358}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Unequip
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13080,6 +13080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4645e76eac50a74b980fc81dd3eca58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryIconsHandlerTransform: {fileID: 357182298}
   equipmentSlots:
   - {fileID: 803858933}
   - {fileID: 346701575}
@@ -24241,6 +24242,11 @@ PrefabInstance:
       objectReference: {fileID: 1065035321}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
+      propertyPath: itemActions
+      value: 
+      objectReference: {fileID: 1212768358}
+    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
       propertyPath: itemInfosPanel
       value: 
       objectReference: {fileID: 1756097816}
@@ -24264,6 +24270,11 @@ PrefabInstance:
       propertyPath: inventoryIconsHandler
       value: 
       objectReference: {fileID: 357182297}
+    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: equipmentSlots.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemInfosPanelDescription
@@ -24304,6 +24315,26 @@ PrefabInstance:
       propertyPath: actionsButtons.Array.data[6]
       value: 
       objectReference: {fileID: 1136090338}
+    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: equipmentSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 803858933}
+    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: equipmentSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 346701575}
+    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: equipmentSlots.Array.data[2]
+      value: 
+      objectReference: {fileID: 878100527}
+    - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: equipmentSlots.Array.data[3]
+      value: 
+      objectReference: {fileID: 1531685223}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: inventoryCells.Array.data[0]

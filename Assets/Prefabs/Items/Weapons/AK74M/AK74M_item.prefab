@@ -486,7 +486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1038.75, y: 938.0074}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8885497719834641197
@@ -514,11 +514,8 @@ MonoBehaviour:
     known for its reliability, chambered for 5.45x39mm ammunition, and widely used
     by military forces around the world."
   inventoryActions: 01010000000001
-  occupiedEquipmentSlot: -1
   associatedItem: {fileID: 0}
-  nbRows: 2
-  nbColumns: 7
-  startPosition: {x: 0, y: 0, z: 0}
+  occupiedEquipmentSlot: -1
   cells:
   - {fileID: 3031923539712653587}
   - {fileID: 4245881481504674058}
@@ -551,6 +548,9 @@ MonoBehaviour:
   - {fileID: 6104907727431724093}
   baseColor: {r: 1, g: 1, b: 1, a: 0}
   hoverColor: {r: 1, g: 1, b: 1, a: 0.7058824}
+  startPosition: {x: 0, y: 0, z: 0}
+  nbRows: 2
+  nbColumns: 7
 --- !u!1 &4472023851586829245
 GameObject:
   m_ObjectHideFlags: 0

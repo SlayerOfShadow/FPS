@@ -22,6 +22,7 @@ public class PlayerInventory : MonoBehaviour
     [Header("Menus")]
     public GameObject itemActionsPanel;
     public GameObject[] actionsButtons;
+    [SerializeField] ItemActions itemActions;
     public GameObject itemInfosPanel;
     public TextMeshProUGUI itemInfosPanelName;
     public TextMeshProUGUI itemInfosPanelDescription;
@@ -199,7 +200,8 @@ public class PlayerInventory : MonoBehaviour
             x += cell.transform.localPosition.x;
             y += cell.transform.localPosition.y;
         }
-        if (count == item.GetComponent<InventoryItem>().cells.Length)
+        InventoryItem inventoryItem = item.GetComponent<InventoryItem>();
+        if (count == inventoryItem.cells.Length)
         {
             Rect rect = item.GetComponent<RectTransform>().rect;
             x /= count;
@@ -212,14 +214,28 @@ public class PlayerInventory : MonoBehaviour
                 cell.ChangeColor();
             }
             previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);
+            if (inventoryItem.occupiedEquipmentSlot >= 0)
+            {
+                itemActions.Unequip(true);
+            }
         }
         else
         {
-            item.transform.position = item.GetComponent<InventoryItem>().startPosition;
-            foreach (InventoryCell cell in previouslyOccupiedCells[item])
+            if (RectTransformUtility.RectangleContainsScreenPoint(itemActions.equipmentSlots[0], item.transform.position))
             {
-                cell.cellState = CellState.occupied;
-                cell.ChangeColor();
+                print("huh");
+            }
+            else
+            {
+                item.transform.position = inventoryItem.startPosition;
+                if (inventoryItem.occupiedEquipmentSlot < 0)
+                {
+                    foreach (InventoryCell cell in previouslyOccupiedCells[item])
+                    {
+                        cell.cellState = CellState.occupied;
+                        cell.ChangeColor();
+                    }
+                }
             }
         }
         previewCells.Clear();
