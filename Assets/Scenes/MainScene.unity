@@ -3104,6 +3104,7 @@ GameObject:
   - component: {fileID: 352200132}
   - component: {fileID: 352200131}
   - component: {fileID: 352200135}
+  - component: {fileID: 352200136}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -3212,6 +3213,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsText: {fileID: 1742661270}
   refreshRate: 1
+--- !u!114 &352200136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352200130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4645e76eac50a74b980fc81dd3eca58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryIconsHandlerTransform: {fileID: 357182298}
+  equipmentSlots:
+  - {fileID: 803858933}
+  - {fileID: 346701575}
+  - {fileID: 878100527}
+  - {fileID: 1531685223}
 --- !u!1 &357182297
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,7 +5148,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212768358}
+      - m_Target: {fileID: 352200136}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Unequip
         m_Mode: 6
@@ -6852,7 +6871,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212768358}
+      - m_Target: {fileID: 352200136}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Equip
         m_Mode: 3
@@ -8061,7 +8080,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212768358}
+      - m_Target: {fileID: 352200136}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Use
         m_Mode: 1
@@ -12457,7 +12476,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212768358}
+      - m_Target: {fileID: 352200136}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Drop
         m_Mode: 1
@@ -12948,7 +12967,6 @@ GameObject:
   - component: {fileID: 1212768356}
   - component: {fileID: 1212768355}
   - component: {fileID: 1212768353}
-  - component: {fileID: 1212768358}
   - component: {fileID: 1212768359}
   m_Layer: 5
   m_Name: ItemActionsPanel
@@ -13068,24 +13086,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212768351}
   m_CullTransparentMesh: 1
---- !u!114 &1212768358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212768351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4645e76eac50a74b980fc81dd3eca58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryIconsHandlerTransform: {fileID: 357182298}
-  equipmentSlots:
-  - {fileID: 803858933}
-  - {fileID: 346701575}
-  - {fileID: 878100527}
-  - {fileID: 1531685223}
 --- !u!114 &1212768359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15930,7 +15930,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212768358}
+      - m_Target: {fileID: 352200136}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Equip
         m_Mode: 3
@@ -17815,7 +17815,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212768358}
+      - m_Target: {fileID: 352200136}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Equip
         m_Mode: 3
@@ -23141,7 +23141,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212768358}
+      - m_Target: {fileID: 352200136}
         m_TargetAssemblyTypeName: ItemActions, Assembly-CSharp
         m_MethodName: Equip
         m_Mode: 3
@@ -24244,7 +24244,7 @@ PrefabInstance:
         type: 3}
       propertyPath: itemActions
       value: 
-      objectReference: {fileID: 1212768358}
+      objectReference: {fileID: 352200136}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemInfosPanel

@@ -211,7 +211,6 @@ public class PlayerInventory : MonoBehaviour
             foreach (InventoryCell cell in previewCells)
             {
                 cell.cellState = CellState.occupied;
-                cell.ChangeColor();
             }
             previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);
             if (inventoryItem.occupiedEquipmentSlot >= 0)
@@ -221,11 +220,17 @@ public class PlayerInventory : MonoBehaviour
         }
         else
         {
-            if (RectTransformUtility.RectangleContainsScreenPoint(itemActions.equipmentSlots[0], item.transform.position))
+            bool exit = false;
+            for (int i = 0; i < 4; i++)
             {
-                print("huh");
+                if (inventoryItem.inventoryActions[i] && RectTransformUtility.RectangleContainsScreenPoint(itemActions.equipmentSlots[i], item.transform.position))
+                {
+                    itemActions.Equip(i);
+                    exit = true;
+                    break;
+                }
             }
-            else
+            if (!exit)
             {
                 item.transform.position = inventoryItem.startPosition;
                 if (inventoryItem.occupiedEquipmentSlot < 0)
@@ -233,7 +238,6 @@ public class PlayerInventory : MonoBehaviour
                     foreach (InventoryCell cell in previouslyOccupiedCells[item])
                     {
                         cell.cellState = CellState.occupied;
-                        cell.ChangeColor();
                     }
                 }
             }
