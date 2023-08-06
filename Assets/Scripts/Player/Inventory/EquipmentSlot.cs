@@ -7,6 +7,7 @@ public class EquipmentSlot : MonoBehaviour
 {
     Player player;
 
+    [SerializeField] int slotNumber;
     [SerializeField] Color baseColor;
     [SerializeField] Color hoverColor;
     Image img;
@@ -28,7 +29,18 @@ public class EquipmentSlot : MonoBehaviour
             Vector3 itemPos = itemDraggedRectTransform.position + 0.5f * new Vector3(itemDraggedRectTransform.rect.width, -itemDraggedRectTransform.rect.height, 0);
             if (RectTransformUtility.RectangleContainsScreenPoint(rectTransform, itemPos))
             {
-                img.color = hoverColor;
+                for (int i = 0; i < 4; i++)
+                {
+                    if (player.playerInventory.itemDragged.inventoryActions[i] && i == slotNumber && !player.playerEquipment.equipment[i])
+                    {
+                        img.color = hoverColor;
+                        break;
+                    }
+                    else
+                    {
+                        img.color = baseColor;
+                    }
+                }
             }
             else
             {

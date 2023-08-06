@@ -224,7 +224,7 @@ public class PlayerInventory : MonoBehaviour
             for (int i = 0; i < 4; i++)
             {
                 Vector3 itemPos = item.transform.position + 0.5f * new Vector3(itemRect.width, -itemRect.height, 0);
-                if (inventoryItem.inventoryActions[i] && RectTransformUtility.RectangleContainsScreenPoint(itemActions.equipmentSlots[i], itemPos))
+                if (inventoryItem.inventoryActions[i] && RectTransformUtility.RectangleContainsScreenPoint(itemActions.equipmentSlots[i], itemPos) && !player.playerEquipment.equipment[i])
                 {
                     itemActions.Equip(i);
                     exit = true;
