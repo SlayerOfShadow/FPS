@@ -17,7 +17,7 @@ public class PlayerInventory : MonoBehaviour
     [HideInInspector] public List<InventoryCell> previewCells = new List<InventoryCell>();
     [HideInInspector] public Dictionary<GameObject, List<InventoryCell>> previouslyOccupiedCells = new Dictionary<GameObject, List<InventoryCell>>();
     Transform[] itemCells;
-    InventoryItem itemDragged;
+    [HideInInspector] public InventoryItem itemDragged;
 
     [Header("Menus")]
     public GameObject itemActionsPanel;
@@ -201,12 +201,12 @@ public class PlayerInventory : MonoBehaviour
             y += cell.transform.localPosition.y;
         }
         InventoryItem inventoryItem = item.GetComponent<InventoryItem>();
+        Rect itemRect = item.GetComponent<RectTransform>().rect;
         if (count == inventoryItem.cells.Length)
         {
-            Rect rect = item.GetComponent<RectTransform>().rect;
             x /= count;
             y /= count;
-            Vector3 meanPosition = new Vector3(x - rect.width * 0.5f, y + rect.height * 0.5f, item.transform.position.z);
+            Vector3 meanPosition = new Vector3(x - itemRect.width * 0.5f, y + itemRect.height * 0.5f, item.transform.position.z);
             item.transform.localPosition = meanPosition;
             foreach (InventoryCell cell in previewCells)
             {
@@ -223,7 +223,8 @@ public class PlayerInventory : MonoBehaviour
             bool exit = false;
             for (int i = 0; i < 4; i++)
             {
-                if (inventoryItem.inventoryActions[i] && RectTransformUtility.RectangleContainsScreenPoint(itemActions.equipmentSlots[i], item.transform.position))
+                Vector3 itemPos = item.transform.position + 0.5f * new Vector3(itemRect.width, -itemRect.height, 0);
+                if (inventoryItem.inventoryActions[i] && RectTransformUtility.RectangleContainsScreenPoint(itemActions.equipmentSlots[i], itemPos))
                 {
                     itemActions.Equip(i);
                     exit = true;

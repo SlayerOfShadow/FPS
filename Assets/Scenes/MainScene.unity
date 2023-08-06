@@ -3026,6 +3026,7 @@ GameObject:
   - component: {fileID: 346701575}
   - component: {fileID: 346701577}
   - component: {fileID: 346701576}
+  - component: {fileID: 346701578}
   m_Layer: 5
   m_Name: SecondarySlot
   m_TagString: Untagged
@@ -3091,6 +3092,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346701574}
   m_CullTransparentMesh: 1
+--- !u!114 &346701578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346701574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3461c26060e87448952a75876a3483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
+  hoverColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
 --- !u!1 &352200130
 GameObject:
   m_ObjectHideFlags: 0
@@ -7377,6 +7392,7 @@ GameObject:
   - component: {fileID: 803858933}
   - component: {fileID: 803858935}
   - component: {fileID: 803858934}
+  - component: {fileID: 803858936}
   m_Layer: 5
   m_Name: PrimarySlot
   m_TagString: Untagged
@@ -7442,6 +7458,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803858932}
   m_CullTransparentMesh: 1
+--- !u!114 &803858936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803858932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3461c26060e87448952a75876a3483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
+  hoverColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
 --- !u!1 &813839916
 GameObject:
   m_ObjectHideFlags: 0
@@ -9935,6 +9965,7 @@ GameObject:
   - component: {fileID: 878100527}
   - component: {fileID: 878100529}
   - component: {fileID: 878100528}
+  - component: {fileID: 878100530}
   m_Layer: 5
   m_Name: Armor
   m_TagString: Untagged
@@ -10000,6 +10031,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878100526}
   m_CullTransparentMesh: 1
+--- !u!114 &878100530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878100526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3461c26060e87448952a75876a3483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
+  hoverColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
 --- !u!1 &883397060
 GameObject:
   m_ObjectHideFlags: 0
@@ -17969,6 +18014,7 @@ GameObject:
   - component: {fileID: 1531685223}
   - component: {fileID: 1531685225}
   - component: {fileID: 1531685224}
+  - component: {fileID: 1531685226}
   m_Layer: 5
   m_Name: Helmet
   m_TagString: Untagged
@@ -18034,6 +18080,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531685222}
   m_CullTransparentMesh: 1
+--- !u!114 &1531685226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531685222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3461c26060e87448952a75876a3483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
+  hoverColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
 --- !u!1 &1554886939
 GameObject:
   m_ObjectHideFlags: 0
@@ -18044,7 +18104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554886940}
   m_Layer: 5
-  m_Name: Temp
+  m_Name: EquipmentSlots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
