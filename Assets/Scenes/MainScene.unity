@@ -24324,6 +24324,106 @@ PrefabInstance:
       propertyPath: interactionPanel
       value: 
       objectReference: {fileID: 1065035321}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: jumpBobLimit
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: travelLimit.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: travelLimit.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: travelLimit.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: walkBobLimit.x
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: walkBobLimit.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: walkBobLimit.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: maxSwayDistance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: maxSwayRotation
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchBobLimit.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchBobLimit.y
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchBobLimit.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: swayPositionSpeed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: swayRotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: standingBobLimit.y
+      value: 0.0025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: standingBobLimit.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: movingBobRotationMultiplier.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: standingBobRotationMultiplier.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: standingBobRotationMultiplier.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: standingBobRotationMultiplier.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: weaponHolder
@@ -24342,7 +24442,7 @@ PrefabInstance:
     - target: {fileID: 8497604716684114998, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 8497604716684114998, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}

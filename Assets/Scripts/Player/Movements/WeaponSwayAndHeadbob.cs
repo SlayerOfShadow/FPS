@@ -18,14 +18,13 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     [Header("Bob position")]
     public Vector3 travelLimit = Vector3.one * 0.025f;
-    [SerializeField] Vector3 walkBobLimit = Vector3.one * 0.02f;
-    [SerializeField] Vector3 runBobLimit = Vector3.one * 0.04f;
-    [SerializeField] Vector3 crouchBobLimit = Vector3.one * 0.01f;
     [SerializeField] Vector3 standingBobLimit = Vector3.one * 0.01f;
+    [SerializeField] Vector3 walkBobLimit = Vector3.one * 0.02f;
+    [SerializeField] Vector3 crouchBobLimit = Vector3.one * 0.01f;
     Vector3 bobLimit;
-    [SerializeField] float walkBobFrequency = 4f;
-    [SerializeField] float runBobFrequency = 6f;
-    [SerializeField] float crouchBobFrequency = 2f;
+    [SerializeField] float baseBobFrequency = 0.01f;
+    [SerializeField] float walkBobMultiplier = 4f;
+    [SerializeField] float crouchBobMultiplier = 2f;
     float bobFrequency;
     [SerializeField] float jumpBob = 0.01f;
     [SerializeField] float jumpBobLimit = 0.05f;
@@ -37,8 +36,8 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     Vector3 bobRotation;
 
     [Header("Bob Rotation")]
-    public Vector3 movingBobRotationMultiplier;
     public Vector3 standingBobRotationMultiplier;
+    public Vector3 movingBobRotationMultiplier;
     Vector3 bobRotationMultiplier;
     Vector2 lookInputs;
 
@@ -53,12 +52,10 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void Update()
     {
-        bobFrequency = player.isRunning ? runBobFrequency
-                    : player.isCrouching ? crouchBobFrequency
-                    : walkBobFrequency;
+        bobFrequency = player.isCrouching ? crouchBobMultiplier : walkBobMultiplier;
+                    
 
-        bobLimit = player.isRunning ? runBobLimit
-                    : player.isCrouching ? crouchBobLimit
+        bobLimit = player.isCrouching ? crouchBobLimit
                     : player.isMoving ? walkBobLimit
                     : standingBobLimit;
 
@@ -102,7 +99,7 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void BobOffset()
     {
-        speedCurve += Time.deltaTime * (player.characterController.isGrounded ? player.rawMoveInputs.magnitude * bobFrequency : 1f) + 0.01f;
+        speedCurve += Time.deltaTime * (player.characterController.isGrounded ? player.rawMoveInputs.magnitude * bobFrequency : 1f) + baseBobFrequency;
         speedCurve = speedCurve % (2 * Mathf.PI);
         bobPosition.x = (cosCurve * bobLimit.x * (player.characterController.isGrounded ? 1 : 0)) - (player.rawMoveInputs.x * travelLimit.x);
         bobPosition.y = player.isJumping ? Mathf.Clamp(player.characterController.velocity.y * -jumpBob, -jumpBobLimit, jumpBobLimit) : (sinCurve * bobLimit.y) - (player.rawMoveInputs.y * travelLimit.y);
