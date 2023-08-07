@@ -3242,6 +3242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryIconsHandlerTransform: {fileID: 357182298}
+  weaponHolder: {fileID: 1777586517}
+  map: {fileID: 1825842866}
   equipmentSlots:
   - {fileID: 803858933}
   - {fileID: 346701575}
@@ -4084,6 +4086,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466169232}
   m_CullTransparentMesh: 1
+--- !u!1 &476051720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4150229004638241168, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &480503860
 GameObject:
   m_ObjectHideFlags: 0
@@ -20651,6 +20659,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756097816}
   m_CullTransparentMesh: 1
+--- !u!1 &1777586516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4598083051209365174, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1777586517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8497604716684114998, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1800781167
 GameObject:
   m_ObjectHideFlags: 0
@@ -24304,6 +24324,16 @@ PrefabInstance:
       propertyPath: interactionPanel
       value: 
       objectReference: {fileID: 1065035321}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolder
+      value: 
+      objectReference: {fileID: 1777586516}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponSwayAndBob
+      value: 
+      objectReference: {fileID: 476051720}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemActions

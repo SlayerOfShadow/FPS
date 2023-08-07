@@ -7,6 +7,8 @@ public class ItemActions : MonoBehaviour
     Player player;
 
     [SerializeField] Transform inventoryIconsHandlerTransform;
+    [SerializeField] Transform weaponHolder;
+    [SerializeField] Transform map;
     public RectTransform[] equipmentSlots;
 
     void Start()
@@ -31,6 +33,13 @@ public class ItemActions : MonoBehaviour
                 cell.cellState = CellState.none;
             }
             player.playerInventory.previouslyOccupiedCells[inventoryItem.gameObject].Clear();
+            if (slot == 0 || slot == 1)
+            {
+                itemToEquip.transform.SetParent(weaponHolder);
+                itemToEquip.transform.localPosition = Vector3.zero;
+                itemToEquip.transform.localRotation = Quaternion.identity;
+                SetLayerRecursively(itemToEquip, "Weapon");
+            }
         }
         inventoryItem.occupiedEquipmentSlot = slot;
         inventoryItem.inventoryActions[slot] = false;
@@ -49,6 +58,8 @@ public class ItemActions : MonoBehaviour
         player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
         inventoryItem.occupiedEquipmentSlot = -1;
         if (!drag) player.playerInventory.RemoveEquipment(inventoryItem);
+        itemToEquip.transform.SetParent(map);
+        itemToEquip.SetActive(false);
     }
 
     public void Use()
@@ -67,13 +78,28 @@ public class ItemActions : MonoBehaviour
             inventoryItem.inventoryActions[4] = false;
             player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
             inventoryItem.occupiedEquipmentSlot = -1;
+            if (itemDropped.layer != LayerMask.NameToLayer("Interactable")) SetLayerRecursively(itemDropped, "Interactable");
         }
-
+        itemDropped.transform.SetParent(map);
         itemDropped.transform.position = player.playerCamera.transform.position + player.playerCamera.transform.forward * player.dropDistance;
         itemDropped.transform.rotation = player.playerCamera.transform.rotation * Quaternion.Euler(0, 90, 0);
+        player.playerInventory.SetCollidersRigidbody(itemDropped, true);
         itemDropped.SetActive(true);
         Vector3 forceToAdd = player.playerCamera.transform.forward * player.dropForce;
         itemDropped.GetComponent<Rigidbody>().AddForce(forceToAdd, ForceMode.Impulse);
         player.playerInventory.RemoveItem(inventoryItemToDrop.gameObject);
+    }
+
+    void SetLayerRecursively(GameObject obj, string layer)
+    {
+        if (obj == null) return;
+
+        obj.layer = LayerMask.NameToLayer(layer);
+
+        foreach (Transform child in obj.transform)
+        {
+            if (child == null) continue;
+            SetLayerRecursively(child.gameObject, layer);
+        }
     }
 }

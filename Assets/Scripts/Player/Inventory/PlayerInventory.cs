@@ -139,6 +139,7 @@ public class PlayerInventory : MonoBehaviour
         }
         item = Instantiate(item, inventoryIconsHandler.transform.position, Quaternion.identity, inventoryIconsHandler.transform);
         item.GetComponent<InventoryItem>().associatedItem = prefab;
+        SetCollidersRigidbody(prefab, false);
         prefab.SetActive(false);
         previouslyOccupiedCells[item] = new List<InventoryCell>(previewCells);
         SnapItem(item);
@@ -319,5 +320,15 @@ public class PlayerInventory : MonoBehaviour
             cell.cellState = CellState.none;
         }
         Destroy(item);
+    }
+
+    public void SetCollidersRigidbody(GameObject obj, bool active)
+    {
+        Collider[] colliders = obj.GetComponents<Collider>();
+        foreach (Collider c in colliders)
+        {
+            c.enabled = active;
+        }
+        obj.GetComponent<Rigidbody>().isKinematic = !active;
     }
 }
