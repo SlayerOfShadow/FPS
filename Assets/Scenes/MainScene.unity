@@ -24318,6 +24318,11 @@ PrefabInstance:
       propertyPath: armsAnimator
       value: 
       objectReference: {fileID: 2123935957}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: handsAnimator
+      value: 
+      objectReference: {fileID: 2123935957}
     - target: {fileID: 6950315238121261916, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: m_IsActive

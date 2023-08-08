@@ -20,14 +20,14 @@ public class PlayerEquipment : MonoBehaviour
         {
             if (equipment[1]) equipment[1].SetActive(false);
             BuildHandsRig(equipment[0]);
-            PullOutWeapon(equipment[0]);
+            StartCoroutine(DelayedPullOut(equipment[0]));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2) && equipment[1])
         {
             if (equipment[0]) equipment[0].SetActive(false);
             BuildHandsRig(equipment[1]);
-            PullOutWeapon(equipment[1]);
+            StartCoroutine(DelayedPullOut(equipment[1]));
         }
     }
 
@@ -35,7 +35,7 @@ public class PlayerEquipment : MonoBehaviour
     {
         weaponSwayAndBob.SetActive(!weapon.activeSelf);
         weapon.SetActive(!weapon.activeSelf);
-        StartCoroutine(ToggleArms(weapon.activeSelf));
+        playerArms.SetActive(weapon.activeSelf);
     }
 
     void BuildHandsRig(GameObject weapon)
@@ -47,9 +47,9 @@ public class PlayerEquipment : MonoBehaviour
         rigBuilder.Build();
     }
 
-    IEnumerator ToggleArms(bool b)
+    IEnumerator DelayedPullOut(GameObject weapon)
     {
-        yield return new WaitForEndOfFrame();
-        playerArms.SetActive(b);
+         yield return new WaitForEndOfFrame();
+         PullOutWeapon(weapon);
     }
 }
