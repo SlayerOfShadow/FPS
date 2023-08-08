@@ -1,1 +1,3 @@
-- item infos display when mouse over
+- little bug when pulling out weapon
+- run anim when holding weapon
+- aim anim when holding weapon

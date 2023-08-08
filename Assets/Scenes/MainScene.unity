@@ -23807,6 +23807,12 @@ MonoBehaviour:
   previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
   img: {fileID: 2112265407}
+--- !u!95 &2123935957 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2989097146091380012, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2125055119
 GameObject:
   m_ObjectHideFlags: 0
@@ -24307,6 +24313,16 @@ PrefabInstance:
       propertyPath: interactionPanel
       value: 
       objectReference: {fileID: 1065035321}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: armsAnimator
+      value: 
+      objectReference: {fileID: 2123935957}
+    - target: {fileID: 6950315238121261916, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemActions

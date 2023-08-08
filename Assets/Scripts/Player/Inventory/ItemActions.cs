@@ -50,16 +50,17 @@ public class ItemActions : MonoBehaviour
 
     public void Unequip(bool drag)
     {
-        Transform inventoryItemToEquip = inventoryIconsHandlerTransform.GetChild(inventoryIconsHandlerTransform.childCount - 1);
-        InventoryItem inventoryItem = inventoryItemToEquip.GetComponent<InventoryItem>();
-        GameObject itemToEquip = inventoryItem.associatedItem;
+        Transform inventoryItemToUnequip = inventoryIconsHandlerTransform.GetChild(inventoryIconsHandlerTransform.childCount - 1);
+        InventoryItem inventoryItem = inventoryItemToUnequip.GetComponent<InventoryItem>();
+        GameObject itemToUnequip = inventoryItem.associatedItem;
         inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
         inventoryItem.inventoryActions[4] = false;
         player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;
         inventoryItem.occupiedEquipmentSlot = -1;
         if (!drag) player.playerInventory.RemoveEquipment(inventoryItem);
-        itemToEquip.transform.SetParent(map);
-        itemToEquip.SetActive(false);
+        itemToUnequip.transform.SetParent(map);
+        if (itemToUnequip.activeSelf) player.playerEquipment.playerArms.SetActive(false);
+        itemToUnequip.SetActive(false);
     }
 
     public void Use()
