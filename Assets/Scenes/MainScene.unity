@@ -24292,31 +24292,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 168882083548283587, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2406720408413523279, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2406720408413523279, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2406720408413523279, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3149811172969667238, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: m_Data.m_Root
-      value: 
-      objectReference: {fileID: 6355916716220798767}
     - target: {fileID: 4558615056594042609, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: m_Name
@@ -24332,11 +24307,26 @@ PrefabInstance:
       propertyPath: interactionPanel
       value: 
       objectReference: {fileID: 1065035321}
-    - target: {fileID: 7644028566629446913, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
-      propertyPath: m_Data.m_Root
+      propertyPath: leftHandIK
       value: 
-      objectReference: {fileID: 3886036877524885735}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: playerArms
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: rigBuilder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: rightHandIK
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemActions
@@ -25692,18 +25682,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d2486b91e978164f87112bd1ba3e4a3, type: 3}
---- !u!4 &3886036877524885735 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7127913710001305824, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2959872043128152127}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6355916716220798767 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1972243796841620765, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2959872043128152127}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8124385744208812937
 PrefabInstance:
   m_ObjectHideFlags: 0
