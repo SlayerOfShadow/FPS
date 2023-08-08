@@ -1,3 +1,3 @@
-- little bug when pulling out weapon
+- weapon flickers when moving the mouse with the custom pass
 - run anim when holding weapon
 - aim anim when holding weapon
