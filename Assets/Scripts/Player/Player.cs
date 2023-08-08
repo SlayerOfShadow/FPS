@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
         if (canMove) rawMoveInputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         isMoving = rawMoveInputs.magnitude > 0;
 
-        canRun = rawMoveInputs.y > 0 && isMoving && !isCrouching && characterController.height >= standingHeight - 0.15f;
+        canRun = characterController.isGrounded && rawMoveInputs.y > 0 && isMoving && !isCrouching && characterController.height >= standingHeight - 0.15f;
         isRunning = canRun && Input.GetKey(KeyCode.LeftShift);
 
         canCrouch = !isJumping;

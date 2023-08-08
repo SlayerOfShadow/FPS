@@ -874,15 +874,22 @@ MonoBehaviour:
   standingBobLimit: {x: 0.005, y: 0.0025, z: 0}
   walkBobLimit: {x: 0.015, y: 0.01, z: 0}
   crouchBobLimit: {x: 0.01, y: 0.005, z: 0}
+  runBobLimit: {x: 0.02, y: 0.01, z: 0}
   baseBobFrequency: 0.01
   walkBobMultiplier: 4
   crouchBobMultiplier: 2
+  runBobMultiplier: 6
   jumpBob: 0.02
   jumpBobLimit: 0.05
   standingBobRotationMultiplier: {x: 0.5, y: 0, z: 0}
   movingBobRotationMultiplier: {x: 1, y: 1, z: 3}
   smoothPosition: 5
   smoothRotation: 5
+  weaponHolder: {fileID: 8497604716684114998}
+  weaponHolderRunningPosition: {x: 0.07956, y: -0.165, z: 0.455}
+  weaponHolderRunningRotation: {x: 0.06172653, y: -0.0034656392, z: 0.055949543, w: 0.99651766}
+  smoothRunningPosition: 5
+  smoothRunningRotation: 5
 --- !u!1 &4236351931049466636
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,10 +936,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkAmount: {x: 0.02, y: 0.01}
-  runAmount: {x: 0.04, y: 0.02}
+  runAmount: {x: 0.03, y: 0.015}
   crouchAmount: {x: 0.01, y: 0.005}
   walkFrequency: 12
-  runFrequency: 16
+  runFrequency: 14
   crouchFrequency: 8
   smooth: 20
 --- !u!1 &4291655612291005380
@@ -1329,9 +1336,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 1960492841014228866}
   characterController: {fileID: 5808438588738662551}
-  currentSpeed: 0
-  walkSpeed: 3
-  runSpeed: 5
+  currentSpeed: 2.5
+  walkSpeed: 2.5
+  runSpeed: 4.5
   crouchSpeed: 1.5
   jumpPower: 6
   gravity: 17.5
@@ -1348,15 +1355,15 @@ MonoBehaviour:
   playerInventory: {fileID: 8913407274875630549}
   playerEquipment: {fileID: 6614099586950798519}
   inventoryOpen: 0
-  canMove: 0
+  canMove: 1
   canRun: 0
-  canJump: 0
+  canJump: 1
   canCrouch: 1
   canOpenInventory: 1
   canInteract: 1
   isMoving: 0
   isRunning: 0
-  isJumping: 1
+  isJumping: 0
   isTryingToCrouch: 0
   isCrouching: 0
   rawMoveInputs: {x: 0, y: 0}
