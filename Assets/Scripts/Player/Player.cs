@@ -37,11 +37,13 @@ public class Player : MonoBehaviour
     public bool canCrouch = false;
     public bool canOpenInventory = true;
     public bool canInteract = true;
+    public bool canAim = true;
     public bool isMoving = false;
     public bool isRunning = false;
     public bool isJumping = true;
     public bool isTryingToCrouch = false;
     public bool isCrouching = false;
+    public bool isAiming = false;
 
     [Header("Inputs")]
     public Vector2 rawMoveInputs;
@@ -67,12 +69,15 @@ public class Player : MonoBehaviour
         if (canMove) rawMoveInputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         isMoving = rawMoveInputs.magnitude > 0;
 
-        canRun = characterController.isGrounded && rawMoveInputs.y > 0 && isMoving && !isCrouching && characterController.height >= standingHeight - 0.15f;
+        canRun = !isAiming && characterController.isGrounded && rawMoveInputs.y > 0 && isMoving && !isCrouching && characterController.height >= standingHeight - 0.15f;
         isRunning = canRun && Input.GetKey(KeyCode.LeftShift);
 
         canCrouch = !isJumping;
         if (canCrouch) isTryingToCrouch = Input.GetKey(KeyCode.X);
         if (isTryingToCrouch && isRunning) isRunning = false;
+
+        canAim = !inventoryOpen;
+        isAiming = canAim && Input.GetMouseButton(1) && playerEquipment.playerArms.activeSelf;
 
         canInteract = !inventoryOpen;
     }

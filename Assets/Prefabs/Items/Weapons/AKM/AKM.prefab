@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3616243989750998068}
-  - component: {fileID: 7425623650783062554}
+  - component: {fileID: 8882596299217549171}
   - component: {fileID: 6869129314785596433}
   - component: {fileID: 7114697998214560237}
   - component: {fileID: 7734884344754240897}
@@ -288,7 +288,7 @@ Transform:
   - {fileID: 5228184620845210624}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7425623650783062554
+--- !u!114 &8882596299217549171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,12 +297,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 811084627201459225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f55736be8836f4daf9bb39c9fea4a9, type: 3}
+  m_Script: {fileID: 11500000, guid: a9445c012e5f1fb41b96181e8a645c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactText: Take
   inventoryItem: {fileID: 4272376817182253583, guid: b2d3acdb95d3b274eb7a1176cd6ca5c3,
     type: 3}
+  weaponAimingPosition: {x: 0, y: -0.08, z: 0.45}
 --- !u!54 &6869129314785596433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1240,7 +1241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2505498110072629399
 Transform:
   m_ObjectHideFlags: 0

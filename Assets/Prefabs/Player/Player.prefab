@@ -874,7 +874,8 @@ MonoBehaviour:
   standingBobLimit: {x: 0.005, y: 0.0025, z: 0}
   walkBobLimit: {x: 0.015, y: 0.01, z: 0}
   crouchBobLimit: {x: 0.01, y: 0.005, z: 0}
-  runBobLimit: {x: 0.02, y: 0.01, z: 0}
+  runBobLimit: {x: 0.025, y: 0.01, z: 0}
+  aimBobLimit: {x: 0.001, y: 0.001, z: 0}
   baseBobFrequency: 0.01
   walkBobMultiplier: 4
   crouchBobMultiplier: 2
@@ -883,6 +884,7 @@ MonoBehaviour:
   jumpBobLimit: 0.05
   standingBobRotationMultiplier: {x: 0.5, y: 0, z: 0}
   movingBobRotationMultiplier: {x: 1, y: 1, z: 3}
+  aimingBobRotationMultiplier: {x: 0, y: 0, z: 0}
   smoothPosition: 5
   smoothRotation: 5
   weaponHolder: {fileID: 8497604716684114998}
@@ -890,6 +892,7 @@ MonoBehaviour:
   weaponHolderRunningRotation: {x: 0.06172653, y: -0.0034656392, z: 0.055949543, w: 0.99651766}
   smoothRunningPosition: 5
   smoothRunningRotation: 5
+  aimSmooth: 7
 --- !u!1 &4236351931049466636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,7 +1012,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -1361,11 +1364,13 @@ MonoBehaviour:
   canCrouch: 1
   canOpenInventory: 1
   canInteract: 1
+  canAim: 1
   isMoving: 0
   isRunning: 0
   isJumping: 0
   isTryingToCrouch: 0
   isCrouching: 0
+  isAiming: 0
   rawMoveInputs: {x: 0, y: 0}
 --- !u!114 &4527583756246682939
 MonoBehaviour:
@@ -1704,6 +1709,7 @@ MonoBehaviour:
   rightHandIK: {fileID: 388663216106115076}
   leftHandIK: {fileID: 1088732924128617169}
   weaponSwayAndBob: {fileID: 4150229004638241168}
+  weaponHeld: {fileID: 0}
 --- !u!1 &4585163397194870797
 GameObject:
   m_ObjectHideFlags: 0

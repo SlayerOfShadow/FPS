@@ -46,7 +46,6 @@ public class PlayerInventory : MonoBehaviour
             {
                 SnapItem(itemDragged.gameObject);
             }
-            player.canInteract = !player.inventoryOpen;
             Cursor.lockState = player.inventoryOpen == true ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = player.inventoryOpen;
             playerInventoryPanel.SetActive(player.inventoryOpen);

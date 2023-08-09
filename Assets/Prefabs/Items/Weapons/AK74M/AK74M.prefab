@@ -748,7 +748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8904147215844736174}
-  - component: {fileID: 1100700591518172168}
+  - component: {fileID: 2216445519846200759}
   - component: {fileID: 2189455283094215233}
   - component: {fileID: 961014755612098514}
   - component: {fileID: 5839348587907641946}
@@ -778,7 +778,7 @@ Transform:
   - {fileID: 4244328657940380367}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1100700591518172168
+--- !u!114 &2216445519846200759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -787,12 +787,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6628728731153963511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f55736be8836f4daf9bb39c9fea4a9, type: 3}
+  m_Script: {fileID: 11500000, guid: a9445c012e5f1fb41b96181e8a645c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactText: Take
   inventoryItem: {fileID: 4272376817182253583, guid: 02b8b9d8cfbb2a8498ce19e1bdafff4d,
     type: 3}
+  weaponAimingPosition: {x: 0, y: -0.087, z: 0.45}
 --- !u!54 &2189455283094215233
 Rigidbody:
   m_ObjectHideFlags: 0

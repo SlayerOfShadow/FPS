@@ -7,13 +7,13 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     Player player;
 
     [Header("Sway position")]
-    public float swayPositionSpeed = 0.01f;
-    public float maxSwayDistance = 0.06f;
+    [SerializeField] float swayPositionSpeed = 0.01f;
+    [SerializeField] float maxSwayDistance = 0.06f;
     Vector3 swayPosition;
 
     [Header("Sway rotation")]
-    public float swayRotationSpeed = 4f;
-    public float maxSwayRotation = 5f;
+    [SerializeField] float swayRotationSpeed = 4f;
+    [SerializeField] float maxSwayRotation = 5f;
     Vector3 swayRotation;
 
     [Header("Bob position")]
@@ -22,6 +22,7 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     [SerializeField] Vector3 walkBobLimit = Vector3.one * 0.02f;
     [SerializeField] Vector3 crouchBobLimit = Vector3.one * 0.01f;
     [SerializeField] Vector3 runBobLimit = Vector3.one * 0.03f;
+    [SerializeField] Vector3 aimBobLimit = Vector3.one * 0.005f;
     Vector3 bobLimit;
     [SerializeField] float baseBobFrequency = 0.01f;
     [SerializeField] float walkBobMultiplier = 4f;
@@ -38,14 +39,15 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     Vector3 bobRotation;
 
     [Header("Bob rotation")]
-    public Vector3 standingBobRotationMultiplier;
-    public Vector3 movingBobRotationMultiplier;
+    [SerializeField] Vector3 standingBobRotationMultiplier;
+    [SerializeField] Vector3 movingBobRotationMultiplier;
+    [SerializeField] Vector3 aimingBobRotationMultiplier;
     Vector3 bobRotationMultiplier;
     Vector2 lookInputs;
 
     [Header("Smooth Sway & Bob")]
-    public float smoothPosition = 10f;
-    public float smoothRotation = 12f;
+    [SerializeField] float smoothPosition = 10f;
+    [SerializeField] float smoothRotation = 12f;
 
     [Header("Running position & rotation")]
     [SerializeField] Transform weaponHolder;
@@ -56,6 +58,9 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     Vector3 weaponHolderStartPosition;
     Quaternion weaponHolderStartRotation;
 
+    [Header("Aiming")]
+    [SerializeField] float aimSmooth = 5f;
+
     void Start()
     {
         player = GameManager.Instance.player;
@@ -65,16 +70,18 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void Update()
     {
-        bobFrequency = player.isCrouching ? crouchBobMultiplier 
+        bobFrequency = player.isCrouching ? crouchBobMultiplier
                     : player.isRunning ? runBobMultiplier
                     : walkBobMultiplier;
 
         bobLimit = player.isCrouching ? crouchBobLimit
                     : player.isRunning ? runBobLimit
                     : player.isMoving ? walkBobLimit
+                    : player.isAiming ? aimBobLimit
                     : standingBobLimit;
 
         bobRotationMultiplier = player.isMoving ? movingBobRotationMultiplier
+                    : player.isAiming ? aimingBobRotationMultiplier
                     : standingBobRotationMultiplier;
 
         lookInputs = !player.inventoryOpen ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) : Vector2.zero;
@@ -92,7 +99,12 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void WeaponHolderTransform()
     {
-        if (player.isRunning)
+        if (player.isAiming)
+        {
+            weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, player.playerEquipment.weaponHeld.weaponAimingPosition, Time.deltaTime * aimSmooth);
+            weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, weaponHolderStartRotation, Time.deltaTime * aimSmooth);
+        }
+        else if (player.isRunning)
         {
             weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, weaponHolderRunningPosition, Time.deltaTime * smoothRunningPosition);
             weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, weaponHolderRunningRotation, Time.deltaTime * smoothRunningRotation);

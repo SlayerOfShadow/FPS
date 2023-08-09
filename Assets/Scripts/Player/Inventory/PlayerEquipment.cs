@@ -13,6 +13,7 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] TwoBoneIKConstraint rightHandIK;
     [SerializeField] TwoBoneIKConstraint leftHandIK;
     [SerializeField] GameObject weaponSwayAndBob;
+    public Weapon weaponHeld;
 
     void Update()
     {
@@ -36,6 +37,7 @@ public class PlayerEquipment : MonoBehaviour
         weaponSwayAndBob.SetActive(!weapon.activeSelf);
         weapon.SetActive(!weapon.activeSelf);
         playerArms.SetActive(weapon.activeSelf);
+        weaponHeld = weapon.activeSelf ? weapon.GetComponent<Weapon>() : null;
     }
 
     void BuildHandsRig(GameObject weapon)
