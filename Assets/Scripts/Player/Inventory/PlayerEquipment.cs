@@ -14,6 +14,7 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] TwoBoneIKConstraint leftHandIK;
     [SerializeField] GameObject weaponSwayAndBob;
     public Weapon weaponHeld;
+    bool canShoot = true;
 
     void Update()
     {
@@ -30,6 +31,19 @@ public class PlayerEquipment : MonoBehaviour
             BuildHandsRig(equipment[1]);
             StartCoroutine(DelayedPullOut(equipment[1]));
         }
+
+        if (weaponHeld && Input.GetMouseButton(0) && canShoot)
+        {
+            StartCoroutine(Shoot(weaponHeld.rateOfFire));
+        }
+    }
+
+    IEnumerator Shoot(float rateOfFire)
+    {
+        canShoot = false;
+        print("shoot");
+        yield return new WaitForSeconds(rateOfFire);
+        canShoot = true;
     }
 
     void PullOutWeapon(GameObject weapon)

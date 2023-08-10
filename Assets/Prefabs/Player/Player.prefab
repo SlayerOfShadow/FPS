@@ -870,7 +870,8 @@ MonoBehaviour:
   maxSwayDistance: 0.05
   swayRotationSpeed: 1
   maxSwayRotation: 5
-  travelLimit: {x: 0.02, y: 0, z: 0.02}
+  movingTravelLimit: {x: 0.02, y: 0, z: 0.02}
+  aimingTravelLimit: {x: 0.001, y: 0, z: 0.01}
   standingBobLimit: {x: 0.005, y: 0.0025, z: 0}
   walkBobLimit: {x: 0.015, y: 0.01, z: 0}
   crouchBobLimit: {x: 0.01, y: 0.005, z: 0}
@@ -879,12 +880,12 @@ MonoBehaviour:
   baseBobFrequency: 0.01
   walkBobMultiplier: 4
   crouchBobMultiplier: 2
-  runBobMultiplier: 6
+  runBobMultiplier: 7
   jumpBob: 0.02
   jumpBobLimit: 0.05
   standingBobRotationMultiplier: {x: 0.5, y: 0, z: 0}
   movingBobRotationMultiplier: {x: 1, y: 1, z: 3}
-  aimingBobRotationMultiplier: {x: 0, y: 0, z: 0}
+  aimingBobRotationMultiplier: {x: 0.2, y: 0.2, z: 0.2}
   smoothPosition: 5
   smoothRotation: 5
   weaponHolder: {fileID: 8497604716684114998}

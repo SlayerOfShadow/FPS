@@ -17,7 +17,9 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     Vector3 swayRotation;
 
     [Header("Bob position")]
-    public Vector3 travelLimit = Vector3.one * 0.025f;
+    [SerializeField] Vector3 movingTravelLimit = Vector3.one * 0.02f;
+    [SerializeField] Vector3 aimingTravelLimit = Vector3.one * 0.01f;
+    Vector3 travelLimit;
     [SerializeField] Vector3 standingBobLimit = Vector3.one * 0.01f;
     [SerializeField] Vector3 walkBobLimit = Vector3.one * 0.02f;
     [SerializeField] Vector3 crouchBobLimit = Vector3.one * 0.01f;
@@ -70,18 +72,20 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     void Update()
     {
+        travelLimit = player.isAiming ? aimingTravelLimit : movingTravelLimit;
+
         bobFrequency = player.isCrouching ? crouchBobMultiplier
                     : player.isRunning ? runBobMultiplier
                     : walkBobMultiplier;
 
-        bobLimit = player.isCrouching ? crouchBobLimit
+        bobLimit = player.isAiming ? aimBobLimit
+                    : player.isCrouching ? crouchBobLimit
                     : player.isRunning ? runBobLimit
                     : player.isMoving ? walkBobLimit
-                    : player.isAiming ? aimBobLimit
                     : standingBobLimit;
 
-        bobRotationMultiplier = player.isMoving ? movingBobRotationMultiplier
-                    : player.isAiming ? aimingBobRotationMultiplier
+        bobRotationMultiplier = player.isAiming ? aimingBobRotationMultiplier
+                    : player.isMoving ? movingBobRotationMultiplier
                     : standingBobRotationMultiplier;
 
         lookInputs = !player.inventoryOpen ? new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) : Vector2.zero;
@@ -102,7 +106,7 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
         if (player.isAiming)
         {
             weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, player.playerEquipment.weaponHeld.weaponAimingPosition, Time.deltaTime * aimSmooth);
-            weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, weaponHolderStartRotation, Time.deltaTime * aimSmooth);
+            weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, player.playerEquipment.weaponHeld.weaponAimingRotation, Time.deltaTime * aimSmooth);
         }
         else if (player.isRunning)
         {
