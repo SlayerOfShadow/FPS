@@ -304,7 +304,7 @@ MonoBehaviour:
   inventoryItem: {fileID: 4272376817182253583, guid: b2d3acdb95d3b274eb7a1176cd6ca5c3,
     type: 3}
   weaponAimingPosition: {x: 0, y: -0.08, z: 0.45}
-  weaponAimingRotation: {x: 0, y: 0, z: 0, w: 0}
+  weaponAimingRotation: {x: -0.0017453283, y: 0, z: 0, w: 0.99999845}
   rateOfFire: 0.2
 --- !u!54 &6869129314785596433
 Rigidbody:

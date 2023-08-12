@@ -15637,6 +15637,12 @@ MonoBehaviour:
   previewColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
   img: {fileID: 1366688851}
+--- !u!1 &1378540935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4598083051209365174, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1380238671
 GameObject:
   m_ObjectHideFlags: 0
@@ -20735,6 +20741,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2959872043128152127}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1777586518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378540935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98be660f246fa14698574f1ae56556b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recoilX: -2
+  recoilY: 1
+  recoilZ: 2
+  aimRecoilX: -1
+  aimRecoilY: 1
+  aimRecoilZ: 0.3
+  snappiness: 10
+  returnSpeed: 10
 --- !u!1 &1800781167
 GameObject:
   m_ObjectHideFlags: 0
@@ -24383,6 +24409,11 @@ PrefabInstance:
       propertyPath: interactionPanel
       value: 
       objectReference: {fileID: 1065035321}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponRecoil
+      value: 
+      objectReference: {fileID: 1777586518}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemActions
@@ -25736,7 +25767,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4598083051209365174, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1777586518}
   m_SourcePrefab: {fileID: 100100000, guid: 3d2486b91e978164f87112bd1ba3e4a3, type: 3}
 --- !u!1001 &8124385744208812937
 PrefabInstance:

@@ -5,9 +5,9 @@ using UnityEngine.Animations.Rigging;
 
 public class PlayerEquipment : MonoBehaviour
 {
+    Player player;
     [Tooltip("0 = PrimaryWeapon | 1 = SecondaryWeapon | 2 = Armor | 3 = Helmet")]
     public GameObject[] equipment = new GameObject[4];
-
     public GameObject playerArms;
     [SerializeField] RigBuilder rigBuilder;
     [SerializeField] TwoBoneIKConstraint rightHandIK;
@@ -15,6 +15,11 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] GameObject weaponSwayAndBob;
     public Weapon weaponHeld;
     bool canShoot = true;
+
+    void Start()
+    {
+        player = GameManager.Instance.player;
+    }
 
     void Update()
     {
@@ -32,7 +37,7 @@ public class PlayerEquipment : MonoBehaviour
             StartCoroutine(DelayedPullOut(equipment[1]));
         }
 
-        if (weaponHeld && Input.GetMouseButton(0) && canShoot)
+        if (weaponHeld && Input.GetMouseButton(0) && canShoot && !player.isRunning)
         {
             StartCoroutine(Shoot(weaponHeld.rateOfFire));
         }
