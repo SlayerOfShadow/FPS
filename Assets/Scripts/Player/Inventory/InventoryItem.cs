@@ -19,9 +19,6 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
 
     [Header("Item hover")]
     public Transform[] cells;
-    [SerializeField] Image[] cellsImages;
-    [SerializeField] Color baseColor;
-    [SerializeField] Color hoverColor;
     [HideInInspector] public Vector3 startPosition;
     public int nbRows;
     public int nbColumns;
@@ -41,7 +38,6 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         {
             player.playerInventory.itemInfosPanelName.text = itemName;
             player.playerInventory.itemInfosPanelDescription.text = itemDescription;
-            Hover(true);
             player.playerInventory.itemInfosPanel.SetActive(true);
             LayoutRebuilder.ForceRebuildLayoutImmediate(player.playerInventory.itemInfosPanel.GetComponent<RectTransform>());
             Canvas.ForceUpdateCanvases();
@@ -52,26 +48,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
     {
         if (!currentEvent.pointerDrag)
         {
-            Hover(false);
             player.playerInventory.itemInfosPanel.SetActive(false);
-        }
-    }
-
-    void Hover(bool isHovered)
-    {
-        if (isHovered)
-        {
-            foreach (Image img in cellsImages)
-            {
-                img.color = hoverColor;
-            }
-        }
-        else
-        {
-            foreach (Image img in cellsImages)
-            {
-                img.color = baseColor;
-            }
         }
     }
 
@@ -148,12 +125,10 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
             if (player.playerInventory.previewCells.Count > 0)
             {
                 player.playerInventory.itemInfosPanel.SetActive(true);
-                Hover(true);
             }
             else
             {
                 player.playerInventory.itemInfosPanel.SetActive(false);
-                Hover(false);
             }
             player.playerInventory.SnapItem(gameObject);
         }
@@ -169,6 +144,5 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
                 cell.cellState = CellState.occupied;
             }
         }
-        if (cellsImages[0].color == hoverColor) Hover(false);
     }
 }
