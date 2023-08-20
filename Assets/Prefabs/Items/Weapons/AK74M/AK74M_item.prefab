@@ -410,7 +410,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 100}
+  m_SizeDelta: {x: 420, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8438996010167419457
 CanvasRenderer:
@@ -487,7 +487,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 100}
+  m_SizeDelta: {x: 420, y: 120}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8885497719834641197
 CanvasRenderer:
@@ -531,23 +531,6 @@ MonoBehaviour:
   - {fileID: 6463281461132767520}
   - {fileID: 5332213334031145888}
   - {fileID: 7832056083216032706}
-  cellsImages:
-  - {fileID: 6039141607473049046}
-  - {fileID: 2000160159098410432}
-  - {fileID: 7579390612497072052}
-  - {fileID: 6628216903904623490}
-  - {fileID: 1295030912178732692}
-  - {fileID: 8005132283725619821}
-  - {fileID: 8082835006627187602}
-  - {fileID: 8419288972215746315}
-  - {fileID: 3292324602495854199}
-  - {fileID: 2272008847586904286}
-  - {fileID: 8507407617828751948}
-  - {fileID: 6729712745722719708}
-  - {fileID: 4957601751043961529}
-  - {fileID: 6104907727431724093}
-  baseColor: {r: 1, g: 1, b: 1, a: 0}
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.7058824}
   startPosition: {x: 0, y: 0, z: 0}
   nbRows: 2
   nbColumns: 7
@@ -846,7 +829,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 50, y: 50}
+  m_CellSize: {x: 60, y: 60}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 7

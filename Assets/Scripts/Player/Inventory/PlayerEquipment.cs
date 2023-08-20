@@ -37,7 +37,7 @@ public class PlayerEquipment : MonoBehaviour
             StartCoroutine(DelayedPullOut(equipment[1]));
         }
 
-        if (weaponHeld && Input.GetMouseButton(0) && canShoot && !player.isRunning)
+        if (weaponHeld && Input.GetMouseButton(0) && canShoot && !player.isRunning & !player.inventoryOpen)
         {
             StartCoroutine(Shoot(weaponHeld.rateOfFire));
         }

@@ -335,7 +335,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 200}
+  m_SizeDelta: {x: 180, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8438996010167419457
 CanvasRenderer:
@@ -487,7 +487,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1038.75, y: 938.0074}
-  m_SizeDelta: {x: 150, y: 200}
+  m_SizeDelta: {x: 180, y: 240}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8885497719834641197
 CanvasRenderer:
@@ -513,11 +513,8 @@ MonoBehaviour:
   itemDescription: A military armor vest is a protective garment worn by soldiers
     to shield against ballistic threats, such as bullets and shrapnel.
   inventoryActions: 00000100000001
-  occupiedEquipmentSlot: -1
   associatedItem: {fileID: 0}
-  nbRows: 4
-  nbColumns: 3
-  startPosition: {x: 0, y: 0, z: 0}
+  occupiedEquipmentSlot: -1
   cells:
   - {fileID: 3031923539712653587}
   - {fileID: 4245881481504674058}
@@ -531,21 +528,9 @@ MonoBehaviour:
   - {fileID: 3441671388632793916}
   - {fileID: 4708287514452647703}
   - {fileID: 1898093268392096132}
-  cellsImages:
-  - {fileID: 6039141607473049046}
-  - {fileID: 2000160159098410432}
-  - {fileID: 7579390612497072052}
-  - {fileID: 6628216903904623490}
-  - {fileID: 7159808928927091052}
-  - {fileID: 6233374004024943310}
-  - {fileID: 847861635583418759}
-  - {fileID: 5742834243457623189}
-  - {fileID: 6858083325994251465}
-  - {fileID: 5652445052547248770}
-  - {fileID: 1400155725193813163}
-  - {fileID: 8528990391233908428}
-  baseColor: {r: 1, g: 1, b: 1, a: 0}
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.7058824}
+  startPosition: {x: 0, y: 0, z: 0}
+  nbRows: 4
+  nbColumns: 3
 --- !u!1 &5240012538204216682
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +674,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 50, y: 50}
+  m_CellSize: {x: 60, y: 60}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 3
