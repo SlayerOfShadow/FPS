@@ -61,9 +61,6 @@ public class WeaponMovements : MonoBehaviour
 
     [Header("Aiming")]
     [SerializeField] float smoothAim = 5f;
-    Vector3 targetPosition;
-    Quaternion targetRotation;
-    float smooth;
 
     void Start()
     {
@@ -105,6 +102,10 @@ public class WeaponMovements : MonoBehaviour
 
     void WeaponHolderTransform()
     {
+        Vector3 targetPosition = Vector3.zero;
+        Quaternion targetRotation = Quaternion.identity;
+        float smooth = 0;
+
         if (player.isAiming)
         {
             targetPosition = player.playerEquipment.weaponHeld.weaponAimPosition;
@@ -126,11 +127,6 @@ public class WeaponMovements : MonoBehaviour
 
         weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, targetPosition, smooth * Time.deltaTime);
         weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, targetRotation, smooth * Time.deltaTime);
-    }
-
-    public void Recoil()
-    {
-        
     }
 
     void Sway()

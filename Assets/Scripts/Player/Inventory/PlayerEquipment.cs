@@ -49,7 +49,6 @@ public class PlayerEquipment : MonoBehaviour
     {
         canShoot = false;
         print("shoot");
-        weaponMovements.Recoil();
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;
     }
