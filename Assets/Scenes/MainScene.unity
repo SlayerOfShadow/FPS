@@ -3116,6 +3116,7 @@ RectTransform:
   - {fileID: 1065035322}
   - {fileID: 1212768352}
   - {fileID: 1756097817}
+  - {fileID: 2059330524}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -22965,6 +22966,87 @@ MonoBehaviour:
   previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
   occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2033589128}
+--- !u!1 &2054324220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4150229004638241168, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2059330523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2059330524}
+  - component: {fileID: 2059330526}
+  - component: {fileID: 2059330525}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2059330524
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059330523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 352200134}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2059330525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059330523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2059330526
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059330523}
+  m_CullTransparentMesh: 1
 --- !u!1 &2065385167
 GameObject:
   m_ObjectHideFlags: 0
@@ -24236,6 +24318,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4150229004638241168, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: m_Name
+      value: WeaponMovements
+      objectReference: {fileID: 0}
     - target: {fileID: 4558615056594042609, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: m_Name
@@ -24261,11 +24348,76 @@ PrefabInstance:
       propertyPath: walkBobLimit.x
       value: 0.005
       objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: baseBobFrequency
+      value: 0.0075
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchBobLimit.x
+      value: 0.0025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: runBobMultiplier
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: walkBobMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchBobMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolderRunPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolderRunPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolderRunPosition.z
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolderRunRotation.w
+      value: -0.99444884
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolderRunRotation.x
+      value: -0.095754534
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolderRunRotation.y
+      value: 0.043418713
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponHolderRunRotation.z
+      value: -0.0041807448
+      objectReference: {fileID: 0}
     - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: weaponRecoil
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: weaponMovementsObject
+      value: 
+      objectReference: {fileID: 2054324220}
     - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: walkAmount

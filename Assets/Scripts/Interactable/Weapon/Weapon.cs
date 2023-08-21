@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Weapon : Item
 {
-    public Vector3 weaponAimingPosition;
-    public Quaternion weaponAimingRotation;
+    public Vector3 weaponAimPosition;
+    public Quaternion weaponAimRotation;
     public float rateOfFire;
 }

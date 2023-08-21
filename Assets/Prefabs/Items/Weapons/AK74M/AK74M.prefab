@@ -793,8 +793,8 @@ MonoBehaviour:
   interactText: Take
   inventoryItem: {fileID: 4272376817182253583, guid: 02b8b9d8cfbb2a8498ce19e1bdafff4d,
     type: 3}
-  weaponAimingPosition: {x: -0.5, y: -0.084, z: 0.45}
-  weaponAimingRotation: {x: 0, y: 0, z: 0, w: 0}
+  weaponAimPosition: {x: 0, y: -0.084, z: 0.45}
+  weaponAimRotation: {x: -0.0039269803, y: 0, z: 0, w: 0.9999923}
   rateOfFire: 0.1
 --- !u!54 &2189455283094215233
 Rigidbody:

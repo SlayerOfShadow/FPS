@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponSwayAndHeadbob : MonoBehaviour
+public class WeaponMovements : MonoBehaviour
 {
     Player player;
 
@@ -53,15 +53,17 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
 
     [Header("Running position & rotation")]
     [SerializeField] Transform weaponHolder;
-    [SerializeField] Vector3 weaponHolderRunningPosition;
-    [SerializeField] Quaternion weaponHolderRunningRotation;
-    [SerializeField] float smoothRunningPosition = 5f;
-    [SerializeField] float smoothRunningRotation = 5f;
+    [SerializeField] Vector3 weaponHolderRunPosition;
+    [SerializeField] Quaternion weaponHolderRunRotation;
+    [SerializeField] float smoothRun = 5f;
     Vector3 weaponHolderStartPosition;
     Quaternion weaponHolderStartRotation;
 
     [Header("Aiming")]
-    [SerializeField] float aimSmooth = 5f;
+    [SerializeField] float smoothAim = 5f;
+    Vector3 targetPosition;
+    Quaternion targetRotation;
+    float smooth;
 
     void Start()
     {
@@ -105,19 +107,30 @@ public class WeaponSwayAndHeadbob : MonoBehaviour
     {
         if (player.isAiming)
         {
-            weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, player.playerEquipment.weaponHeld.weaponAimingPosition, Time.deltaTime * aimSmooth);
-            weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, player.playerEquipment.weaponHeld.weaponAimingRotation, Time.deltaTime * aimSmooth);
+            targetPosition = player.playerEquipment.weaponHeld.weaponAimPosition;
+            targetRotation = player.playerEquipment.weaponHeld.weaponAimRotation;
+            smooth = smoothAim;
         }
         else if (player.isRunning)
         {
-            weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, weaponHolderRunningPosition, Time.deltaTime * smoothRunningPosition);
-            weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, weaponHolderRunningRotation, Time.deltaTime * smoothRunningRotation);
+            targetPosition = weaponHolderRunPosition;
+            targetRotation = weaponHolderRunRotation;
+            smooth = smoothRun;
         }
         else if (!player.isJumping)
         {
-            weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, weaponHolderStartPosition, Time.deltaTime * smoothRunningPosition);
-            weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, weaponHolderStartRotation, Time.deltaTime * smoothRunningRotation);
+            targetPosition = weaponHolderStartPosition;
+            targetRotation = weaponHolderStartRotation;
+            smooth = 5f;
         }
+
+        weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, targetPosition, smooth * Time.deltaTime);
+        weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, targetRotation, smooth * Time.deltaTime);
+    }
+
+    public void Recoil()
+    {
+        
     }
 
     void Sway()

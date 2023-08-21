@@ -12,13 +12,15 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] RigBuilder rigBuilder;
     [SerializeField] TwoBoneIKConstraint rightHandIK;
     [SerializeField] TwoBoneIKConstraint leftHandIK;
-    [SerializeField] GameObject weaponSwayAndBob;
+    [SerializeField] GameObject weaponMovementsObject;
+    WeaponMovements weaponMovements;
     public Weapon weaponHeld;
     bool canShoot = true;
 
     void Start()
     {
         player = GameManager.Instance.player;
+        weaponMovements = weaponMovementsObject.GetComponent<WeaponMovements>();
     }
 
     void Update()
@@ -47,13 +49,14 @@ public class PlayerEquipment : MonoBehaviour
     {
         canShoot = false;
         print("shoot");
+        weaponMovements.Recoil();
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;
     }
 
     void PullOutWeapon(GameObject weapon)
     {
-        weaponSwayAndBob.SetActive(!weapon.activeSelf);
+        weaponMovementsObject.SetActive(!weapon.activeSelf);
         weapon.SetActive(!weapon.activeSelf);
         playerArms.SetActive(weapon.activeSelf);
         weaponHeld = weapon.activeSelf ? weapon.GetComponent<Weapon>() : null;
