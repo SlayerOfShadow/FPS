@@ -214,8 +214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 16251011}
 --- !u!1 &16373797
 GameObject:
@@ -307,8 +307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 16373799}
 --- !u!1 &21231456
 GameObject:
@@ -400,8 +400,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 21231458}
 --- !u!1 &52336196
 GameObject:
@@ -493,8 +493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 52336198}
 --- !u!1 &54235800
 GameObject:
@@ -586,8 +586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 54235802}
 --- !u!1 &65677929
 GameObject:
@@ -679,8 +679,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 65677931}
 --- !u!1 &74195103
 GameObject:
@@ -772,8 +772,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 74195105}
 --- !u!850595691 &97330815
 LightingSettings:
@@ -929,8 +929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 110224220}
 --- !u!1 &142508529
 GameObject:
@@ -1022,8 +1022,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 142508531}
 --- !u!1 &152404879
 GameObject:
@@ -1526,8 +1526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 172570160}
 --- !u!1 &178079280
 GameObject:
@@ -1619,8 +1619,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 178079282}
 --- !u!1 &188291666
 GameObject:
@@ -1712,8 +1712,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 188291668}
 --- !u!1 &193980096
 GameObject:
@@ -1805,8 +1805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 193980098}
 --- !u!43 &210380390
 Mesh:
@@ -2212,8 +2212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 265683696}
 --- !u!1 &266544411
 GameObject:
@@ -2305,8 +2305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 266544413}
 --- !u!1 &270476643
 GameObject:
@@ -2398,8 +2398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 270476645}
 --- !u!1 &276701965
 GameObject:
@@ -2491,8 +2491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 276701967}
 --- !u!1 &290747513
 GameObject:
@@ -2584,8 +2584,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 290747515}
 --- !u!1 &330692105
 GameObject:
@@ -2826,8 +2826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 343155669}
 --- !u!1 &344316801
 GameObject:
@@ -2919,8 +2919,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 344316803}
 --- !u!1 &346701574
 GameObject:
@@ -3013,7 +3013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotNumber: 1
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  hoverColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
+  hoverColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
 --- !u!1 &352200130
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,8 +3290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 377297635}
 --- !u!1 &383395258
 GameObject:
@@ -3383,8 +3383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 383395260}
 --- !u!1 &397373411
 GameObject:
@@ -3476,8 +3476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 397373413}
 --- !u!1 &399386758
 GameObject:
@@ -3569,8 +3569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 399386760}
 --- !u!1 &427591755
 GameObject:
@@ -3662,8 +3662,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 427591757}
 --- !u!1 &431695504
 GameObject:
@@ -3755,8 +3755,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 431695506}
 --- !u!1 &432432459
 GameObject:
@@ -4222,8 +4222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 491121221}
 --- !u!1 &494322305
 GameObject:
@@ -4315,8 +4315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 494322307}
 --- !u!1 &501320246
 GameObject:
@@ -4557,8 +4557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 523167262}
 --- !u!43 &531372034
 Mesh:
@@ -4815,8 +4815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 533202498}
 --- !u!43 &538476167
 Mesh:
@@ -5228,8 +5228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 581792930}
 --- !u!1 &582772313
 GameObject:
@@ -5321,8 +5321,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 582772315}
 --- !u!43 &585550737
 Mesh:
@@ -5579,8 +5579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 611980503}
 --- !u!43 &621971224
 Mesh:
@@ -6002,8 +6002,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 676588328}
 --- !u!1 &682500230
 GameObject:
@@ -6244,8 +6244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 691847404}
 --- !u!1 &692526862
 GameObject:
@@ -6337,8 +6337,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 692526864}
 --- !u!1 &700984018
 GameObject:
@@ -6430,8 +6430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 700984020}
 --- !u!1 &707201827
 GameObject:
@@ -6523,8 +6523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 707201829}
 --- !u!1 &707630556
 GameObject:
@@ -6616,8 +6616,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 707630558}
 --- !u!1 &714992511
 GameObject:
@@ -6709,8 +6709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 714992513}
 --- !u!1 &717493352
 GameObject:
@@ -6951,8 +6951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 771798116}
 --- !u!1 &783773835
 GameObject:
@@ -7397,7 +7397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotNumber: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  hoverColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
+  hoverColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
 --- !u!1 &813839916
 GameObject:
   m_ObjectHideFlags: 0
@@ -7839,8 +7839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 817958794}
 --- !u!1 &820424169
 GameObject:
@@ -7932,8 +7932,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 820424171}
 --- !u!1 &839864738
 GameObject:
@@ -9726,8 +9726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 871954398}
 --- !u!1 &872326332
 GameObject:
@@ -9969,7 +9969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotNumber: 2
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  hoverColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
+  hoverColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
 --- !u!1 &883397060
 GameObject:
   m_ObjectHideFlags: 0
@@ -10060,8 +10060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 883397062}
 --- !u!1 &897175222
 GameObject:
@@ -10505,8 +10505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 922760036}
 --- !u!1 &943142486
 GameObject:
@@ -10598,8 +10598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 943142488}
 --- !u!1 &944822154
 GameObject:
@@ -10691,8 +10691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 944822156}
 --- !u!1 &947328421
 GameObject:
@@ -10784,8 +10784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 947328423}
 --- !u!1 &968767608
 GameObject:
@@ -10877,8 +10877,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 968767610}
 --- !u!1 &980384866
 GameObject:
@@ -10970,8 +10970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 980384868}
 --- !u!1 &982538938
 GameObject:
@@ -11063,8 +11063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 982538940}
 --- !u!1 &986364528
 GameObject:
@@ -11156,8 +11156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 986364530}
 --- !u!1 &991544921
 GameObject:
@@ -11249,8 +11249,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 991544923}
 --- !u!1 &998822557
 GameObject:
@@ -11476,8 +11476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1050188994}
 --- !u!1 &1065035321
 GameObject:
@@ -11710,8 +11710,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1080899012}
 --- !u!1 &1085726988
 GameObject:
@@ -11803,8 +11803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1085726990}
 --- !u!1 &1086348382
 GameObject:
@@ -11896,8 +11896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1086348384}
 --- !u!1 &1093855946
 GameObject:
@@ -11989,8 +11989,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1093855948}
 --- !u!1 &1099035086
 GameObject:
@@ -12082,8 +12082,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1099035088}
 --- !u!1 &1101134113
 GameObject:
@@ -12175,8 +12175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1101134115}
 --- !u!1 &1119077132
 GameObject:
@@ -12268,8 +12268,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1119077134}
 --- !u!1 &1127523285
 GameObject:
@@ -12586,8 +12586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1157319885}
 --- !u!1 &1194049916
 GameObject:
@@ -12679,8 +12679,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1194049918}
 --- !u!1 &1198895207
 GameObject:
@@ -12772,8 +12772,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1198895209}
 --- !u!1 &1203949098
 GameObject:
@@ -13160,8 +13160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1216527660}
 --- !u!1 &1228768879
 GameObject:
@@ -13253,8 +13253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1228768881}
 --- !u!1 &1231432407
 GameObject:
@@ -13346,8 +13346,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1231432409}
 --- !u!1 &1236577343
 GameObject:
@@ -13439,8 +13439,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1236577345}
 --- !u!1 &1253580648
 GameObject:
@@ -13532,8 +13532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1253580650}
 --- !u!1 &1268101691
 GameObject:
@@ -13940,8 +13940,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1269556595}
 --- !u!1 &1271997188
 GameObject:
@@ -14033,8 +14033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1271997190}
 --- !u!1 &1279365322
 GameObject:
@@ -14275,8 +14275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1282356503}
 --- !u!43 &1289888889
 Mesh:
@@ -15034,8 +15034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1338357032}
 --- !u!43 &1341464681
 Mesh:
@@ -15292,8 +15292,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1342254031}
 --- !u!1 &1356256198
 GameObject:
@@ -15385,8 +15385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1356256200}
 --- !u!1 &1366688849
 GameObject:
@@ -15478,8 +15478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1366688851}
 --- !u!1 &1380238671
 GameObject:
@@ -15571,8 +15571,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1380238673}
 --- !u!1 &1384762895
 GameObject:
@@ -15798,8 +15798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1392490900}
 --- !u!1 &1393550263
 GameObject:
@@ -16464,8 +16464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1395863872}
 --- !u!1 &1403673941
 GameObject:
@@ -16557,8 +16557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1403673943}
 --- !u!1 &1408803898
 GameObject:
@@ -16650,8 +16650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1408803900}
 --- !u!1 &1411028629
 GameObject:
@@ -16892,8 +16892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1422163036}
 --- !u!1 &1430603539
 GameObject:
@@ -16985,8 +16985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1430603541}
 --- !u!43 &1432283188
 Mesh:
@@ -17243,8 +17243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1438237013}
 --- !u!1 &1447562245
 GameObject:
@@ -17336,8 +17336,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1447562247}
 --- !u!1 &1461487810
 GameObject:
@@ -17429,8 +17429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1461487812}
 --- !u!1 &1467798824
 GameObject:
@@ -17522,8 +17522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1467798826}
 --- !u!1 &1473911648
 GameObject:
@@ -17615,8 +17615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1473911650}
 --- !u!1 &1489941394
 GameObject:
@@ -18000,8 +18000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1502475026}
 --- !u!1 &1531685222
 GameObject:
@@ -18094,7 +18094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotNumber: 3
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  hoverColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
+  hoverColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
 --- !u!1 &1554886939
 GameObject:
   m_ObjectHideFlags: 0
@@ -18225,8 +18225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1558294505}
 --- !u!1 &1558376602
 GameObject:
@@ -18318,8 +18318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1558376604}
 --- !u!1 &1562773692
 GameObject:
@@ -18411,8 +18411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1562773694}
 --- !u!1 &1576442475
 GameObject:
@@ -18504,8 +18504,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1576442477}
 --- !u!1 &1577941749
 GameObject:
@@ -18597,8 +18597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1577941751}
 --- !u!1 &1578061742
 GameObject:
@@ -18690,8 +18690,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1578061744}
 --- !u!1 &1585616675
 GameObject:
@@ -18831,8 +18831,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1591648505}
 --- !u!1 &1601143466
 GameObject:
@@ -18924,8 +18924,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1601143468}
 --- !u!1 &1601899166
 GameObject:
@@ -19017,8 +19017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1601899168}
 --- !u!1 &1608823454
 GameObject:
@@ -19244,8 +19244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1631450498}
 --- !u!1 &1632646121
 GameObject:
@@ -19337,8 +19337,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1632646123}
 --- !u!1 &1655724433
 GameObject:
@@ -19430,8 +19430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1655724435}
 --- !u!1 &1662409302
 GameObject:
@@ -19523,8 +19523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1662409304}
 --- !u!1 &1666379992
 GameObject:
@@ -19616,8 +19616,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1666379994}
 --- !u!1 &1667823098
 GameObject:
@@ -19709,8 +19709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1667823100}
 --- !u!1 &1675278347
 GameObject:
@@ -19802,8 +19802,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1675278349}
 --- !u!1001 &1678038516
 PrefabInstance:
@@ -19963,8 +19963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1685217763}
 --- !u!114 &1699233288 stripped
 MonoBehaviour:
@@ -20068,8 +20068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1711370582}
 --- !u!1 &1714758690
 GameObject:
@@ -20161,8 +20161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1714758692}
 --- !u!1 &1715361562
 GameObject:
@@ -20254,8 +20254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1715361564}
 --- !u!1 &1718980851
 GameObject:
@@ -20347,8 +20347,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1718980853}
 --- !u!1 &1742661268
 GameObject:
@@ -20909,8 +20909,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1853545201}
 --- !u!1 &1868728977
 GameObject:
@@ -21488,8 +21488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1879782599}
 --- !u!1 &1881294601
 GameObject:
@@ -22004,8 +22004,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1911765926}
 --- !u!1 &1925762602
 GameObject:
@@ -22097,8 +22097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1925762604}
 --- !u!1 &1940790979
 GameObject:
@@ -22190,8 +22190,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1940790981}
 --- !u!1 &1963411144
 GameObject:
@@ -22283,8 +22283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1963411146}
 --- !u!1 &1965963205
 GameObject:
@@ -22376,8 +22376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1965963207}
 --- !u!1 &1996548041
 GameObject:
@@ -22821,8 +22821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 1999562576}
 --- !u!1 &2013410473
 GameObject:
@@ -22962,8 +22962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2033589128}
 --- !u!1 &2065385167
 GameObject:
@@ -23055,8 +23055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2065385169}
 --- !u!1 &2069036389
 GameObject:
@@ -23148,8 +23148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2069036391}
 --- !u!1 &2089685413
 GameObject:
@@ -23390,8 +23390,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2097716405}
 --- !u!4 &2104596048 stripped
 Transform:
@@ -23841,8 +23841,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2125055121}
 --- !u!1 &2125801226
 GameObject:
@@ -23934,8 +23934,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2125801228}
 --- !u!1 &2136456164
 GameObject:
@@ -24027,8 +24027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellState: 0
   baseColor: {r: 0, g: 0, b: 0, a: 0.8627451}
-  previewColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.8627451}
-  occupiedColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.8627451}
+  previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
+  occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 2136456166}
 --- !u!1001 &695921943060717567
 PrefabInstance:
@@ -24265,6 +24265,41 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponRecoil
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: walkAmount
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: runAmount.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchAmount
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: walkAmount.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: walkAmount.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchAmount.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501064513065344911, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: crouchAmount.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
