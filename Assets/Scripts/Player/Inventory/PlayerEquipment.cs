@@ -28,14 +28,14 @@ public class PlayerEquipment : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3) && equipment[0])
         {
             if (equipment[1]) equipment[1].SetActive(false);
-            BuildHandsRig(equipment[0]);
+            BuildHandsRig(equipment[0].transform);
             StartCoroutine(DelayedPullOut(equipment[0]));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2) && equipment[1])
         {
             if (equipment[0]) equipment[0].SetActive(false);
-            BuildHandsRig(equipment[1]);
+            BuildHandsRig(equipment[1].transform);
             StartCoroutine(DelayedPullOut(equipment[1]));
         }
 
@@ -59,12 +59,18 @@ public class PlayerEquipment : MonoBehaviour
         weapon.SetActive(!weapon.activeSelf);
         playerArms.SetActive(weapon.activeSelf);
         weaponHeld = weapon.activeSelf ? weapon.GetComponent<Weapon>() : null;
+        if (weaponHeld)
+        {
+            weaponHeld.weaponAnimator.SetTrigger("PullOut");
+            weaponHeld.weaponAnimator.Update(0);
+        }
     }
 
-    void BuildHandsRig(GameObject weapon)
+    void BuildHandsRig(Transform weapon)
     {
-        Transform rightGrip = weapon.transform.Find("RightGrip");
-        Transform leftGrip = weapon.transform.Find("LeftGrip");
+        Transform meshTransform = weapon.GetChild(0);
+        Transform rightGrip = meshTransform.Find("RightGrip");
+        Transform leftGrip = meshTransform.Find("LeftGrip");
         rightHandIK.data.target = rightGrip;
         leftHandIK.data.target = leftGrip;
         rigBuilder.Build();
@@ -72,7 +78,7 @@ public class PlayerEquipment : MonoBehaviour
 
     IEnumerator DelayedPullOut(GameObject weapon)
     {
-         yield return new WaitForEndOfFrame();
-         PullOutWeapon(weapon);
+        yield return new WaitForEndOfFrame();
+        PullOutWeapon(weapon);
     }
 }

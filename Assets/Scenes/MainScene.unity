@@ -1287,6 +1287,12 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!95 &157354183 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2989097146091380012, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &171471248
 GameObject:
   m_ObjectHideFlags: 0
@@ -19869,6 +19875,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8882596299217549171, guid: 767ce987eb962714f836eb966b80f307,
+        type: 3}
+      propertyPath: weaponBasePosition.y
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882596299217549171, guid: 767ce987eb962714f836eb966b80f307,
+        type: 3}
+      propertyPath: weaponBasePosition.z
+      value: 0.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24408,6 +24424,11 @@ PrefabInstance:
       propertyPath: weaponHolderRunRotation.z
       value: -0.0041807448
       objectReference: {fileID: 0}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: armsAnimator
+      value: 
+      objectReference: {fileID: 157354183}
     - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: weaponRecoil

@@ -35,9 +35,10 @@ public class ItemActions : MonoBehaviour
             player.playerInventory.previouslyOccupiedCells[inventoryItem.gameObject].Clear();
             if (slot == 0 || slot == 1)
             {
+                Weapon itemToEquipWeapon = itemToEquip.GetComponent<Weapon>();
                 itemToEquip.transform.SetParent(weaponHolder);
-                itemToEquip.transform.localPosition = Vector3.zero;
-                itemToEquip.transform.localRotation = Quaternion.identity;
+                itemToEquip.transform.localPosition = itemToEquipWeapon.weaponBasePosition;
+                itemToEquip.transform.localRotation = itemToEquipWeapon.weaponBaseRotation;
                 SetLayerRecursively(itemToEquip, "Weapon");
             }
         }
