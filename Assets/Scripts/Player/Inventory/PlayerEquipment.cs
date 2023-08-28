@@ -14,13 +14,15 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] TwoBoneIKConstraint rightHandIK;
     [SerializeField] TwoBoneIKConstraint leftHandIK;
     [SerializeField] GameObject weaponMovementsObject;
+    WeaponMovements weaponMovements;
     public Weapon weaponHeld;
     [HideInInspector] public bool isSwitching = false;
-    bool canShoot = true;
+    public bool canShoot = true;
 
     void Start()
     {
         player = GameManager.Instance.player;
+        weaponMovements = weaponMovementsObject.GetComponent<WeaponMovements>();
     }
 
     void Update()
@@ -99,7 +101,7 @@ public class PlayerEquipment : MonoBehaviour
     IEnumerator Shoot(float rateOfFire)
     {
         canShoot = false;
-        print("shoot");
+        weaponMovements.Recoil(weaponHeld.recoilX, weaponHeld.recoilY, weaponHeld.recoilZ, weaponHeld.kickBackZ);
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;
     }

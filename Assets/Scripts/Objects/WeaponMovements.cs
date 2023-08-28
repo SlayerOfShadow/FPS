@@ -62,6 +62,10 @@ public class WeaponMovements : MonoBehaviour
     [Header("Aiming")]
     [SerializeField] float smoothAim = 5f;
 
+    [Header("Recoil")]
+    bool recoil = false;
+    float recoilX, recoilY, recoilZ, kickBackZ;
+
     void Start()
     {
         player = GameManager.Instance.player;
@@ -125,8 +129,24 @@ public class WeaponMovements : MonoBehaviour
             smooth = 5f;
         }
 
+        if (recoil)
+        {
+            targetPosition -= new Vector3(0, 0, kickBackZ);
+            targetRotation *= Quaternion.Euler(-recoilX, Random.Range(-recoilY, recoilY), Random.Range(-recoilZ, recoilZ));
+            recoil = false;
+        }
+
         weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, targetPosition, smooth * Time.deltaTime);
         weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, targetRotation, smooth * Time.deltaTime);
+    }
+
+    public void Recoil(float x, float y, float z, float kbz)
+    {
+        recoil = true;
+        recoilX = x;
+        recoilY = y;
+        recoilZ = z;
+        kickBackZ = kbz;
     }
 
     void Sway()
