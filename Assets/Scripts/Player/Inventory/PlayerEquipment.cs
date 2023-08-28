@@ -6,6 +6,7 @@ using UnityEngine.Animations.Rigging;
 public class PlayerEquipment : MonoBehaviour
 {
     Player player;
+
     [Tooltip("0 = PrimaryWeapon | 1 = SecondaryWeapon | 2 = Armor | 3 = Helmet")]
     public GameObject[] equipment = new GameObject[4];
     public GameObject playerArms;
@@ -13,36 +14,86 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] TwoBoneIKConstraint rightHandIK;
     [SerializeField] TwoBoneIKConstraint leftHandIK;
     [SerializeField] GameObject weaponMovementsObject;
-    WeaponMovements weaponMovements;
     public Weapon weaponHeld;
+    [HideInInspector] public bool isSwitching = false;
     bool canShoot = true;
 
     void Start()
     {
         player = GameManager.Instance.player;
-        weaponMovements = weaponMovementsObject.GetComponent<WeaponMovements>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha3) && equipment[0])
+        if (!player.inventoryOpen && !isSwitching)
         {
-            if (equipment[1]) equipment[1].SetActive(false);
-            BuildHandsRig(equipment[0].transform);
-            StartCoroutine(DelayedPullOut(equipment[0]));
+            if (Input.GetKeyDown(KeyCode.Alpha3) && equipment[0])
+            {
+                StartCoroutine(SwitchWeapon(equipment[0]));
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2) && equipment[1])
+            {
+                StartCoroutine(SwitchWeapon(equipment[1]));
+            }
+
+            if (Input.GetMouseButton(0) && weaponHeld && !player.isRunning && canShoot)
+            {
+                StartCoroutine(Shoot(weaponHeld.rateOfFire));
+            }
+        }
+    }
+
+    IEnumerator SwitchWeapon(GameObject weapon)
+    {
+        isSwitching = true;
+
+        yield return new WaitForEndOfFrame();
+
+        Animation weaponAnim = weapon.GetComponent<Animation>();
+
+        if (weaponHeld == null)
+        {
+            weapon.SetActive(true);
+            weaponMovementsObject.SetActive(true);
+            playerArms.SetActive(true);
+            weaponHeld = weapon.GetComponent<Weapon>();
+
+            BuildHandsRig(weapon.transform);
+
+            weaponAnim.Play("WeaponPullOut");
+            yield return new WaitForSeconds(weaponAnim.GetClip("WeaponPullOut").length);
+        }
+        else
+        {
+            Animation weaponHeldAnim = weaponHeld.GetComponent<Animation>();
+
+            weaponHeldAnim.Play("WeaponPullIn");
+            yield return new WaitForSeconds(weaponHeldAnim.GetClip("WeaponPullIn").length);
+
+            weaponHeld.gameObject.SetActive(false);
+            weaponMovementsObject.SetActive(false);
+            playerArms.SetActive(false);
+
+            if (weaponHeld == weapon.GetComponent<Weapon>())
+            {
+                weaponHeld = null;
+            }
+            else
+            {
+                weapon.SetActive(true);
+                weaponMovementsObject.SetActive(true);
+                playerArms.SetActive(true);
+                weaponHeld = weapon.GetComponent<Weapon>();
+
+                BuildHandsRig(weapon.transform);
+
+                weaponAnim.Play("WeaponPullOut");
+                yield return new WaitForSeconds(weaponAnim.GetClip("WeaponPullOut").length);
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2) && equipment[1])
-        {
-            if (equipment[0]) equipment[0].SetActive(false);
-            BuildHandsRig(equipment[1].transform);
-            StartCoroutine(DelayedPullOut(equipment[1]));
-        }
-
-        if (weaponHeld && Input.GetMouseButton(0) && canShoot && !player.isRunning & !player.inventoryOpen)
-        {
-            StartCoroutine(Shoot(weaponHeld.rateOfFire));
-        }
+        isSwitching = false;
     }
 
     IEnumerator Shoot(float rateOfFire)
@@ -53,19 +104,6 @@ public class PlayerEquipment : MonoBehaviour
         canShoot = true;
     }
 
-    void PullOutWeapon(GameObject weapon)
-    {
-        weaponMovementsObject.SetActive(!weapon.activeSelf);
-        weapon.SetActive(!weapon.activeSelf);
-        playerArms.SetActive(weapon.activeSelf);
-        weaponHeld = weapon.activeSelf ? weapon.GetComponent<Weapon>() : null;
-        if (weaponHeld)
-        {
-            weaponHeld.weaponAnimator.SetTrigger("PullOut");
-            weaponHeld.weaponAnimator.Update(0);
-        }
-    }
-
     void BuildHandsRig(Transform weapon)
     {
         Transform meshTransform = weapon.GetChild(0);
@@ -74,11 +112,5 @@ public class PlayerEquipment : MonoBehaviour
         rightHandIK.data.target = rightGrip;
         leftHandIK.data.target = leftGrip;
         rigBuilder.Build();
-    }
-
-    IEnumerator DelayedPullOut(GameObject weapon)
-    {
-        yield return new WaitForEndOfFrame();
-        PullOutWeapon(weapon);
     }
 }

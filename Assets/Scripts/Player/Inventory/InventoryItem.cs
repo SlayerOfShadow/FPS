@@ -59,7 +59,7 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
             if (inventoryActions[i])
             {
                 player.playerInventory.actionsButtons[i].SetActive(true);
-                if (i == 0 || i == 1 || i == 2 || i == 3)
+                if (i < 4)
                 {
                     player.playerInventory.actionsButtons[i].GetComponent<Button>().interactable = !player.playerEquipment.equipment[i];
                     player.playerInventory.actionsButtons[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color

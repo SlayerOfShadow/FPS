@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         if (canCrouch) isTryingToCrouch = Input.GetKey(KeyCode.X);
         if (isTryingToCrouch && isRunning) isRunning = false;
 
-        canAim = !inventoryOpen;
+        canAim = !inventoryOpen && !playerEquipment.isSwitching;
         isAiming = canAim && Input.GetMouseButton(1) && playerEquipment.playerArms.activeSelf;
 
         canInteract = !inventoryOpen;

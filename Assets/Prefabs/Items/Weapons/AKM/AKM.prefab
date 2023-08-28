@@ -259,11 +259,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3616243989750998068}
   - component: {fileID: 8882596299217549171}
-  - component: {fileID: 3146987112630780349}
   - component: {fileID: 6869129314785596433}
   - component: {fileID: 7114697998214560237}
   - component: {fileID: 7734884344754240897}
   - component: {fileID: 7104088757878624594}
+  - component: {fileID: -162461761344990746}
   m_Layer: 3
   m_Name: AKM
   m_TagString: Untagged
@@ -302,33 +302,11 @@ MonoBehaviour:
   interactText: Take
   inventoryItem: {fileID: 4272376817182253583, guid: b2d3acdb95d3b274eb7a1176cd6ca5c3,
     type: 3}
-  weaponBasePosition: {x: 0, y: -5, z: 0}
+  weaponBasePosition: {x: 0, y: -0.03, z: 0.03}
   weaponBaseRotation: {x: 0, y: 0, z: 0, w: 0}
   weaponAimPosition: {x: 0, y: -0.08, z: 0.45}
   weaponAimRotation: {x: -0.0006981316, y: 0, z: 0, w: 0.99999976}
   rateOfFire: 0.2
-  weaponAnimator: {fileID: 3146987112630780349}
---- !u!95 &3146987112630780349
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811084627201459225}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2d731e779a02178428f195563ccca7d3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!54 &6869129314785596433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -419,6 +397,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08, y: 0.28495246, z: 0.75126845}
   m_Center: {x: 0, y: -0.12732986, z: -0.410245}
+--- !u!111 &-162461761344990746
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811084627201459225}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 7321fc66b7b86994a8b9b691c5496583, type: 2}
+  - {fileID: 7400000, guid: a6383d53f9e5b9245b82fa285ffb23cd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1083089848043942894
 GameObject:
   m_ObjectHideFlags: 0
