@@ -60,14 +60,20 @@ public class WeaponMovements : MonoBehaviour
     Quaternion weaponHolderStartRotation;
 
     [Header("Recoil")]
+    [SerializeField] Transform cameraHolder;
+    Vector3 cameraHolderStartPosition;
+    Quaternion cameraHolderStartRotation;
     bool recoil = false;
-    float recoilX, recoilY, recoilZ, kickBackZ;
+    float upRecoil, sideRecoil, kickBack;
+
 
     void Start()
     {
         player = GameManager.Instance.player;
         weaponHolderStartPosition = weaponHolder.localPosition;
         weaponHolderStartRotation = weaponHolder.localRotation;
+        cameraHolderStartPosition = cameraHolder.localPosition;
+        cameraHolderStartRotation = cameraHolder.localRotation;
     }
 
     void Update()
@@ -103,8 +109,11 @@ public class WeaponMovements : MonoBehaviour
 
     void WeaponHolderTransform()
     {
-        Vector3 targetPosition = Vector3.zero;
-        Quaternion targetRotation = Quaternion.identity;
+        Vector3 targetPosition = weaponHolderStartPosition;
+        Quaternion targetRotation = weaponHolderStartRotation;
+
+        Vector3 cameraTargetPosition = cameraHolderStartPosition;
+        Quaternion cameraTargetRotation = cameraHolderStartRotation;
 
         if (player.isAiming)
         {
@@ -116,30 +125,30 @@ public class WeaponMovements : MonoBehaviour
             targetPosition = weaponHolderRunPosition;
             targetRotation = weaponHolderRunRotation;
         }
-        else
-        {
-            targetPosition = weaponHolderStartPosition;
-            targetRotation = weaponHolderStartRotation;
-        }
 
         if (recoil)
         {
-            targetPosition -= new Vector3(0, 0, kickBackZ);
-            targetRotation *= Quaternion.Euler(-recoilX, Random.Range(-recoilY, recoilY), Random.Range(-recoilZ, recoilZ));
+            Vector3 newPosition = new Vector3(0, 0, kickBack);
+            Quaternion newRotation = Quaternion.Euler(-upRecoil, Random.Range(-sideRecoil, sideRecoil), 0);
+            targetPosition -= newPosition;
+            targetRotation *= newRotation;
+            cameraTargetPosition -= newPosition;
+            cameraTargetRotation *= newRotation;
             recoil = false;
         }
 
         weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, targetPosition, smoothMovements * Time.deltaTime);
         weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, targetRotation, smoothMovements * Time.deltaTime);
+        cameraHolder.localPosition = Vector3.Lerp(cameraHolder.localPosition, cameraTargetPosition, smoothMovements * 0.25f * Time.deltaTime);
+        cameraHolder.localRotation = Quaternion.Slerp(cameraHolder.localRotation, cameraTargetRotation, smoothMovements * 0.25f * Time.deltaTime);
     }
 
-    public void Recoil(float x, float y, float z, float kbz)
+    public void Recoil(float up, float side, float kick)
     {
         recoil = true;
-        recoilX = x;
-        recoilY = y;
-        recoilZ = z;
-        kickBackZ = kbz;
+        upRecoil = up;
+        sideRecoil = side;
+        kickBack = kick;
     }
 
     void Sway()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraHeadbob : MonoBehaviour
+public class CameraMovements : MonoBehaviour
 {
     Player player;
 

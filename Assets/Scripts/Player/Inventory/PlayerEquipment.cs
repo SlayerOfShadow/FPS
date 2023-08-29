@@ -101,7 +101,7 @@ public class PlayerEquipment : MonoBehaviour
     IEnumerator Shoot(float rateOfFire)
     {
         canShoot = false;
-        weaponMovements.Recoil(weaponHeld.recoilX, weaponHeld.recoilY, weaponHeld.recoilZ, weaponHeld.kickBackZ);
+        weaponMovements.Recoil(weaponHeld.upRecoil, weaponHeld.sideRecoil, weaponHeld.kickBack);
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;
     }

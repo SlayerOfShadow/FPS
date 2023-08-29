@@ -10794,6 +10794,12 @@ MonoBehaviour:
   previewColor: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 0.8627451}
   occupiedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.8627451}
   img: {fileID: 947328423}
+--- !u!4 &959329882 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4758948087782656894, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2959872043128152127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &968767608
 GameObject:
   m_ObjectHideFlags: 0
@@ -24346,9 +24352,24 @@ PrefabInstance:
       objectReference: {fileID: 1065035321}
     - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: cameraHolder
+      value: 
+      objectReference: {fileID: 959329882}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
       propertyPath: runBobLimit.x
       value: 0.015
       objectReference: {fileID: 0}
+    - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: cameraMovement
+      value: 
+      objectReference: {fileID: 959329882}
     - target: {fileID: 5632783905006253199, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: walkBobLimit.x

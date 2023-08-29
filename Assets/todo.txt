@@ -1,1 +1,2 @@
-- aim anim when holding weapon
+- camera follows weapon rotation when shooting
+- clean code
