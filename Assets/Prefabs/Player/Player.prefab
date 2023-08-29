@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 8140355368162520461}
   - component: {fileID: 5632783905006253199}
   m_Layer: 0
-  m_Name: WeaponSwayAndBob
+  m_Name: WeaponMovements
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -873,14 +873,14 @@ MonoBehaviour:
   movingTravelLimit: {x: 0.02, y: 0, z: 0.02}
   aimingTravelLimit: {x: 0.001, y: 0, z: 0.01}
   standingBobLimit: {x: 0.005, y: 0.0025, z: 0}
-  walkBobLimit: {x: 0.015, y: 0.01, z: 0}
-  crouchBobLimit: {x: 0.01, y: 0.005, z: 0}
-  runBobLimit: {x: 0.025, y: 0.01, z: 0}
+  walkBobLimit: {x: 0.005, y: 0.01, z: 0}
+  crouchBobLimit: {x: 0.0025, y: 0.005, z: 0}
+  runBobLimit: {x: 0.015, y: 0.01, z: 0}
   aimBobLimit: {x: 0.001, y: 0.001, z: 0}
-  baseBobFrequency: 0.01
+  baseBobFrequency: 0.0075
   walkBobMultiplier: 4
   crouchBobMultiplier: 2
-  runBobMultiplier: 7
+  runBobMultiplier: 6
   jumpBob: 0.02
   jumpBobLimit: 0.05
   standingBobRotationMultiplier: {x: 0.5, y: 0, z: 0}
@@ -889,11 +889,10 @@ MonoBehaviour:
   smoothPosition: 5
   smoothRotation: 5
   weaponHolder: {fileID: 8497604716684114998}
-  weaponHolderRunningPosition: {x: 0.07956, y: -0.165, z: 0.455}
-  weaponHolderRunningRotation: {x: 0.06172653, y: -0.0034656392, z: 0.055949543, w: 0.99651766}
-  smoothRunningPosition: 5
-  smoothRunningRotation: 5
-  aimSmooth: 7
+  weaponHolderRunPosition: {x: 0.05, y: -0.18, z: 0.45}
+  weaponHolderRunRotation: {x: -0.095754534, y: 0.043418713, z: -0.0041807448, w: -0.99444884}
+  smoothMovements: 5
+  cameraHolder: {fileID: 4758948087782656894}
 --- !u!1 &4236351931049466636
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,13 +938,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18098d0423e76c64a8108ff37a736fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkAmount: {x: 0.02, y: 0.01}
-  runAmount: {x: 0.03, y: 0.015}
-  crouchAmount: {x: 0.01, y: 0.005}
+  walkAmount: 0.015
+  runAmount: 0.03
+  crouchAmount: 0.01
   walkFrequency: 12
   runFrequency: 14
   crouchFrequency: 8
   smooth: 20
+  returnSpeed: 10
 --- !u!1 &4291655612291005380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,8 +1540,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   inventoryCellsTransform:
   - {fileID: 0}
   - {fileID: 0}
@@ -1669,10 +1667,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  cellSize: 50
-  inventoryColumns: 16
+  cellSize: 60
+  inventoryColumns: 9
   previewCells: []
   itemDragged: {fileID: 0}
   itemActionsPanel: {fileID: 0}
@@ -1709,8 +1705,10 @@ MonoBehaviour:
   rigBuilder: {fileID: 615054202582496863}
   rightHandIK: {fileID: 388663216106115076}
   leftHandIK: {fileID: 1088732924128617169}
-  weaponSwayAndBob: {fileID: 4150229004638241168}
+  weaponMovementsObject: {fileID: 4150229004638241168}
   weaponHeld: {fileID: 0}
+  isSwitching: 0
+  canShoot: 1
 --- !u!1 &4585163397194870797
 GameObject:
   m_ObjectHideFlags: 0
