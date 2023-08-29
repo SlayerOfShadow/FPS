@@ -16,6 +16,7 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] GameObject weaponMovementsObject;
     WeaponMovements weaponMovements;
     public Weapon weaponHeld;
+    Transform muzzleFlash;
     [HideInInspector] public bool isSwitching = false;
     public bool canShoot = true;
 
@@ -63,6 +64,8 @@ public class PlayerEquipment : MonoBehaviour
 
             BuildHandsRig(weapon.transform);
 
+            muzzleFlash = weapon.transform.GetChild(0).Find("MuzzleFlash");
+
             weaponAnim.Play("WeaponPullOut");
             yield return new WaitForSeconds(weaponAnim.GetClip("WeaponPullOut").length);
         }
@@ -80,6 +83,7 @@ public class PlayerEquipment : MonoBehaviour
             if (weaponHeld == weapon.GetComponent<Weapon>())
             {
                 weaponHeld = null;
+                muzzleFlash = null;
             }
             else
             {
@@ -89,6 +93,8 @@ public class PlayerEquipment : MonoBehaviour
                 weaponHeld = weapon.GetComponent<Weapon>();
 
                 BuildHandsRig(weapon.transform);
+
+                muzzleFlash = weapon.transform.GetChild(0).Find("MuzzleFlash");
 
                 weaponAnim.Play("WeaponPullOut");
                 yield return new WaitForSeconds(weaponAnim.GetClip("WeaponPullOut").length);

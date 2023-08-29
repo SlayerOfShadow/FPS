@@ -83,6 +83,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &581385193005543108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2898359176420301772}
+  m_Layer: 3
+  m_Name: MuzzleFlash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2898359176420301772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581385193005543108}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 10}
+  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5578411867908520189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &721775414402600056
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,10 +338,9 @@ MonoBehaviour:
   weaponAimPosition: {x: 0, y: -0.08, z: 0.45}
   weaponAimRotation: {x: -0.0006981316, y: 0, z: 0, w: 0.99999976}
   rateOfFire: 0.2
-  recoilX: 30
-  recoilY: 30
-  recoilZ: 30
-  kickBackZ: 1
+  upRecoil: 0
+  sideRecoil: 0
+  kickBack: 0
 --- !u!54 &6869129314785596433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2503,6 +2533,7 @@ Transform:
   m_Children:
   - {fileID: 851608042038683243}
   - {fileID: 5228184620845210624}
+  - {fileID: 2898359176420301772}
   - {fileID: 813781275366380342}
   - {fileID: 2658387575071792513}
   - {fileID: 5687255676279017568}
