@@ -36,10 +36,7 @@ public class PlayerController : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
-        if (!player.isJumping)
-        {
-            movements = player.rawMoveInputs * player.currentSpeed;
-        }
+        movements = player.rawMoveInputs * player.currentSpeed;
 
         float yMovementDirection = moveDirection.y;
         if (!player.isJumping) targetMoveDirection = (forward * movements.y) + (right * movements.x);

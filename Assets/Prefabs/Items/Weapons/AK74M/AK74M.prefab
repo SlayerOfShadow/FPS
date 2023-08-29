@@ -799,9 +799,9 @@ MonoBehaviour:
   weaponAimPosition: {x: 0, y: -0.084, z: 0.45}
   weaponAimRotation: {x: -0.0039269803, y: 0, z: 0, w: 0.9999923}
   rateOfFire: 0.1
-  recoilX: 30
-  recoilY: 10
-  recoilZ: 30
+  recoilX: 20
+  recoilY: 5
+  recoilZ: 20
   kickBackZ: 1
 --- !u!54 &2189455283094215233
 Rigidbody:

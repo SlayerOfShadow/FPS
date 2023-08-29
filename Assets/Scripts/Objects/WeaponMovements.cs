@@ -55,12 +55,9 @@ public class WeaponMovements : MonoBehaviour
     [SerializeField] Transform weaponHolder;
     [SerializeField] Vector3 weaponHolderRunPosition;
     [SerializeField] Quaternion weaponHolderRunRotation;
-    [SerializeField] float smoothRun = 5f;
+    [SerializeField] float smoothMovements = 5f;
     Vector3 weaponHolderStartPosition;
     Quaternion weaponHolderStartRotation;
-
-    [Header("Aiming")]
-    [SerializeField] float smoothAim = 5f;
 
     [Header("Recoil")]
     bool recoil = false;
@@ -108,25 +105,21 @@ public class WeaponMovements : MonoBehaviour
     {
         Vector3 targetPosition = Vector3.zero;
         Quaternion targetRotation = Quaternion.identity;
-        float smooth = 0;
 
         if (player.isAiming)
         {
             targetPosition = player.playerEquipment.weaponHeld.weaponAimPosition;
             targetRotation = player.playerEquipment.weaponHeld.weaponAimRotation;
-            smooth = smoothAim;
         }
         else if (player.isRunning)
         {
             targetPosition = weaponHolderRunPosition;
             targetRotation = weaponHolderRunRotation;
-            smooth = smoothRun;
         }
-        else if (!player.isJumping)
+        else
         {
             targetPosition = weaponHolderStartPosition;
             targetRotation = weaponHolderStartRotation;
-            smooth = 5f;
         }
 
         if (recoil)
@@ -136,8 +129,8 @@ public class WeaponMovements : MonoBehaviour
             recoil = false;
         }
 
-        weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, targetPosition, smooth * Time.deltaTime);
-        weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, targetRotation, smooth * Time.deltaTime);
+        weaponHolder.localPosition = Vector3.Lerp(weaponHolder.localPosition, targetPosition, smoothMovements * Time.deltaTime);
+        weaponHolder.localRotation = Quaternion.Slerp(weaponHolder.localRotation, targetRotation, smoothMovements * Time.deltaTime);
     }
 
     public void Recoil(float x, float y, float z, float kbz)

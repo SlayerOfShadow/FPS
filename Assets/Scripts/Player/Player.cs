@@ -58,10 +58,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        currentSpeed = isRunning ? runSpeed
-                    : isCrouching ? crouchSpeed
-                    : walkSpeed;
-
         canJump = characterController.isGrounded;
         isJumping = !canJump;
 
@@ -69,7 +65,7 @@ public class Player : MonoBehaviour
         if (canMove) rawMoveInputs = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         isMoving = rawMoveInputs.magnitude > 0;
 
-        canRun = !isAiming && characterController.isGrounded && rawMoveInputs.y > 0 && isMoving && !isCrouching && characterController.height >= standingHeight - 0.15f;
+        canRun = !isAiming && characterController.isGrounded && rawMoveInputs.y > 0 && !isCrouching && characterController.height >= standingHeight - 0.15f;
         isRunning = canRun && Input.GetKey(KeyCode.LeftShift);
 
         canCrouch = !isJumping;
@@ -80,5 +76,9 @@ public class Player : MonoBehaviour
         isAiming = canAim && Input.GetMouseButton(1) && playerEquipment.playerArms.activeSelf;
 
         canInteract = !inventoryOpen;
+
+        currentSpeed = isRunning ? runSpeed
+                    : isCrouching ? crouchSpeed
+                    : walkSpeed;
     }
 }
