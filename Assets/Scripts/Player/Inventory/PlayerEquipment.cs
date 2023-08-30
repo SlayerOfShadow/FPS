@@ -17,6 +17,8 @@ public class PlayerEquipment : MonoBehaviour
     WeaponMovements weaponMovements;
     public Weapon weaponHeld;
     Transform muzzleFlash;
+    GameObject muzzleFlashEffect;
+    AudioSource audioSource;
     [HideInInspector] public bool isSwitching = false;
     public bool canShoot = true;
 
@@ -65,6 +67,8 @@ public class PlayerEquipment : MonoBehaviour
             BuildHandsRig(weapon.transform);
 
             muzzleFlash = weapon.transform.GetChild(0).Find("MuzzleFlash");
+            muzzleFlashEffect = weaponHeld.muzzleFlashEffect;
+            audioSource = weapon.GetComponent<AudioSource>();
 
             weaponAnim.Play("WeaponPullOut");
             yield return new WaitForSeconds(weaponAnim.GetClip("WeaponPullOut").length);
@@ -84,6 +88,8 @@ public class PlayerEquipment : MonoBehaviour
             {
                 weaponHeld = null;
                 muzzleFlash = null;
+                muzzleFlashEffect = null;
+                audioSource = null;
             }
             else
             {
@@ -95,6 +101,8 @@ public class PlayerEquipment : MonoBehaviour
                 BuildHandsRig(weapon.transform);
 
                 muzzleFlash = weapon.transform.GetChild(0).Find("MuzzleFlash");
+                muzzleFlashEffect = weaponHeld.muzzleFlashEffect;
+                audioSource = weapon.GetComponent<AudioSource>();
 
                 weaponAnim.Play("WeaponPullOut");
                 yield return new WaitForSeconds(weaponAnim.GetClip("WeaponPullOut").length);
@@ -108,6 +116,8 @@ public class PlayerEquipment : MonoBehaviour
     {
         canShoot = false;
         weaponMovements.Recoil(weaponHeld.upRecoil, weaponHeld.sideRecoil, weaponHeld.kickBack);
+        audioSource.PlayOneShot(audioSource.clip);
+        Instantiate(muzzleFlashEffect, muzzleFlash);
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;
     }

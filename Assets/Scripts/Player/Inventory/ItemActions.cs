@@ -61,6 +61,7 @@ public class ItemActions : MonoBehaviour
         if (!drag) player.playerInventory.RemoveEquipment(inventoryItem);
         itemToUnequip.transform.SetParent(map);
         if (itemToUnequip.activeSelf) player.playerEquipment.playerArms.SetActive(false);
+        if (player.playerEquipment.weaponHeld == itemToUnequip.GetComponent<Weapon>()) player.playerEquipment.weaponHeld = null;
         itemToUnequip.SetActive(false);
     }
 
