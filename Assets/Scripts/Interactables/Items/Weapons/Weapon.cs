@@ -10,5 +10,4 @@ public class Weapon : Item
     public float upRecoil;
     public float sideRecoil;
     public float kickBack;
-    public GameObject muzzleFlashEffect;
 }

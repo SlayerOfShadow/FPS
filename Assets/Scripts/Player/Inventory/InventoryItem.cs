@@ -74,13 +74,6 @@ public class InventoryItem : MonoBehaviour, IDragHandler, IEndDragHandler, IBegi
         player.playerInventory.itemActionsPanel.SetActive(true);
     }
 
-    public enum InventoryActions
-    {
-        equipPrimary,
-        unequip,
-        drop
-    }
-
     public void OnPointerDown(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)

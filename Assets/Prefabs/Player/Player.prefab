@@ -1707,8 +1707,8 @@ MonoBehaviour:
   leftHandIK: {fileID: 1088732924128617169}
   weaponMovementsObject: {fileID: 4150229004638241168}
   weaponHeld: {fileID: 0}
+  muzzleFlashEffect: {fileID: 100000, guid: 03a4a1935a9f4454c861dfa0aa6df562, type: 3}
   isSwitching: 0
-  canShoot: 1
 --- !u!1 &4585163397194870797
 GameObject:
   m_ObjectHideFlags: 0

@@ -22091,11 +22091,6 @@ PrefabInstance:
       propertyPath: interactionPanel
       value: 
       objectReference: {fileID: 1065035321}
-    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
-        type: 3}
-      propertyPath: muzzleFlashEffect
-      value: 
-      objectReference: {fileID: 100006, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
     - target: {fileID: 8913407274875630549, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: itemActions
