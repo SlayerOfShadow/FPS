@@ -77,6 +77,14 @@ public class ItemActions : MonoBehaviour
         GameObject itemDropped = inventoryItem.associatedItem;
         if (inventoryItem.occupiedEquipmentSlot > -1)
         {
+            if (itemDropped.GetComponent<Weapon>() == player.playerEquipment.weaponHeld)
+            {
+                player.playerEquipment.weaponMovementsObject.SetActive(false);
+                player.playerEquipment.playerArms.SetActive(false);
+                player.playerEquipment.weaponHeld = null;
+                player.playerEquipment.muzzleFlash = null;
+                player.playerEquipment.audioSource = null;
+            }
             inventoryItem.inventoryActions[inventoryItem.occupiedEquipmentSlot] = true;
             inventoryItem.inventoryActions[4] = false;
             player.playerEquipment.equipment[inventoryItem.occupiedEquipmentSlot] = null;

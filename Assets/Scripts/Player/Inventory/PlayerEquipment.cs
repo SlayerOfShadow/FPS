@@ -13,12 +13,12 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] RigBuilder rigBuilder;
     [SerializeField] TwoBoneIKConstraint rightHandIK;
     [SerializeField] TwoBoneIKConstraint leftHandIK;
-    [SerializeField] GameObject weaponMovementsObject;
+    public GameObject weaponMovementsObject;
     WeaponMovements weaponMovements;
     public Weapon weaponHeld;
-    Transform muzzleFlash;
+    [HideInInspector] public Transform muzzleFlash;
     [SerializeField] GameObject muzzleFlashEffect;
-    AudioSource audioSource;
+    [HideInInspector] public AudioSource audioSource;
     [HideInInspector] public bool isSwitching = false;
     bool canShoot = true;
 
