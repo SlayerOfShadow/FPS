@@ -4068,7 +4068,7 @@ MonoBehaviour:
         targetColorBuffer: 0
         targetDepthBuffer: 0
         clearFlags: 0
-        passFoldout: 1
+        passFoldout: 0
         m_Version: 0
         filterFoldout: 1
         rendererFoldout: 1
@@ -4105,7 +4105,7 @@ MonoBehaviour:
         targetColorBuffer: 0
         targetDepthBuffer: 0
         clearFlags: 0
-        passFoldout: 1
+        passFoldout: 0
         m_Version: 0
         filterFoldout: 1
         rendererFoldout: 1
@@ -22091,6 +22091,17 @@ PrefabInstance:
       propertyPath: interactionPanel
       value: 
       objectReference: {fileID: 1065035321}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: bulletHole
+      value: 
+      objectReference: {fileID: 4512291405129295943, guid: d3d6ce228f25f7346907921a8c98ff2a,
+        type: 3}
+    - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
+        type: 3}
+      propertyPath: bulletImpact
+      value: 
+      objectReference: {fileID: 100002, guid: 3b1513bcb86426b4795879be6a128ed7, type: 3}
     - target: {fileID: 6614099586950798519, guid: 3d2486b91e978164f87112bd1ba3e4a3,
         type: 3}
       propertyPath: bulletImpactEffect

@@ -21,7 +21,8 @@ public class PlayerEquipment : MonoBehaviour
     [HideInInspector] public AudioSource audioSource;
     [HideInInspector] public bool isSwitching = false;
     bool canShoot = true;
-    [SerializeField] GameObject bulletImpactEffect;
+    [SerializeField] GameObject bulletImpact;
+    [SerializeField] GameObject bulletHole;
 
     void Start()
     {
@@ -120,7 +121,8 @@ public class PlayerEquipment : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(player.playerCamera.transform.position, player.playerCamera.transform.forward, out hit, weaponHeld.range))
         {
-            Instantiate(bulletImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            Instantiate(bulletImpact, hit.point, Quaternion.LookRotation(hit.normal));
+            Instantiate(bulletHole, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
         }
 
         yield return new WaitForSeconds(rateOfFire);
