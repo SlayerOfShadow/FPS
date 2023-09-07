@@ -801,10 +801,10 @@ MonoBehaviour:
   weaponAimPosition: {x: 0, y: -0.084, z: 0.45}
   weaponAimRotation: {x: -0.0039269803, y: 0, z: 0, w: 0.9999923}
   rateOfFire: 0.1
-  upRecoil: 20
-  sideRecoil: 10
-  kickBack: 1
-  muzzleFlashEffect: {fileID: 100000, guid: 03a4a1935a9f4454c861dfa0aa6df562, type: 3}
+  range: 300
+  upRecoil: 5
+  sideRecoil: 5
+  kickBack: 0.5
 --- !u!82 &4961410744505473478
 AudioSource:
   m_ObjectHideFlags: 0
